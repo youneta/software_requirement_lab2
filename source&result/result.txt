@@ -1,0 +1,4861 @@
+1.  https://github.com/microsoft/vscode/issues/10121
+title: ['Allow for floating windows °§ Issue #10121 °§ microsoft/vscode °§ GitHub']
+Hi,
+I suggest floating windows option for:
+
+Terminal
+Debug console
+Problems
+Output
+
+Eventually:
+
+tabs
+Explorer / search / debug / git / extensions
+
+This way we could take advantage of large screen space and / or multi monitors.
+Having to constantly switch between the various windows is not optimum working flow.
+
+2.  https://github.com/microsoft/vscode/issues/519
+title: ['Allow to change the font size and font of the workbench °§ Issue #519 °§ microsoft/vscode °§ GitHub']
+At the moment, we can only change the font size / font of the editor. If we want to change the font size, we need to use a roundabout method of "zooming in / out". It would be nice if this could be adjusted through the preferences.
+
+3.  https://github.com/microsoft/vscode/issues/10759
+title: ['Release in the Microsoft Store °§ Issue #10759 °§ microsoft/vscode °§ GitHub']
+While VS Code is easily obtainable as it is, it still feels like VS Code could benefit from the standardized update procedure that comes with the Windows Store. Perhaps even something like the Desktop App Convertor could be used.
+
+4.  https://github.com/microsoft/vscode/issues/13680
+title: ['Git: Support git with private key password °§ Issue #13680 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.6.0
+Commit e52fb0b
+Date 2016-10-10T18:37:40.189Z
+Shell 1.3.7
+Renderer 52.0.2743.82
+Node 6.5.0
+OS Version: Windows 7 Pro
+
+Steps to Reproduce:
+
+Create a public-private key pair with password protection
+add them to your github account
+setup git to use the private key file
+try to push something with git
+
+Result:
+git pull
+Permission denied, please try again.
+Permission denied, please try again.
+Permission denied (publickey,password).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+5.  https://github.com/microsoft/vscode/issues/28795
+title: ['Editor: scroll jumps randomly (related to Chrome, Electron, xinput) °§ Issue #28795 °§ microsoft/vscode °§ GitHub']
+VSCode Version: starting at 1.13.0, up to current
+OS Version: Fedora 24-27
+
+Looks like VS Code is listening to mouse scroll events, even while it is not active in the window.
+Related:
+https://bugs.chromium.org/p/chromium/issues/detail?id=608246
+https://bugs.chromium.org/p/chromium/issues/detail?id=807187
+Steps to Reproduce
+requirements: Browser (Chromium / Firefox / Google Chrome), VSCode Editor (Any file type. Ideally a long file to ensure the scroll is visible.)
+VSCode: Leave cursor at top of file.
+Browser: Scroll, excessively, (For a few seconds) down the page. Even if it's a blank tab with no content.
+VSCode: Scroll, ever so slightly, in any direction.
+You'll find the editor will jump suddenly further down the active file.
+It seems VSCode is receiving the scroll events, for whatever reason; which are all suddenly evaluated upon any form of scroll input in the editor.
+Updates based on comments
+GUESS: Appears to be an issue with Electron and some input libraries?
+Is not isolated to VScode
+Fix: Does not yet exist.
+Linux Workarounds (Not to be confused with a fix)
+imwheel - not suitable for all users
+wayland - not suitable for all users
+Note: Ubuntu 19.04 (Desktop) appears to be using Wayland.
+I'm not sure we will see further updates in here, which is a bit disappointing from the developers, given the amount of comments from affected people. I would like to have some official guidance, even if it's pointing us to other resources.
+
+6.  https://github.com/microsoft/vscode/issues/3130
+title: ['Allow customization of mouse shortcuts °§ Issue #3130 °§ microsoft/vscode °§ GitHub']
+Some users would like to be able to customize not just pure keyboard shortcuts but also mouse + modifier ones. These are currently hard coded, for example alt+click to add a selection.
+See #3091 for some more context.
+
+7.  https://github.com/microsoft/vscode/issues/4490
+title: ['Macro recording °§ Issue #4490 °§ microsoft/vscode °§ GitHub']
+It would be nice to be able to record a sequence of inputs and then reproduce it as in Notepad++ or Vim.
+
+8.  https://github.com/microsoft/vscode/issues/10546
+title: ['Tabs for integrated terminal °§ Issue #10546 °§ microsoft/vscode °§ GitHub']
+Feature request.
+Default terminal
+
+But could be more usable...
+
+9.  https://github.com/microsoft/vscode/issues/70764
+title: ['Visual Studio Code for ipad °§ Issue #70764 °§ microsoft/vscode °§ GitHub']
+can use the Visual Studio Code on a ipad
+
+10.  https://github.com/microsoft/vscode/issues/41309
+title: ['Add an optional configurable toolbar below the menu °§ Issue #41309 °§ microsoft/vscode °§ GitHub']
+Whole my life I used ide where there was a customizable toolbar. I starded to use vscode and stopped to use it after one day. It is impossible to remember all shorcuts. In any other popular ide you can put any menu item on toolbar and use it from time to time.
+visual vtudio:
+
+idea:
+
+eclipse:
+
+netbeans:
+
+code blocks:
+
+komodo ide:
+
+atom:
+
+notepad++:
+
+gedit:
+
+github:
+
+WTF MS? VS code? VS users?
+Don't tag it "out-of-scope" as you did before with similar requests. Even simple editors have toolbar.
+It isn't advanced feature it's basic feature for most people.
+Using ide without toolbar is not user friendly for most users. It is vim way.
+People really need it like "exit from vim":
+
+
+
+
+
+
+FAQ FOR PEOPLE WHO ARE AGAINST THE TOOLBAR:
+
+I don't want to use toolbar so I am against that feature-request.
+
+It is not a problem "it is optional toolbar". If you don't want you can don't use it.
+
+If you want it so why don't you form a team and submit a PR?
+
+People have offered, go look at the many other bug reports made on the same issue. MS has said they would likely reject it. They don't even want to add hooks to make a plugin possible. So it's not a resource issue, it's an ideological one.
+
+Temporary workaround by @GorvGoyl:
+
+It seems like it won't be the high priority feature in foreseeable future so I made this extension which adds handy buttons like beautify, list files, undo, redo, save all etc to the editor menu bar in the VSCode. Shortcut Menu Bar
+
+11.  https://github.com/microsoft/vscode/issues/43188
+title: ['Allow to open multiple workspaces in the same window °§ Issue #43188 °§ microsoft/vscode °§ GitHub']
+Workspace feature is great because we can grouping projects in a top context (microservices projects in a big API workspace). But, only one workspace can be open. This feature can be powerful if multiple workspaces can be open at the same time (in the same window).
+
+And another request : it will be great if :
+
+Right click on the workspace name should open menu with a "settings" item (which open xxxx.code-workspace).
+Workspace settings should contain a name attribute (to clearly identify the workspace in the left pane in VS Code)
+
+12.  https://github.com/microsoft/vscode/issues/5402
+title: ['Improved column selection (Alt+select) °§ Issue #5402 °§ microsoft/vscode °§ GitHub']
+The column selection implemented in #1515 is a start, but it's a bit awkward and unintuitive compared to other editors.
+With the following editors or IDEs, you can create a column selection starting from where the mouse is clicked/dragged:
+
+Atom (with Sublime Style Column Selection)
+Eclipse
+Notepad++
+Programmer's Notepad
+Sublime
+Visual Studio 2015
+
+At least Eclipse, Programmer's Notepad, and VS2015 support virtual whitespace as well, creating a complete square/rectangle.
+Some of them also don't show multiple cursors, which I think looks better.
+Other users were also expecting this behaviour (see here and here).
+
+13.  https://github.com/microsoft/vscode/issues/49923
+title: ['Alternative locations for the outline view °§ Issue #49923 °§ microsoft/vscode °§ GitHub']
+The outline view lives inside the file explorer and while it can be re-arranges in there it cannot be dragged into its own view. Alternative locations could be:
+
+a standalone viewlet,
+inside another viewlets,
+the bottom panel, or
+as a re-arrangable view that can be docked anywhere in the UI (like most others have it).
+
+14.  https://github.com/microsoft/vscode/issues/6328
+title: ['File Nesting °§ Issue #6328 °§ microsoft/vscode °§ GitHub']
+Is there any possible chance we might see File Nesting in Visual Studio Code the same way it works in Visual Studio 2015? It was really convenient and helpful. I would adore such a feature!
+
+
+
+
+15.  https://github.com/microsoft/vscode/issues/47841
+title: ['Windows update failed: Access is denied °§ Issue #47841 °§ microsoft/vscode °§ GitHub']
+Log from %HOME%\AppData\Local\Temp\vscode-inno-updater.log
+Apr 13 11:27:40.666 INFO Starting: C:\Program Files\Microsoft VS Code\Code.exe, false
+Apr 13 11:27:40.670 INFO Checking for running Code.exe processes... (attempt 1)
+Apr 13 11:27:40.670 INFO Code.exe is running, wait a bit
+Apr 13 11:27:41.148 INFO Checking for running Code.exe processes... (attempt 2)
+Apr 13 11:27:41.153 INFO Code.exe is running, wait a bit
+Apr 13 11:27:41.654 INFO Checking for running Code.exe processes... (attempt 3)
+Apr 13 11:27:41.666 INFO Code.exe is not running
+Apr 13 11:27:41.666 INFO Starting update, silent = false
+Apr 13 11:27:41.691 INFO do_update: "C:\\Program Files\\Microsoft VS Code\\Code.exe", _
+Apr 13 11:27:41.692 INFO move_update: "C:\\Program Files\\Microsoft VS Code\\unins000.dat", _
+Apr 13 11:27:41.696 INFO Delete: "Code.exe" (attempt 1)
+Apr 13 11:27:41.744 INFO Delete: "Code.exe" (attempt 2)
+Apr 13 11:27:41.945 INFO Delete: "Code.exe" (attempt 3)
+Apr 13 11:27:42.396 INFO Delete: "Code.exe" (attempt 4)
+Apr 13 11:27:43.197 INFO Delete: "Code.exe" (attempt 5)
+Apr 13 11:27:44.448 INFO Delete: "Code.exe" (attempt 6)
+Apr 13 11:27:46.249 INFO Delete: "Code.exe" (attempt 7)
+Apr 13 11:27:48.700 INFO Delete: "Code.exe" (attempt 8)
+Apr 13 11:27:51.901 INFO Delete: "Code.exe" (attempt 9)
+Apr 13 11:27:55.952 INFO Delete: "Code.exe" (attempt 10)
+Apr 13 11:28:00.953 INFO Delete: "Code.exe" (attempt 11)
+Apr 13 11:28:00.953 ERRO Access is denied. (os error 5)
+
+On Windows 10 64 bit
+
+16.  https://github.com/microsoft/vscode/issues/5953
+title: ['Support to print the editor contents °§ Issue #5953 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.0
+OS Version: Windows 10.0.10586.218
+
+Steps to Reproduce:
+
+Open a File in VSCode or enter some code
+Try to print it to a printer
+
+Sometimes paper is unbeatable.
+
+17.  https://github.com/microsoft/vscode/issues/3884
+title: ['Revisit VS Code folder structure for app data, settings, extensions °§ Issue #3884 °§ microsoft/vscode °§ GitHub']
+Config is stored in ~/.config/Code[ - <quality>]/User. To match platform conventions (lowercase and hyphens for everything) as well as to keep consistency with the cli code[-<quality>] I propose we change the settings directory one of:
+
+~/.config/code[-<quality>]/user
+~/.vscode[-<quality>] (see #3883)
+~/.code[-<quality>] (to prevent using 'vs' showing up in the OSS build as it is now)
+
+If we moved this it would probably require some discovery/migration on first launch of a newer version.
+
+The below is a living document.
+Proposed folder structure
+Notes:
+
+I don't think we should be encouraging the use of admin rights within vscode, instead a permissions elevation dialog would probably be better than allowing a specific place for root user data #5561
+I want to clean up the whole code vs vscode thing in this change; only official builds should carry the visual studio branding, that should carry over to the config directories consistently as well.
+The CLI args --user-data-dir and --extensions-dir will need to be adjusted for this, something like --config-dir and --cache-dir would probably be better.
+
+Windows
+Old
+Settings:                %APPDATA%\Code[ - Variant]\User\settings.json
+Keybindings:             %APPDATA%\Code[ - Variant]\User\keybindings.json
+Snippets:                %APPDATA%\Code[ - Variant]\User\snippets\
+Workspace storage:       %APPDATA%\Code[ - Variant]\User\workspaceStorage\
+Chromium user data:      %APPDATA%\Code[ - Variant]\
+Extensions:              %USERPROFILE%\.vscode[-variant]\extensions\
+
+New
+Settings:                %APPDATA%\Microsoft\[Visual Studio ]Code[ - Variant]\settings.json
+Keybindings:             %APPDATA%\Microsoft\[Visual Studio ]Code[ - Variant]\keybindings.json
+Snippets:                %APPDATA%\Microsoft\[Visual Studio ]Code[ - Variant]\snippets\
+Workspace storage:       %LOCALAPPDATA%\Microsoft\[Visual Studio ]Code[ - Variant]\workspaceStorage\
+Chromium user data:      %LOCALAPPDATA%\Microsoft\[Visual Studio ]Code[ - Variant]\userdata\
+Extensions:              %LOCALAPPDATA%\Microsoft\[Visual Studio ]Code[ - Variant]\extensions\
+
+Notes:
+
+Note that %APPDATA% is roaming and %LOCALAPPDATA% is local, meaning extensions will not be carried across multiple machines until a solution is devised for #15442. An extension manifest, eg. %APPDATA%\Microsoft\[Visual Studio ]Code[ - Variant]\extensions.json which automatically installs extensions is my thinking of solving this problem.
+
+Linux
+Old
+Settings:                $HOME/.config/Code[ - Variant]/User/settings.json
+Keybindings:             $HOME/.config/Code[ - Variant]/User/keybindings.json
+Snippets:                $HOME/.config/Code[ - Variant]/User/snippets/
+Workspace storage:       $HOME/.config/Code[ - Variant]/User/workspaceStorage/
+Chromium user data:      $HOME/.config/Code[ - Variant]/
+Extensions:              $HOME/.vscode[-variant]/extensions/ (not moving)
+
+New
+Settings:                $XDG_CONFIG_HOME/[vs]code[-variant]/settings.json
+Keybindings:             $XDG_CONFIG_HOME/[vs]code[-variant]/keybindings.json
+Snippets:                $XDG_CONFIG_HOME/[vs]code[-variant]/snippets/
+Workspace storage:       $XDG_CACHE_HOME/[vs]code[-variant]/workspaceStorage/
+Chromium user data:      $XDG_CACHE_HOME/[vs]code[-variant]/userdata/
+Extensions:              $XDG_CACHE_HOME/[vs]code[-variant]/extensions/
+
+Notes:
+
+Thanks to @ollie27 and others for calling out the XDG Base Directory Specification, see that document for fallbacks to the environment variables.
+$XDG_CACHE_HOME would be best for extensions provided there is an extensions manifest in $XDG_CONFIG_HOME #15442.
+Maybe extensions should live in $XDG_DATA_HOME?
+
+Mac
+Old
+Settings:                $HOME/Library/Application Support/Code[ - Variant]/User/settings.json
+Keybindings:             $HOME/Library/Application Support/Code[ - Variant]/User/keybindings.json
+Snippets:                $HOME/Library/Application Support/Code[ - Variant]/User/snippets/
+Workspace storage:       $HOME/Library/Application Support/Code[ - Variant]/User/workspaceStorage/
+Chromium user data:      $HOME/Library/Application Support/Code[ - Variant]/
+Extensions:              $HOME/.vscode[-variant]/extensions/ (not moving)
+
+New
+Settings:                $HOME/Library/Application Support/[Visual Studio ]Code[ - Variant]/settings.json
+Keybindings:             $HOME/Library/Application Support/[Visual Studio ]Code[ - Variant]/keybindings.json
+Snippets:                $HOME/Library/Application Support/[Visual Studio ]Code[ - Variant]/snippets/
+Workspace storage:       $HOME/Library/Application Support/[Visual Studio ]Code[ - Variant]/workspaceStorage/
+Chromium user data:      $HOME/Library/Application Support/[Visual Studio ]Code[ - Variant]/userdata/
+Extensions:              $HOME/Library/Application Support/[Visual Studio ]Code[ - Variant]/extensions/
+
+Notes:
+
+Is there a similar standard for dividing cache and config files on Mac? http://stackoverflow.com/a/5084892/1156119
+
+18.  https://github.com/microsoft/vscode/issues/70413
+title: ['Allow tabs to wrap to multi-line °§ Issue #70413 °§ microsoft/vscode °§ GitHub']
+I almost always have more tabs open than fit in the horizontal space provided. I have seen the thread on shrinking tabs to try to fit them in one line #15048, and I've also seen this closed feature request for what I'm asking for - #32836. That issue was closed saying there would be no changes for 6-12 months, and it has been around 15 months now so wanted to reopen discussion.
+JetBrains IDEs added this a few years ago - simple config option to wrap open tabs to multiple lines rather than extending indefinitely horizontally, forcing a horizontal scroll or use of the Open Editors section in the left bar. While the Open Editors block is a nice idea, I've spent so many years switching via tabs (and continue to do so in all my other editors) that I'm requesting a better solution.
+
+19.  https://github.com/microsoft/vscode/issues/2686
+title: ['Support to open a project folder in multiple VS Code windows °§ Issue #2686 °§ microsoft/vscode °§ GitHub']
+Currently VS Code prevents opening a folder more than once which makes it impossible to work on a project in multiple windows (e.g. on multiple displays).
+@bpasero @dbaeumer @egamma @alexandrudima please raise any obstacles and issues you might foresee with this request.
+Issues found so far:
+
+ we use the workspace path as identifier to communicate back from debug target to debug host
+ we need to verify cross platform that there is no code causing issues when running over the same root folder (e.g. file watchers)
+
+
+Please note: Initially I've created this feature request for a specific use case: enable debugging of multiple processes.
+In the meantime, debugging of multiple processes has become possible without the need for opening a folder more than once (see #13426). But instead of closing this item (as no longer necessary), I've repurposed it by removing the specific debug use case.
+For transparency you can find the original comment below:
+
+Currently it is not possible to debug more than one process from a single VS Code project (= window)
+because VS Code prevents opening a folder more than once.
+The workaround is to open VS code on a subfolder within the original folder, which means to restructure the project (which is not desirable).
+This feature request asks for lifting the constraint and allowing to open a project folder multiple times.
+
+20.  https://github.com/microsoft/vscode/issues/2809
+title: ['Support variables when resolving values in settings °§ Issue #2809 °§ microsoft/vscode °§ GitHub']
+Hi,
+I was just reading the latest updates and it says one can install typescript@next globally and then set typescript.tsdk so VS Code can use the appropriate version/installation. In a team environment, I'd like to put that setting in our project, something like:
+.vscode/settings.json:
+{
+    "typescript.tsdk": "%APPDATA%/npm/node_modules/typescript/lib"
+}
+The problem is restarting VS Code results in an error:
+The path c:\Projects\Derp\%APPDATA%\npm\node_modules\typescript\lib doesn't point to a valid tsserver install. TypeScript language features will be disabled.
+
+Now the setting needs to be per-person because I highly doubt my teammates have tsc installed in C:\Users\Olson\AppData\Roaming\npm\node_modules\typescript\lib üòâ
+Could we get environment variables evaluated on that and all other settings that involve paths?
+I haven't tested other paths, but I see these in the Default Settings:
+
+git.path
+markdown.styles
+json.schemas
+typescript.tsdk
+php.validate.executablePath
+
+21.  https://github.com/microsoft/vscode/issues/25887
+title: ['Copy/replace/add left <-> right in compare views °§ Issue #25887 °§ microsoft/vscode °§ GitHub']
+In the compare views, it would be nice to have
+
+"Copy to left/right"
+"Replace left (with right)/right (with left)"
+"Add above/down left/right"
+
+in all views, i.e. the side-by-side and the unified view (there with other text than "left/right").
+Now, I need to select the text and copy-paste it. In the unified view, I even can't select the text from the compared file ("left" file in side-by-side view).
+A nice UI would be the one as in Meld:
+
+Related: #24390 (but only wanted for staging VCS diffs)
+Blocked by: #4180 ?
+
+22.  https://github.com/microsoft/vscode/issues/869
+title: ['Exclude all files except for... °§ Issue #869 °§ microsoft/vscode °§ GitHub']
+The files exclude allows you to set true/false values, but it doesn't seem to take them completely into account.
+For example, I would like to hide everything except for the scripts folder. You might then assume that this would do this:
+{
+    "files.exclude":
+    {
+        "**/*": true,
+        "**/Scripts": false
+    }
+}
+
+It does not do that, it just hides everything. In order to achieve this, you must list every file and directory except for the Scripts directory, and who knows how many directories there are and if a new directory/file gets added you then must edit the list to exclude those.
+In the end, their should be a way to hide everything except for xxx.
+
+23.  https://github.com/microsoft/vscode/issues/20530
+title: ['Search: target particular set of files °§ Issue #20530 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Code 1.9.1 (f9d0c68, 2017-02-08T23:31:51.320Z)
+OS Version: Darwin x64 15.6.0
+Extensions:
+
+
+
+
+Extension
+Author
+Version
+
+
+
+
+cpptools
+ms-vscode
+0.10.1
+
+
+
+
+Steps to Reproduce:
+1.when i use global search, it's not easy to type whole file path and name in input box,
+hope that there is a convenient way to  use highlight in search current file by typing ""
+
+Note from @roblourens This includes searching in any particular subset of files such as
+
+All open files
+Files staged in git
+Recently modified files
+
+etc
+
+24.  https://github.com/microsoft/vscode/issues/52855
+title: ['VS Code was lost on shutdown with pending update °§ Issue #52855 °§ microsoft/vscode °§ GitHub']
+It was the second time ,it happend.
+I download VScode's update patch when I was coding , and then  shut down the computer and forgot to update it.
+Next day I turn the computer on and  can't find VScode anywhere , all the file was empty.
+
+OS Version : Windows 10 Home
+
+25.  https://github.com/microsoft/vscode/issues/3451
+title: ['VS Code not working on Ubuntu when connected using XRDP. °§ Issue #3451 °§ microsoft/vscode °§ GitHub']
+Hi, it seems like the bug with either Atom or XRDP discussed in Atom issue here: atom/atom#4360 is keeping VSCode from working in Ubuntu when you connect to it with RDP.
+Trying to launch the app gives the following output:
+Xlib:  extension "XInputExtension" missing on display ":10.0".
+Xlib:  extension "XInputExtension" missing on display ":10.0".
+libGL: OpenDriver: trying /usr/lib/x86_64-linux-gnu/dri/tls/swrast_dri.so
+libGL: OpenDriver: trying /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so
+libGL: Can't open configuration file /home/hannesne/.drirc: No such file or directory.
+libGL: Can't open configuration file /home/hannesne/.drirc: No such file or directory.
+libGL error: No matching fbConfigs or visuals found
+libGL error: failed to load driver: swrast
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+Xlib:  extension "XInputExtension" missing on display ":10.0".
+Xlib:  extension "XInputExtension" missing on display ":10.0".
+[ , [Error: channel closed] ]
+This happens regardless of using the MATE or LFCE desktop.
+An output of GLXInfo gives the following:
+libGL error: No matching fbConfigs or visuals found
+libGL error: failed to load driver: swrast
+name of display: :10.0
+display: :10  screen: 0
+direct rendering: No (If you want to find out why, try setting LIBGL_DEBUG=verbose)
+server glx vendor string: SGI
+server glx version string: 1.2
+server glx extensions:
+GLX_EXT_import_context, GLX_EXT_visual_info, GLX_EXT_visual_rating
+client glx vendor string: Mesa Project and SGI
+client glx version string: 1.4
+client glx extensions:
+GLX_ARB_create_context, GLX_ARB_create_context_profile,
+GLX_ARB_create_context_robustness, GLX_ARB_fbconfig_float,
+GLX_ARB_framebuffer_sRGB, GLX_ARB_get_proc_address, GLX_ARB_multisample,
+GLX_EXT_buffer_age, GLX_EXT_create_context_es2_profile,
+GLX_EXT_fbconfig_packed_float, GLX_EXT_framebuffer_sRGB,
+GLX_EXT_import_context, GLX_EXT_texture_from_pixmap, GLX_EXT_visual_info,
+GLX_EXT_visual_rating, GLX_INTEL_swap_event, GLX_MESA_copy_sub_buffer,
+GLX_MESA_multithread_makecurrent, GLX_MESA_query_renderer,
+GLX_MESA_swap_control, GLX_OML_swap_method, GLX_OML_sync_control,
+GLX_SGIS_multisample, GLX_SGIX_fbconfig, GLX_SGIX_pbuffer,
+GLX_SGIX_visual_select_group, GLX_SGI_make_current_read,
+GLX_SGI_swap_control, GLX_SGI_video_sync
+GLX version: 1.2
+GLX extensions:
+GLX_ARB_get_proc_address, GLX_EXT_import_context, GLX_EXT_visual_info,
+GLX_EXT_visual_rating, GLX_MESA_multithread_makecurrent
+OpenGL vendor string: Mesa project: www.mesa3d.org
+OpenGL renderer string: Mesa GLX Indirect
+OpenGL version string: 1.3 Mesa 4.0.4
+OpenGL extensions:
+GL_ARB_imaging, GL_ARB_multitexture, GL_ARB_texture_border_clamp,
+GL_ARB_texture_cube_map, GL_ARB_texture_env_add,
+GL_ARB_texture_env_combine, GL_ARB_texture_env_dot3,
+GL_ARB_transpose_matrix, GL_EXT_abgr, GL_EXT_blend_color,
+GL_EXT_blend_minmax, GL_EXT_blend_subtract, GL_EXT_draw_range_elements,
+GL_EXT_multi_draw_arrays, GL_EXT_texture_env_add,
+GL_EXT_texture_env_combine, GL_EXT_texture_env_dot3,
+GL_EXT_texture_lod_bias, GL_SGIS_texture_border_clamp,
+GL_SUN_multi_draw_arrays
+8 GLX Visuals
+visual  x   bf lv rg d st  colorbuffer  sr ax dp st accumbuffer  ms  cav
+id dep cl sp  sz l  ci b ro  r  g  b  a F gb bf th cl  r  g  b  a ns b eat
+0x024 24 tc  1  24  0 r  y .   8  8  8  0 .  .  0 16  0  0  0  0  0  0 0 None
+0x025 24 tc  1  24  0 r  y .   8  8  8  0 .  .  0 16  8 16 16 16  0  0 0 None
+0x026 24 tc  1  24  0 r  y .   8  8  8  8 .  .  0 16  8 16 16 16 16  0 0 None
+0x027 24 tc  1  24  0 r  . .   8  8  8  8 .  .  0 16  8 16 16 16 16  0 0 None
+0x028 24 dc  1  24  0 r  y .   8  8  8  0 .  .  0 16  0  0  0  0  0  0 0 None
+0x029 24 dc  1  24  0 r  y .   8  8  8  0 .  .  0 16  8 16 16 16  0  0 0 None
+0x02a 24 dc  1  24  0 r  y .   8  8  8  8 .  .  0 16  8 16 16 16 16  0 0 None
+0x02b 24 dc  1  24  0 r  . .   8  8  8  8 .  .  0 16  8 16 16 16 16  0 0 None
+Any suggestions?
+
+26.  https://github.com/microsoft/vscode/issues/12377
+title: ['Mac: Provide a setting to hide the title bar and inline the window controls °§ Issue #12377 °§ microsoft/vscode °§ GitHub']
+Hello there, a lot of the standard apps in recent versions of macOS have started to inline their titlebar into their tabs, menu buttons etc. I assume this is mainly to save vertical space on laptops. However, like all UI trends, apps that don't quite keep up end up feeling old-fashioned üëØ
+I started a fork of VS Code that uses the inline style:
+
+There needed to be a few changes:
+
+I moved the sidebar width to 76, to fit the traffic lights
+I increased the height of the elements that act as the titlebar by one pixel, mainly so that they align with the centre position of the titlebar items
+Allow mouse dragging via the sidebar, and the title elements
+
+Fork: https://github.com/orta/vscode/tree/inline-titlebar
+Changes: orta/vscode@master...mac-titlebar-inline
+I realise that VS Code is a cross-platform project, and so these changes should probably only be applied in the context of macOS, which I'm happy to look into with some advice (I don't have a windows/linux machine to hand for example).
+I also know that no-one wants big unexpected UI changes on their OSS projects, so I've not made it as a PR, but I'd love to know if/what I can do to move this upstream?
+Sidenote: If someone can tell me how, I'm happy to make a downloadable build for people to try too, I couldn't find a way to do it - I'm still quite fresh to npm projects.
+
+27.  https://github.com/microsoft/vscode/issues/13953
+title: ['Feature Request: Show all errors and warnings in project for all files, not just opened ones °§ Issue #13953 °§ microsoft/vscode °§ GitHub']
+I am using VS Code on a project at work that has hundreds of files and many layers of nested sub-directories. I frequently make changes that break many files, such as changing the call signature of a commonly used method. Since the project is entirely typescript, it is useful to be able to open the "Problems" view and see the errors and warnings my change caused in the files I have open. However, because of the size of the project, I still need to go to my terminal and run our own make commands to see the list of problems. I then need to perform the fun dance between my terminal and VS Code, searching for the right line in the right file before I can fix the problem.
+What I need is a way to tell the "Problems"  view to show me all errors and warnings across all open and closed files in my project. This would allow me to see all problems in a single list and quickly click through and fix them.
+
+28.  https://github.com/microsoft/vscode/issues/1012
+title: ["Insert key doesn't switch to overtype/overwrite mode °§ Issue #1012 °§ microsoft/vscode °§ GitHub"]
+Insert key should switch between insert and overtype modes but it does not.
+Version 0.10.3
+Commit 783ecf8
+Date 2015-11-26T14:10:14.207Z
+Shell 0.34.1
+Renderer 45.0.2454.85
+Node 4.1.1
+Ubuntu 14.04
+
+29.  https://github.com/microsoft/vscode/issues/13960
+title: ['Virtual Space is not implemented. °§ Issue #13960 °§ microsoft/vscode °§ GitHub']
+https://blogs.msdn.microsoft.com/zainnab/2010/02/28/understanding-virtual-space/
+This is a much needed productivity option that has been available in Visual Studio and other editors for many years.
+See also the column select issue that requires it:
+#5402
+
+30.  https://github.com/microsoft/vscode/issues/5770
+title: ['Git: Use VS Code as merge editor °§ Issue #5770 °§ microsoft/vscode °§ GitHub']
+1.0.0 introduced the ability to use VS Code as a git difftool. The relevant global .gitconfig lines are as follows:
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+How can I use VS Code as a git mergetool?
+The relevant arguments it needs to accept, I believe, are $LOCAL, $REMOTE, $BASE, and $MERGED.
+
+31.  https://github.com/microsoft/vscode/issues/3998
+title: ['File watcher resulting in high CPU use on Mac/Linux for large folders °§ Issue #3998 °§ microsoft/vscode °§ GitHub']
+We are using chokidar for file watching. Chokidar is known for performing bad over large folders (see paulmillr/chokidar#410). To investigate:
+
+can we consume a newer version of chokidar with the scalability issue fixed
+can we change our watching strategy to only watch what we need instead of always watching root
+can we switch to another watching library that is more efficient
+
+Workaround:
+Find the large folders in your workspace and add them under the files.watcherExclude setting
+
+32.  https://github.com/microsoft/vscode/issues/56644
+title: ['[windows] Slow opening (vscode, file, folder...) °§ Issue #56644 °§ microsoft/vscode °§ GitHub']
+Issue Type: Performance Issue
+Hi,
+Since the last july update and the switch to the user version (vs. all users version) of vscode, everything is slow. Vscode takes like 20 seconds to open and then when I click on a file it takes another 10 seconds to open it.
+I tried to disable all extensions, nothing changed.
+The problem came right after I downloaded the "user version" of vscode. Before that, I had the "all users version" installed and everything was ok. Maybe it's because I'm on an entreprise computer linked to a windows domain and our user PATH is special and located on a network drive.
+Thanks in advance for your help !
+Regards
+Cl√©ment
+VS Code version: Code 1.26.0 (4e93618, 2018-08-13T16:29:31.933Z)
+OS version: Windows_NT x64 10.0.16299
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-4800MQ CPU @ 2.70GHz (8 x 2694)
+
+
+GPU Status
+2d_canvas: enabledchecker_imaging: disabled_offflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmultiple_raster_threads: enabled_onnative_gpu_memory_buffers: disabled_softwarerasterization: unavailable_softwarevideo_decode: enabledvideo_encode: enabledwebgl: enabledwebgl2: unavailable_off
+
+
+Memory (System)
+7.91GB (0.76GB free)
+
+
+Process Argv
+C:\Users\clement.boillat\AppData\Local\Programs\Microsoft VS Code\Code.exe --prof-startup
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+
+
+
+Process Info
+CPU %	Mem MB	   PID	Process
+    0	   119	 15100	code main
+    1	    64	  1360	   window (Issue Reporter)
+    0	   134	  5676	   shared-process
+    0	   157	 13184	   window (Untitled-1)
+    0	   152	 13748	     extensionHost
+    0	    38	 16416	     searchService
+    0	    16	 18372	     electron-crash-reporter
+    0	   145	 13336	   gpu-process
+    0	    25	 14028	   utility
+
+
+
+Workspace Info
+;
+
+
+Extensions (21)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+vscode-color
+ans
+0.4.5
+
+
+path-intellisense
+chr
+1.4.2
+
+
+open-html-in-browser
+cod
+0.1.21
+
+
+bracket-pair-colorizer
+Coe
+1.0.59
+
+
+vscode-eslint
+dba
+1.4.12
+
+
+vscode-html-css
+ecm
+0.2.0
+
+
+vsc-material-theme
+Equ
+2.3.0
+
+
+prettier-vscode
+esb
+1.6.1
+
+
+beautify
+Hoo
+1.3.2
+
+
+smarty
+imp
+0.3.0
+
+
+sftp
+lix
+1.3.9
+
+
+prettify-json
+moh
+0.0.3
+
+
+vscode-apache
+mrm
+1.1.1
+
+
+sublime-keybindings
+ms-
+4.0.0
+
+
+color-highlight
+nau
+2.3.0
+
+
+vetur
+oct
+0.12.6
+
+
+code-settings-sync
+Sha
+3.0.0
+
+
+trailing-spaces
+sha
+0.2.11
+
+
+stylelint
+shi
+0.39.0
+
+
+quokka-vscode
+Wal
+1.0.137
+
+
+html-css-class-completion
+Zig
+1.17.1
+
+33.  https://github.com/microsoft/vscode/issues/14836
+title: ['Add "find all occurences" in the current file feature °§ Issue #14836 °§ microsoft/vscode °§ GitHub']
+Using Search sidebar to find all items in current file requires too much clicks.
+VS has a find all option
+
+VSCode Version: 1.6.1
+OS Version: Windows Server 2008
+
+Steps to Reproduce:
+
+Ctrl + F
+Type search test
+
+Expected
+option to see all occurrences
+Actual
+No such option
+Visual Studio
+
+VS Code
+
+34.  https://github.com/microsoft/vscode/issues/69665
+title: ['Terminal shows corrupt texture sometimes when resuming the OS from a sleep state °§ Issue #69665 °§ microsoft/vscode °§ GitHub']
+Workaround: Press ctrl++ and ctrl+- (mac: cmd++, cmd+-) to zoom VS Code in and out which will do a complete redraw of the terminal.
+
+Repro:
+
+Open a terminal, run some commands
+Sleep system
+Resume the system (I think the delay between 2 and 3 has to be a while)
+
+What happens exactly differs across machines, I've seen full black, full transparent and things like this:
+
+It seems like both the main terminal canvas texture as well as the texture atlas textures can become corrupted.
+
+35.  https://github.com/microsoft/vscode/issues/1751
+title: ['Universal Language Injections °§ Issue #1751 °§ microsoft/vscode °§ GitHub']
+Language injections is a feature of IDEs like Webstorm and PHPStorm that auto-detects when a language is use inside another language and then shows syntax highlighting for that injected language. VS Code currently supports this in a few places:
+
+<style> tags in HTML get CSS highlighting and IntelliSense
+<script> tags in HTML get JS highlighting and IntelliSense
+HTML in a PHP file outside of <?php ?> gets highlighting but no IntelliSense
+
+But there are many other contexts where this would be helpful, that are currently not supported and impossible to all hardcode:
+
+style attribute in HTML contain CSS
+String literals in languages like PHP often contain SQL, see #1361. PHPStorm supports this for PHP, but Webstorm for example does not support this for NodeJS. It should really be supported in any language.
+String literals commonly contain HTML in Javascript or PHP (e.g. with jQuery, Angular or Vue templates)
+String literals commonly contain GraphQL queries in JavaScript
+HTML event attributes contain Javascript, like onclick="event.preventDefault()"
+Countless HTML attributes in the Angular framework have Javascript-like expressions in them, like ng-if="ctrl.items.length > 0 && someOtherValue", but also the mustache syntax {{ ... }}.
+<script type="text/ng-template"> contain Angular templates which is nothing but HTML. This pattern of templates in script tags exists in many of the major client side MVC frameworks.
+Javascript has RegExp literals. In other languages like PHP, RegExps are passed as strings. This is also the case in tasks.json problem matchers for VS Code (RegExp inside JSON string)
+
+All of these examples currently don't get colored and receive no autocompletion. It would be awesome if VS Code was able to automatically detect languages in any context (like string literals, HTML attributes and tags) by some language patterns, like < > tags for HTML/XML, keywords like SELECT, INSERT, etc. for SQL or template string tags like gql for GraphQL. This could be contributed by extensions or language servers.
+This would be one of the best features VS Code could offer.
+
+36.  https://github.com/microsoft/vscode/issues/37350
+title: ['Support Git conflict resolution tool similar to IntelliJ, WebStorm °§ Issue #37350 °§ microsoft/vscode °§ GitHub']
+IntelliJ, and all other IntelliJ-based IDE such as WebStorm, support a git merge's conflict resolution tool that it shows the conflict in three columns:
+
+the first column for Local Changes
+the third column for Changes from Server
+the second column for Conflict Resolution Result
+
+Please see my attached file.
+
+I find that it's super easy for us to resolve conflict, because I can compare the Local Changes and the Server Changes on the same windows, and I can see the Resolution Result immediately.
+Can we please support that?
+
+37.  https://github.com/microsoft/vscode/issues/12080
+title: ['Provide live preview of HTML like Adobe Brackets °§ Issue #12080 °§ microsoft/vscode °§ GitHub']
+You should implement a live preview interface with all browsers
+
+38.  https://github.com/microsoft/vscode/issues/34385
+title: ['XHR Failed on trying to install plugins via Visual Studio code °§ Issue #34385 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.16.0
+OS Version: Windows 10
+
+Steps to Reproduce:
+
+When trying to install a plugin, i get an error XHR Failed.
+Also when i try to download the extensions manually and try to install it via the options "install from VSIX", it fails silently.
+I am behind a proxy network.
+
+39.  https://github.com/microsoft/vscode/issues/28432
+title: ['File explorer is not updated after many file changes occur °§ Issue #28432 °§ microsoft/vscode °§ GitHub']
+Hello,
+I noticed that sometimes (often ?) the file explorer doesn't get updated (missing files/folder) after creating new files/folders with something like a git pull or using symfony console to generate files.
+Refreshing the explorer using the little refresh icon make the files/folders appear.
+This is a follow up of this issue #24309
+
+VSCode Version: 1.21
+OS Version: Ubuntu 17.10 / Fedora 27
+
+Thanks !
+
+40.  https://github.com/microsoft/vscode/issues/60697
+title: ["Can't Install local user update due to `\\\\bin` folder being used by another process °§ Issue #60697 °§ microsoft/vscode °§ GitHub"]
+There was an error while deleting a directory: %LOCALAPPDATA%\Programs\Microsoft VS Code\bin: the process cannot access the file because it is being used by another process‚Ä?
+
+
+VSCode Version: 1.2.7.2 (user setup)
+OS Version: Windows 10
+
+Steps to Reproduce:
+
+when an update is available, click Install Update
+
+Does this issue occur when all extensions are disabled?: cannot try this because installation is disabled/destroyed due to incomplete setup
+Workaround: will go back to system installs instead of local user installs.
+
+41.  https://github.com/microsoft/vscode/issues/40239
+title: ['Feature Request: Enable/disable extensions from config file °§ Issue #40239 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.18.1
+OS Version: Windows 10 FU
+
+Explain:
+There are certain extensions that play well together, and it would be useful to be able to set a config file to enable and disable certain extensions in that workspace. This would be a config file, like the extensions recommendations, but with a series of parameters that would allow to enable and disable certain extensions.
+This would be like a config file for the "[Dis]Allow (Workspace)" setting.
+
+42.  https://github.com/microsoft/vscode/issues/33752
+title: ['Create an option to position the intellisense parameter info top or bottom. °§ Issue #33752 °§ microsoft/vscode °§ GitHub']
+Currently the parameter info tooltip is always placed above the cursor. This is often quite annoying since it completely blocks code in the above lines and you sometimes need to look at your context to know what values to give the parameters.
+Example:
+
+43.  https://github.com/microsoft/vscode/issues/33110
+title: ['Synchronized Scrolling in Split Editor °§ Issue #33110 °§ microsoft/vscode °§ GitHub']
+I have a feature request related to synchronized scrolling in the Split Editor. I checked for extensions and didn't see any. Was wondering if this is the pipeline or not.
+
+44.  https://github.com/microsoft/vscode/issues/40233
+title: ['[Feature] Local Workspace settings °§ Issue #40233 °§ microsoft/vscode °§ GitHub']
+I would like to be able to configure settings that are specific to my user and to a particular workspace. So, 'local' workspace settings?
+So there would be three locations for settings (for a single-folder workspace):
+
+user settings
+${workspaceRoot}/.vscode/settings.json
+${workspaceRoot}/.vscode/settings.local.json
+
+This way, I can add .vscode/settings.json to git, and share project settings such as "exclude node_modules" but I can gitignore .vscode/settings.local.json and add things specific to that project that I don't want to share, such as git autofetch.
+I originally thought to suggest .vscode/settings.user.json, similar to how VS Pro handles similar configuration, but that might be confusing.
+
+
+
+
+
+45.  https://github.com/microsoft/vscode/issues/4873
+title: ['Add read-only mode °§ Issue #4873 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 0.10.11
+OS Version: Fedora 23, 64bit
+
+Details:
+
+Please add read-only mode and its keyboard shortcut.
+It should be a switch. When turned on, opening new files will be in read-only mode.
+It should be persistent across restarts.
+
+This feature should be very useful for code reviewing. And I think it's not hard to implement.
+Thank you,
+
+46.  https://github.com/microsoft/vscode/issues/15178
+title: ['API Access to "Open Editors" °§ Issue #15178 °§ microsoft/vscode °§ GitHub']
+I have a use case where I would like to be able to get a list of all the open editors (basically exactly what is shown here).
+
+I understand that Editors are disposed but I just need a list of filenames.
+Something like: workspace.openDocuments:Array<TextDocument> or even just workspace.openFiles:Array<string>.
+Long term, it might be nice to have API access to operate on this list (EG: sort open editors pane by last opened, name, etc).
+
+47.  https://github.com/microsoft/vscode/issues/15756
+title: ['Allow extensions to publish beta releases and users to opt-in to them °§ Issue #15756 °§ microsoft/vscode °§ GitHub']
+Apologies if this has come up before; I'm unable to find any related issues.
+It would be cool to be able to publish extensions in a beta form (similar to Code Insiders) so that they can be run "in production" with real users that have opted-in. This would reduce the disk in publishing an extension because you can push it to a smaller number of users for testing (I probably don't need to sell this to you, I guess you have Insiders for very similar reasons).
+I know we can package and distribute extensions ourselves for now, but it's not as easy (eg. updating is not automatic).
+I originally thought the "Preview" flag might've provided this functionality but unless I've overlooked something, it does not seem to.
+
+48.  https://github.com/microsoft/vscode/issues/16927
+title: ['Maximize current file/tab/editor °§ Issue #16927 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.7.2
+OS Version: Linux Mint
+
+I've looked a bit but couldn't find a solution. Is there a way to toggle maximize (full screen) only the current tab/file? Even if there is split editor, it shouldn't display it, only the current file/tab.
+Thanks
+
+49.  https://github.com/microsoft/vscode/issues/21839
+title: ['Feature Request: Support for private marketplace/gallery °§ Issue #21839 °§ microsoft/vscode °§ GitHub']
+We have created several VSIX extension that have no use to anybody else except our company. We would like to host our own private extension gallery and have an ability to specify alternative extension gallery paths (like "Additional Extension Galleries" in Visual Studio 2015).
+
+VSCode Version: 1.10.1
+OS Version: Windows 10
+
+50.  https://github.com/microsoft/vscode/issues/3429
+title: ["[themes] Themes don't support background styling °§ Issue #3429 °§ microsoft/vscode °§ GitHub"]
+.tmTheme files allow specification of background colors which don't seem to be supported, for example:
+<dict>
+  <key>name</key>
+  <string>Separator</string>
+  <key>scope</key>
+  <string>meta.separator</string>
+  <key>settings</key>
+  <dict>
+    <key>background</key>
+    <string>#E0E0E0</string>
+    <key>foreground</key>
+    <string>#373B41</string>
+  </dict>
+</dict>
+This is especially problematic for themes that attempt to invert background and use a similar foreground to the text view's background color (#2158)
+
+51.  https://github.com/microsoft/vscode/issues/21839
+title: ['Feature Request: Support for private marketplace/gallery °§ Issue #21839 °§ microsoft/vscode °§ GitHub']
+We have created several VSIX extension that have no use to anybody else except our company. We would like to host our own private extension gallery and have an ability to specify alternative extension gallery paths (like "Additional Extension Galleries" in Visual Studio 2015).
+
+VSCode Version: 1.10.1
+OS Version: Windows 10
+
+52.  https://github.com/microsoft/vscode/issues/48659
+title: ['FileSystemProvider: no way of handling permissions issues °§ Issue #48659 °§ microsoft/vscode °§ GitHub']
+Refs: #48421
+Setup:
+
+clone https://github.com/bpasero/remote-fs
+F5
+click "Refresh" in the explorer
+you should see the current working directory as a remote folder using the file system provider for scheme datei://
+
+I can think of 2 reasons why a permission error raises:
+
+user needs elevated rights to change a file or folder
+a file can be readonly (e.g. Windows) and to save it you need to first remove the readonly flag
+
+Currently there does not seem to be a way to signal a) to save as elevated user or b) to remove the readonly flag.
+I am not sure how relevant this is for any other file system provider that does not have these concepts but this is something our file service can do (via the options overwriteReadonly and writeElevated).
+
+53.  https://github.com/microsoft/vscode/issues/6302
+title: ['Middle mouse button scrolling °§ Issue #6302 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.10
+
+I searched the issues but did not find any such post, so apologies if there is an existing thread that I missed.
+I'd like to know if there is any middle mouse click scrolling, planned? That is, clicking the scroll wheel to toggle drag scrolling. It's a useful feature to have when navigating very long files.
+And if it isn't, is there any API that would allow this to be enabled via an extension?
+Thanks
+
+54.  https://github.com/microsoft/vscode/issues/34442
+title: ['Extract the integrated terminal °§ Issue #34442 °§ microsoft/vscode °§ GitHub']
+"Feature" request.
+The integrated terminal grows in functionality, to the point that it could soon become very useful standalone, as its own app. I'm only a casual VScode user (using vim most of the time), but I would definitely be interested in a well-behaved, consistent, reactively-configurable, multi-platform terminal not tied to the editor.
+Obviously if such a situation were to unfold, the shared component (not entirely dissimilar to VTE) should be jointly developed and shared with VScode. Both could be able to leverage a common configuration so that whether a terminal leveraging such a theoretical common component is spawned within VScode or standalone, they behave the same.
+
+55.  https://github.com/microsoft/vscode/issues/103295
+title: ["Snap: Shared process doesn't start °§ Issue #103295 °§ microsoft/vscode °§ GitHub"]
+VSCode Version: 1.47.2 17299e4 x64
+OS Version: Ubuntu LTS 20
+
+Steps to Reproduce:
+
+Go into VSCODE the extensions menu
+
+(what the extensions menu looks like for me; still does not load content):
+
+
+Does this issue occur when all extensions are disabled?: Yes
+
+56.  https://github.com/microsoft/vscode/issues/60579
+title: ['macOS Mojave: code command line generate duplicate "recently opened" icons in dock  °§ Issue #60579 °§ microsoft/vscode °§ GitHub']
+Issue Type: Bug
+$ code 
+$ code
+$ code
+VS Code version: Code 1.28.0 (431ef9d, 2018-10-04T16:40:40.180Z)
+OS version: Darwin x64 18.0.0 (10.14)
+
+57.  https://github.com/microsoft/vscode/issues/46403
+title: ['Allow hiding the buttons in the tab bar line and in the panel title bar °§ Issue #46403 °§ microsoft/vscode °§ GitHub']
+A small change related to the buttons in the tab bar line:
+
+Open Changes
+Split Editor
+Close
+
+and to the buttons in the panel title bar:
+
+New Terminal
+Split Terminal
+Kill Terminal
+Maximize Panel Size
+Move to Bottom
+Close Panel
+
+For users who have already memorized the keyboard shortcuts for these commands (and considering the existence of Ctrl-p and Ctrl-Shift-p), the buttons are kind of redundant. It would be nice to have an option to hide them as almost everything in the UI already can be hidden. I know about Zen mode, but Zen mode also centers the text in the editor, hides the panel/terminals, makes Visual Studio Code full screen and all sort of other things which might not be desirable.
+As a note related to this, Vim and Emacs users generally tend to hide the UI. Funnily enough, even the beast that is IntelliJ IDEA allows it üòÜ
+
+58.  https://github.com/microsoft/vscode/issues/32320
+title: ['Paste indents twice with HTML formatting °§ Issue #32320 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Code 1.15.0 (8b95971, 2017-08-09T20:16:06.988Z)
+OS Version: Windows_NT ia32 10.0.15063
+Extensions:
+
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+vscode-css-formatter
+aes
+0.0.2
+
+
+vscode-intelephense-client
+bme
+0.7.2
+
+
+githistory
+don
+0.2.3
+
+
+python
+don
+0.7.0
+
+
+
+
+Steps to Reproduce:
+
+Create an empty HTML tag. Example <div></div>
+Go inside the tag and press enter. Assuming that you have 2 spaces indentation you get:
+
+<div>
+  |
+</div>
+
+
+Paste another HTML tag copied and you get pasted code indented twice.
+
+<div>
+    <span>This tag should be indented once but gets two.</span>
+</div>
+
+Reproduces without extensions: Yes
+There are also another issue with indentation that looks similar:
+
+#31255
+
+59.  https://github.com/microsoft/vscode/issues/5280
+title: ['How to detect shift shift key in VSCode? °§ Issue #5280 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.0.0
+OS Version: OS X El Capitan 10.11.4
+
+Steps to Reproduce:
+I'm trying to bind quick open (ctrl+p) command to shift shift (shift x2) keys like IntelliJ IDEA in VS Code Extension (TypeScript).
+But vscode.commands.registerCommand('type', (args) => args.text) can't detect shfit key.
+How can I detect shift shift key?
+// VSCode v0.10.12 or higher (not working <= v0.10.11)
+'use strict';
+import * as vscode from 'vscode';
+
+export function activate(context: vscode.ExtensionContext) {
+
+    let disposable = vscode.commands.registerCommand('type', (args) => {
+
+        vscode.window.showInformationMessage(args.text);
+
+        vscode.commands.executeCommand('default:type', {
+            text: args.text
+        });
+    });
+
+    context.subscriptions.push(disposable);
+}
+
+
+
+
+60.  https://github.com/microsoft/vscode/issues/3742
+title: ['Add setting to automatically hide the side bar °§ Issue #3742 °§ microsoft/vscode °§ GitHub']
+Would it be possible to add a option to automatically hide the files explorer after a configurable duration ?
+
+61.  https://github.com/microsoft/vscode/issues/46505
+title: ['Feature Request : SHOW / HIDE comments in editor °§ Issue #46505 °§ microsoft/vscode °§ GitHub']
+Hi VsCode teams !
+Why developers need it
+
+Adding comments and documentation in a codebase is very important for maintenance.
+But often it could make it harder to read (especially if you use jsdoc or swagger)
+
+Conclusion: toggling comments visibility could be a very nice productivity feature directly inside VSCode ! Moreover, this feature exists on most of other text editors.
+Question
+If i missed the feature in VSCode, how could i show / hide comments in my code ?
+I saw this extension on vscode store, but it's not maintained and it doesn't work with last versions of VSCode
+Thanks for your work ! üëê
+
+62.  https://github.com/microsoft/vscode/issues/76594
+title: ['1.36 scrolling suddenly laggy - precision touchpads °§ Issue #76594 °§ microsoft/vscode °§ GitHub']
+Since updating to 1.36 the scrolling experience got bad.
+I increased the multiplier to have the same speed, but it still feels "heavy" to scroll, not the same as before - what change could be the cause for this?
+Same in the explorer view (with or without the new guides).
+Here it looks like the renderer skips frames, jumpy and not calm (also the scroll multiplier does not seem to have an effect here, merely Alt).
+I'm using a precision touchpad device (Dell) but this is not the old problem and cannot be solved by resizing the window.
+It is especially annoying in the explorer tree, bordering close to the unusable level.
+After trying for a while I will now downgrade to 1.35.x. This seamingly little handicap somehow greatly impacts productivity, at least for me, feels like having a slow computer.
+Update: Yes, 1.35.1 is definitely faster and lighter to scroll (did you add some animation? my setting for 'smooth scrolling' is deactivated). I will have to stay on this version until this is fixed.
+Cannot find anything in the release notes except "This is a major Electron release and comes with Chrome 69 and Node.js 10.11.0 (a major leap forward from our current version with Chrome 66 and Node.js 10.2.0)". I guess it won't be easy to locate the issue. However, the new version is not usable, for me (Windows 10, precision touchpad).
+
+63.  https://github.com/microsoft/vscode/issues/50140
+title: ['Support syntax highlighting with tree-sitter °§ Issue #50140 °§ microsoft/vscode °§ GitHub']
+Please consider supporting tree-sitter grammars in addition to TextMate grammars. TextMate grammars are incredibly difficult to author and maintain and impossible to get right. The over 500 (!) issues reported against https://github.com/Microsoft/TypeScript-TmLanguage are a living proof of this.
+This presentation explains the motivation and goals for tree-sitter: https://www.youtube.com/watch?v=a1rC79DHpmY
+tree-sitter already ships with Atom and is also used on github.com.
+
+64.  https://github.com/microsoft/vscode/issues/23991
+title: ['Keyboard mappings with `setxkbmap` on Linux not working °§ Issue #23991 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.11.0
+OS Version: Ubuntu 16.04
+
+I have my Caps Lock key bound to Escape using setxkbmap on Linux. This worked fine till 1.10, but broke with 1.11. At first I thought it was an issue with the VSCodeVim extension, but the issue persists with all the other Vim extensions on the marketplace as well. Pressing the escape button still works as expected.
+The binding is still respected everywhere else in the operating system, it's only Visual Studio Code that ignores it for some reason.
+Steps to Reproduce:
+
+Run setxkbmap -option caps:escape (binds caps to escape for the duration of the session)
+Hitting caps lock when in insert mode (with a Vim extension like VSCodeVim installed) no longer puts you normal mode.
+Hitting escape still works as expected and puts you in normal mode.
+
+65.  https://github.com/microsoft/vscode/issues/45177
+title: ['Allow "files" field in .code-workspace file °§ Issue #45177 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.20.1
+OS Version: Microsoft Windows [Version 10.0.16299.248]
+
+Steps to Reproduce:
+N/A
+
+Does this issue occur when all extensions are disabled?: Yes
+
+Currently, .code-workspace only contains folders field which allows to add folders into workspace. I prefer a way to add single files into workspace for the entire project, such as README or something else.
+
+66.  https://github.com/microsoft/vscode/issues/107016
+title: ['Slow reponse to scroll and typing °§ Issue #107016 °§ microsoft/vscode °§ GitHub']
+Issue Type: Performance Issue
+It is not slow to start-up, it is slow to do anything in the text editor (scroll, find, type, etc). For example, when scrolling, the screen is unable to keep up with the mouse wheel and it will keep scrolling for a while after I stop the mouse wheel. I disabled the extensions I installed lately, and also reduced the amount of files in the workspace.
+VS Code version: Code 1.49.1 (58bb7b2, 2020-09-16T23:27:51.792Z)
+OS version: Windows_NT x64 10.0.19041
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz (4 x 2712)
+
+
+GPU Status
+2d_canvas: enabledflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmultiple_raster_threads: enabled_onoop_rasterization: disabled_offopengl: enabled_onprotected_video_decode: enabledrasterization: enabledskia_renderer: disabled_off_okvideo_decode: enabledvulkan: disabled_offwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+undefined
+
+
+Memory (System)
+11.85GB (4.20GB free)
+
+
+Process Argv
+--crash-reporter-id 2c01e348-504e-456f-931c-280aa8926a03
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+
+
+
+Process Info
+CPU %	Mem MB	   PID	Process
+    2	    96	 33588	code main
+    2	    88	 13340	   shared-process
+    3	    84	 26656	   window (Issue Reporter)
+    0	    24	 27836	   crashpad-handler
+    0	   223	 30908	   window (Settings - local_svn_workspace (Workspace) - Visual Studio Code)
+    0	    11	  6640	     watcherService 
+    0	     6	 12092	       console-window-host (Windows internal process)
+    0	     6	  9240	     console-window-host (Windows internal process)
+    0	    96	 19504	     extensionHost
+    0	    69	 30740	     C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+    0	    60	 30924	   utility
+    1	   241	 33368	   gpu-process
+
+
+
+Workspace Info
+|  Window (Settings - local_svn_workspace (Workspace) - Visual Studio Code)
+|    Folder (JESD204): 1760 files
+|      File types: svn-base(998) v(161) sv(38) sh(33) tcl(30) prj(30) do(25)
+|                  tmp(9) txt(9) log(7)
+|      Conf files: makefile(7);
+
+
+Extensions (11)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+better-comments
+aar
+2.1.0
+
+
+bracket-pair-colorizer
+Coe
+1.0.61
+
+
+ctags-support
+jay
+1.0.19
+
+
+svn-scm
+joh
+2.12.4
+
+
+rainbow-csv
+mec
+1.7.1
+
+
+remote-ssh
+ms-
+0.55.0
+
+
+remote-ssh-edit
+ms-
+0.55.0
+
+
+remote-wsl
+ms-
+0.44.5
+
+
+veriloghdl
+msh
+1.3.3
+
+
+awesome-vhdl
+puo
+0.0.1
+
+
+tcl
+ras
+0.1.0
+
+67.  https://github.com/microsoft/vscode/issues/12493
+title: ['[icon-themes] Support for globs in file associations (Icon themes) °§ Issue #12493 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Stable 1.5.2
+OS Version: Windows 10
+
+See vscode-icons #328
+This will allow to support a very common scenario which is a filename with small variations depending on environments:
+
+web.config, web.prod.config, web.dev.config
+webpack.config.json, webpack.dev.config.json
+...
+
+68.  https://github.com/microsoft/vscode/issues/66982
+title: ["Clear all problems in the 'Problems' pane with a button °§ Issue #66982 °§ microsoft/vscode °§ GitHub"]
+Please add a button in the Problems pane that allows the developer to clear all items in there.
+Following discussions from #15524, #29169, #66343 and #50448.
+Currently we see problems from different sources (linters, tasks, etc) and they sometimes stay there after the problem or the source file is gone, e.g. problems in an unsaved buffer, in files that were renamed, or files removed when we switch Git branches.
+More often than not I have a bunch of problems and the only way to clear that pane is to restart the entire editor.
+
+69.  https://github.com/microsoft/vscode/issues/40898
+title: ['files.watcherExclude setting is not working in multi-root workspace °§ Issue #40898 °§ microsoft/vscode °§ GitHub']
+Initial problem is that npm install takes twice as long to install dependencies when vscode is running. I've figured out that this is because of file watching for node_modules folder so I added it to files.watcherExclude. I uses following combinations (but non of them seems to be working):
+"files.watcherExclude": {
+        "**/node_modules": true,
+        "**/node_modules/**": true,
+        "**/node_modules/*/**": true
+    }
+
+During rm -rf node_modules I notice that watcherService is having some load:
+
+
+VSCode Version: 1.19
+OS Version: Windows 10
+
+Steps to Reproduce:
+
+Add any folder to watcherExclude list
+Perform any operation on said folder (i.e. delete it)
+
+Reproduces without extensions: Yes
+
+70.  https://github.com/microsoft/vscode/issues/101014
+title: ['Icon change for macOS Big Sur °§ Issue #101014 °§ microsoft/vscode °§ GitHub']
+macOS Big Sur brings macOS' system icons all with square corners, and some 3rd party developers including Adobe are converting their app icons to match up with these system icons.
+Are there any plans for VS Code?
+
+71.  https://github.com/microsoft/vscode/issues/14710
+title: ['Add an option to confirm before quitting °§ Issue #14710 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.6
+OS Version: OSX Sierra
+
+Many times on a Mac it is necessary to use cmd+`` to navigate between projects. This can lead to a mishit on cmd+q` very easily. It would be great to have a confirm quit feature. Something like this sublimetext extension https://github.com/xavi-/sublime-maybs-quit
+Thanks!
+
+72.  https://github.com/microsoft/vscode/issues/15667
+title: [' Tooltips gets in the way of general operations in the editor °§ Issue #15667 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.7.1
+OS Version: Windows 10 64bit
+
+Steps to Reproduce:
+
+I'm finding that the hover over tooltip gets in the way of general operations in the editor. i.e. when trying to double click on words. The tooltip prevents selection (see the screenshot).
+Can we have a setting to change the delay timing for these tooltips?
+
+73.  https://github.com/microsoft/vscode/issues/16221
+title: ['Parameter Hints shown inline all the time (like IntelliJ) °§ Issue #16221 °§ microsoft/vscode °§ GitHub']
+Would be useful for typescript: https://youtu.be/ZfYOddEmaRw
+
+74.  https://github.com/microsoft/vscode/issues/11770
+title: ['Support for RTL languages °§ Issue #11770 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.5.0
+OS Version: windows 10
+
+I can honestly dare to say that this is the best open source editor for web developers but, the missing of the small things like the Arabic language support is really frustrating!!
+@alexandrudima  yes I mean to work with source code files containing Arabic or Hebrew.
+
+75.  https://github.com/microsoft/vscode/issues/3352
+title: ['[folding] Collapse ending brace to the same line °§ Issue #3352 °§ microsoft/vscode °§ GitHub']
+Consider a large JavaScript file
+function a() {
+  ...
+}
+
+function b() {
+  ...
+}
+
+function c() {
+  ...
+}
+
+and so on...
+Collapsing all currently yields:
+function a() { ...
+}
+
+function b() { ...
+}
+
+function c() { ...
+}
+
+and so on...
+This would be more readable if the closing brace was on the same line:
+function a() { ... }
+
+function b() { ... }
+
+function c() { ... }
+
+and so on...
+
+Here is how other prominent editors handle the above:
+Atom
+
+Brackets
+
+Sublime Text 3
+
+
+VS Code
+
+76.  https://github.com/microsoft/vscode/issues/42253
+title: ['Allow for smaller or larger tab height size °§ Issue #42253 °§ microsoft/vscode °§ GitHub']
+Height of tabs and tab container currently is fixed. It would be nice to allow for the option to have a smaller height size of tab container by possibly having an option to set it in settings. Maybe even offer option for larger as well. One might also be able to have the option of disabling file icons to provide even more of a xsmall option. All this provides more real estate to editor instead.
+Current:
+
+Quick modified version of a solution. Line height still needs to be adjusted to be centered though.
+
+
+VSCode Version: Latest
+OS Version: Latest
+
+77.  https://github.com/microsoft/vscode/issues/91061
+title: ['List should announce how many items are selected °§ Issue #91061 °§ microsoft/vscode °§ GitHub']
+Turn on Screen Reader
+Add an element to the List selection such that you have two items selected - Screen reader does not announce that an item is added to the selection
+
+I have checked what native Windows Explorer does with NVDA - nothing.
+And what Finder does with VoiceOver on mac - and they announce when the element after the first is added to the selection.
+It announces NAME added to selection 2 items selected
+I think we should strive for this experience if possible, so nothing announced if only one item is selected but announce when other items enter the selection
+Edit:
+We have done changes on the VS Code side however there is still a Chrome issue.
+Upstream issue:  https://bugs.chromium.org/p/chromium/issues/detail?id=1058961.
+
+78.  https://github.com/microsoft/vscode/issues/26777
+title: ['Allow multiple views to show at the same time °§ Issue #26777 °§ microsoft/vscode °§ GitHub']
+Would be nice to be able to have both a left and right sidebar i,e file tree in left and VSC in right.
+Kinda vibing off the multi panel layout of atom with github / git integration
+Something like this
+
+79.  https://github.com/microsoft/vscode/issues/6209
+title: ['isWatching task as preLaunchTask in launch.json °§ Issue #6209 °§ microsoft/vscode °§ GitHub']
+It would be nice to have a watcher task as preLaunchTask in launch.json. At the moment this is not possible because the launch task will not start before the preLaunchTask ends.
+A long running preLaunchTask should have a regex similar to problemMatcher to wait for a specific text in the output window before executing the launch task.
+In my scenario I'm running webpack dev server as a watcher task. I want this task to run if F5 is hit and the preLaunchTask is not running. To delay the debugger launch it would be useful to test for a specific string in the output window webpack: bundle is now VALID.
+
+80.  https://github.com/microsoft/vscode/issues/20652
+title: ['[themes] different themes for different filetypes °§ Issue #20652 °§ microsoft/vscode °§ GitHub']
+Is it possible to have different themes for different filetypes?
+
+81.  https://github.com/microsoft/vscode/issues/38999
+title: ['Unable to drag and drop files from Explorer to VSCode when running as different user °§ Issue #38999 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Code 1.18.1 (929bacb, 2017-11-16T18:32:36.023Z)
+OS Version: Windows_NT x64 10.0.15063
+Extensions:
+
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+npm-intellisense
+chr
+1.3.0
+
+
+path-intellisense
+chr
+1.4.2
+
+
+vscode-mocha
+Com
+0.1.1
+
+
+vscode-eslint
+dba
+1.4.3
+
+
+vscode-npm-script
+eg2
+0.3.3
+
+
+auto-close-tag
+for
+0.5.3
+
+
+code-runner
+for
+0.8.4
+
+
+rest-client
+hum
+0.16.1
+
+
+search-node-modules
+jas
+1.2.0
+
+
+prettify-json
+moh
+0.0.3
+
+
+cpptools
+ms-
+0.14.2
+
+
+csharp
+ms-
+1.13.1
+
+
+sublime-keybindings
+ms-
+3.0.3
+
+
+vscode-arduino
+vsc
+0.2.10
+
+
+nodejs-extension-pack
+wad
+0.1.9
+
+
+JavaScriptSnippets
+xab
+1.5.0
+
+
+
+(1 theme extensions excluded)
+
+Steps to Reproduce:
+
+Open VSCode. Open an Explorer Window.
+Try to drag and drop a file into the editor window.
+A "no drop" cursor appears.
+
+
+Reproduces without extensions: Yes/No
+
+82.  https://github.com/microsoft/vscode/issues/26398
+title: ['High DPI: Laggy Unresponsive Scrolling on OSX °§ Issue #26398 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.12.1
+OS Version: macOS Sierra Version 10.12
+
+Steps to Reproduce:
+
+Open a file
+Scroll (I'm using magic touch pad, but same happens with regular touch pad on mac)
+
+When I first found out about vs code, this issue was there. A patch was released that fixed the laggy scrolling issues. Seems to have come back now. It's so bad I can't even scan through a 200 line class and find methods.
+
+83.  https://github.com/microsoft/vscode/issues/45295
+title: ['Linux: watcher requires file handles per file in the workspace folder °§ Issue #45295 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.21.0
+OS Version: Arch Linux
+
+Steps to Reproduce:
+
+Run 'code' from command line or click menu item to run it.
+
+Does this issue occur when all extensions are disabled?: Yes
+Dialog message indicates the web page has help. It does not.
+Bumped (soft) open file limit from 1024 to 4096: no help.
+
+84.  https://github.com/microsoft/vscode/issues/105446
+title: ['Integrated Terminal Lags Intermittently  °§ Issue #105446 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.48.2(macOS Stable)
+OS Version: macOS Big Sur 11.0 Beta (20A5354i) (Public Beta Release 2)
+
+Steps to Reproduce:
+
+Open Terminal
+Spam random keys until lag is experienced Press enter, then continuously type (anything) for about 2 seconds.
+Experience a very long stutter
+
+
+Does this issue occur when all extensions are disabled?: Yes
+This occurs on a public beta build of macOS 11. I've confirmed the same issue on two different MacBook Pro's on the same OS version, and same VS Code version.
+Attached is a performance profile. You can see the spike in the integrated terminal response time at around 23000ms - 24000ms
+
+Profile-20200826T124154.json.zip
+
+85.  https://github.com/microsoft/vscode/issues/871
+title: ['Macro like keybindings °§ Issue #871 °§ microsoft/vscode °§ GitHub']
+When creating keyboard shortcuts, it would be nice if you could pass an array of commands (to execute like a macro) that would run the commands in that order.
+So take this for example:
+{
+    "key": "ctrl+s",
+    "command": [
+        "editor.action.format",
+        "editor.action.trimTrailingWhitespace",
+        "workbench.action.files.save"
+    ],
+    "when": "editorTextFocus"
+}
+
+It would format the file, remove trailing white space then save the file.
+
+86.  https://github.com/microsoft/vscode/issues/38878
+title: ['Use .gitignore to hide files in explorer °§ Issue #38878 °§ microsoft/vscode °§ GitHub']
+Forking #23804 on the advice of @isidorn as it was conflating two issues - colouring and hiding gitignored files in the file explorer.
+
+Greying/colouring works great as of 1.18.
+Hiding them completely still requires an extension or manually syncing ignored patterns with the files.exclude setting.
+
+I would love a separate setting which completely hides files instead of just greying them out. Thanks.
+
+87.  https://github.com/microsoft/vscode/issues/5595
+title: ['Allow to scope settings by platform °§ Issue #5595 °§ microsoft/vscode °§ GitHub']
+Hi
+I develop on 3 different platform. When synchronizing settings, snippets and so on, i often must change path, adjust font-size, etc...
+So, it could be great if we had a per platform settings set (Windows, Mac, Unix)
+
+88.  https://github.com/microsoft/vscode/issues/69335
+title: ['Investigation: do not restart Extension host when first folder changes °§ Issue #69335 °§ microsoft/vscode °§ GitHub']
+Today we restart the extension host whenever the first folder changes because workspace.rootPath is always set to that first folder and it never used to change after the extension host started once.
+If we would not restart the extension host anymore an extension:
+
+could use workspace.rootPath as before, it would still point to the first folder always (which can be undefined if the workspace contains no folders)
+could subscribe to the onDidChangeWorkspaceFolders event to get notified about updates
+would see the value of workspace.rootPath changing during runtime whenever the first folder changes
+
+//cc @sandy081 @jrieken
+
+89.  https://github.com/microsoft/vscode/issues/71966
+title: ['Often getting full window hangs °§ Issue #71966 °§ microsoft/vscode °§ GitHub']
+Issue Type: Bug
+I have been seeing hangs happen on and off since 1.33 was in insiders, but never pinpointed anything. And while I still haven't pinpointed anything the frequency has increased (even at the very end of 1.33). I have noticed that the hangs very often coincide with kicking off a task (usually it is a compound task).
+How best can I help capture information to get to the bottom of it? When it happens the window is hung completely so I can't open devtools or anything like that.
+VS Code version: Code - Insiders 1.34.0-insider (0ab39f4, 2019-04-08T05:19:58.162Z)
+OS version: Windows_NT x64 10.0.18362
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz (8 x 4008)
+
+
+GPU Status
+2d_canvas: enabledchecker_imaging: disabled_offflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmultiple_raster_threads: enabled_onnative_gpu_memory_buffers: disabled_softwarerasterization: enabledsurface_synchronization: enabled_onvideo_decode: enabledwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+undefined
+
+
+Memory (System)
+31.93GB (18.83GB free)
+
+
+Process Argv
+
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+90.  https://github.com/microsoft/vscode/issues/32813
+title: ["[theming] Access theme's colors programmatically  °§ Issue #32813 °§ microsoft/vscode °§ GitHub"]
+I think we should add support for accessing theme's colors programmatically.
+For instance let's take as an example the popular OneDark Pro theme, I'd like to access colors defined under tokenColors.
+My use case: I'm making an extension that decorates some tokens, and I'd like them to have the same color that comments have in my theme, the problem is that the regex I use to find those tokens depends on some configurable value, so I cannot pre-compute it in advance and just put it in a .tmLanguage file.
+It's already possible to somehow access colors defined under the colors key, via something like new vscode.ThemeColor ( 'activityBar.background' ), adding support for this sounds like a useful generalization to me.
+What do you think?
+
+91.  https://github.com/microsoft/vscode/issues/23107
+title: ['Allow to configure editor auto reload behaviour °§ Issue #23107 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.10.2
+OS Version: macOS 10.12.3
+Steps to Reproduce:
+
+Open editor
+Modify a file in your git repository, but don't save it
+Checkout a different branch that touches the same file
+Go back to the editor and try to save
+ERROR: "Failed to save 'file1': The content on disk is newer. Click on Compare to compare your version with the one on disk."
+
+Personally I would like to see the files being reload from the disk every time. With git I don't have to worry about losing history. Similar to how SublimeText works. If the files change in disk (ex, change of branches), they should automatically get reloaded, independently of their current state in the editor. I prefer this behaviour, rather than having to confirm reloads from popups.
+With that said however, there should be options for other use cases.
+Add an editor.autoReload parameter in order to control this behaviour. Possible values:
+
+Always - reload from disk
+Confirm - show a popup/toast notification
+Never - current behaviour?
+
+Took the idea from @rmunn on #23043 issue. Decided it was best to create a separate issue for this.
+
+92.  https://github.com/microsoft/vscode/issues/52364
+title: ['Shortcut for opening color picker and insert color of selected format °§ Issue #52364 °§ microsoft/vscode °§ GitHub']
+Problem
+A huge dealbreaker for me is that VSCode just doesn't let me use the color picker ever, because I'm using Sass files. There does not seem to be any color picker extension that provides the functionality either, that isn't Windows-specific (I'm running macOS).
+Feature request
+I'd like the ability to spawn a color picker anywhere. So there would be a command that does exactly that, and when you're done it inserts the color code.
+A nice inclusion would be if it could know if the cursor is in a color code, and accordingly update that color code. VSCode seems to do this only in a few file types now, which is a bummer for anyone not using those. I don't demand this, as long as I can get a color picker I'm content.
+
+
+93.  https://github.com/microsoft/vscode/issues/1833
+title: ['Add some API to support GUI customization °§ Issue #1833 °§ microsoft/vscode °§ GitHub']
+VS Code is a great coding IDE, but developers love to customize their tools to make them feel like home and VS Code lacks those customization abilities.
+I love the sublime material theme and I wanted to implement it in VS Code but as far as I can see it's not possible now because only the coding area is customizable. So in my opinion some improvement in ui customization would be welcomed by a lot of us. In the ideal word every pixel and element of VS Code should be customizable with extensions, but for start it would be enough to start with the following things:
+
+customization of the side panel (#427 and #123)
+adding support for custom tabs, the possibilities of the quick box is very limited (#710)
+adding the ability to add and remove ui elements (e.g. a bottom panel for error listing like in Atom)
+
+I have read about the approach followed by VS Code. So instead of allowing extensions to create custom ui elements, VS Code itself should provide some API for this, what allows to the developers to set the content, but the styling of the content should be based on the theme of VS Code.
+So in a nutshell: VS Code core provide the bones and template of the ui elements, extension developers can set the content but not the style and theme developers can style the content.
+
+94.  https://github.com/microsoft/vscode/issues/9209
+title: ['Offer code mark styles and gutter marks °§ Issue #9209 °§ microsoft/vscode °§ GitHub']
+From @darkred on July 10, 2016 23:30
+(Using VSCode 1.3.0 in win 10 x64 build 10586 with vscode-eslint extension 1.10.18).
+Currently the code marks(for errors and warnings) appear only as squiggly underline (i.e. as spellchecker errors in browsers, e.g. Firefox, Chrome):
+(the error is in red, and the warning is in green)
+
+My suggestion is to offer more code mark styles (ideally  the outline style, as it highlights the errors/warnings the best way -see below- ) and gutter marks :
+(with the errors to be in red, and the warnings to be in yellow, as ESLint itself uses these colors - not green)
+
+(here is another screenshot)
+It's more easy to distinguish the errors this way.
+Thank you
+
+For reference SublimeLinter3 package offers five different code mark styles :
+
+fill,
+outline   (the default style),
+solid underline,
+squiggly underline, and
+stippled underline
+
+and two types of gutter marks:
+
+errors, and
+warnings
+
+Copied from original issue: microsoft/vscode-eslint#99
+
+95.  https://github.com/microsoft/vscode/issues/56279
+title: ['Option to specify separator for "Copy Relative Path" action °§ Issue #56279 °§ microsoft/vscode °§ GitHub']
+Workaround (from @bpasero)
+You can use this extension: https://marketplace.visualstudio.com/items?itemName=rssowl.copy-relative-path-posix
+Original Issue:
+
+Looked for other mentions but haven't found related requests or discussion.
+
+I'm often using Copy Relative Path feature to compose import strings or share with other developers on Mac/Linux. Therefore, new Copy relative path feature that has native path separators on Windows doesn't help in these cases (in comparison with Copy path).
+Please add option to change path separators used in Copy Relative Path action, so I will be able to set / as path separator and have same behavior across all platforms.
+
+96.  https://github.com/microsoft/vscode/issues/47985
+title: ['Environment variables defined in `tasks.json::tasks.options.env` do not overwrite existing environment variables °§ Issue #47985 °§ microsoft/vscode °§ GitHub']
+Code: 1.22.2
+macOS: 10.13.3
+When I create a task, I want to provide a very specific environment (which is why I bother filling out the JSON values). However, if an environment variable is pre-existing, it will not be overwritten in the execution environment of the task.
+I am extremely surprised by this behavior. I discovered this by not being able to find a library I was building with a task when specifying DYLD_LIBRARY_PATH.
+A very simple test is to update ~/.bash_profile to include
+export FOO=bar
+
+Then attempt to override it with tasks.json
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "diagnostic",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/beam",
+                "env": {
+                    "FOO": "baz",
+                }
+            },
+            "command": "printenv",
+            "problemMatcher": []
+        }
+    ]
+}
+
+Output:
+...
+FOO=bar
+...
+
+A "task" appears to execute . ~/.bash_profile to set it's environment. Since it is already creating a new environment for each execution, it would be nice if I could override the values as I see fit, by specifying the values in tasks.options.env.
+
+97.  https://github.com/microsoft/vscode/issues/5240
+title: ['Allow to add file reference with drag and drop. °§ Issue #5240 °§ microsoft/vscode °§ GitHub']
+It is very common use case when user wants to add reference of module file (external file) by dragging and dropping it to editor. But right now VScode is not supporting this feature. When user try to drag a file from the explorer window it is opening that file in the editor.
+In the below screen shout you can compare Visual studio and VS code action for drag and drop.
+
+98.  https://github.com/microsoft/vscode/issues/98918
+title: ['Terminal output div container should be more accessible for screen readers °§ Issue #98918 °§ microsoft/vscode °§ GitHub']
+CC @isidorn
+System Info
+
+Version: 1.46.0-insider (system setup)
+Commit: cd41dd1
+Date: 2020-05-29T05:51:32.662Z
+Electron: 7.3.0
+Chrome: 78.0.3904.130
+Node.js: 12.8.1
+V8: 7.8.279.23-electron.0
+OS: Windows_NT x64 10.0.18363
+
+Steps to Reproduce:
+
+With either NVDA or JAWS loaded, type any commands in terminal (Ctrl+`) input area.
+Press Shift+Tab two times from the terminal input to focus in terminal output list view.
+The terminal output list is reachable via tab key thanks to tabindex = "0" attribute; however, screen readers (both NVDA and JAWS) do not read anything with arrow keys unless users manually switch on browse mode.
+The additional problem can be found with very long terminal outputs that require scroll behavior. Screen reader users have to switch back to forms mode to arrow up/down  to scroll through the output history (while not being read any current line) and again, turn back to browse mode to check the results.
+
+
+Does this issue occur when all extensions are disabled?: Yes
+
+Suggested Solutions
+Currently, the terminal output <div> container denoted with class = "xterm-accessibility-tree" has role = "list".
+As a blind developer myself, I am requesting the following for accessibility improvements for screen readers.
+
+Please change the value of role attribute from "list" to "document" so that screen reader users can navigate the terminal output via arrow keys using browse mode.
+Please adjust the tabindex value of this terminal output container in the way that screen reader users can quickly Shift+Tab from terminal input area. In other words, pressing tab key from terminal output area should go to terminal input area; pressing Shift+Tab key from terminal input goes to terminal output area denoted with role = "document" div.
+Ideally, it would be great if the terminal output can be also included in the F6-keycycle.
+
+99.  https://github.com/microsoft/vscode/issues/98160
+title: ['Pinned tabs: show them in a secondary tab row above others °§ Issue #98160 °§ microsoft/vscode °§ GitHub']
+Refs: #12622
+Pinned tabs by default will show to the left of other tabs. An alternative presentation is to do what Visual Studio does and have a secondary tab row above the others:
+
+vs what we do today:
+
+100.  https://github.com/microsoft/vscode/issues/20013
+title: ['Retain terminal processes between window reloads °§ Issue #20013 °§ microsoft/vscode °§ GitHub']
+Hi
+Please implement Hot Exit on Integrated Terminal.
+Thanks
+
+VSCode Version: 1.9.0
+OS Version: Windows 10
+
+101.  https://github.com/microsoft/vscode/issues/23251
+title: ['Support Platform Specific Extensions °§ Issue #23251 °§ microsoft/vscode °§ GitHub']
+I can't find answer from stack overflow, so I open a issue.
+
+102.  https://github.com/microsoft/vscode/issues/27378
+title: ['Feature Request: Zero-latency Typing °§ Issue #27378 °§ microsoft/vscode °§ GitHub']
+Following articles goes into length describing the issue in general.
+
+https://pavelfatin.com/typing-with-pleasure/
+https://blog.jetbrains.com/idea/2015/08/experimental-zero-latency-typing-in-intellij-idea-15-eap/
+https://news.ycombinator.com/item?id=10787812
+
+The subtle typing lag is observed in VS Code in same machine in which the typing is lag free with sublime text and even eclipse. This feature request is to look into the issue and address it if feasible.
+
+103.  https://github.com/microsoft/vscode/issues/28235
+title: ['Provide Task Runner viewlet °§ Issue #28235 °§ microsoft/vscode °§ GitHub']
+We did a Task 2.0 deep dive today and this issue collects the combined feedback received.
+Task Properties
+
+echo should be true by default so that users get a better idea of the task executed
+we should support flattening the JSON properties as we do with other settings (e.g "terminal.echo": true instead of "terminal": { "echo": true }
+we should better separate task declaration from task customization. Currently both happens in the tasks array property and the differentiating element is the customize property.
+
+Task Picker
+The task picker should support a decription / detail message to better explain what the task does. We also discussed whether the task picker should support MRU which would automatically move the most used tasks up to the top without customization. If we provide a task panel (see below) such a MRU list could be useful there as well.
+Task Customization
+The task customization is currently instance based where the task instance is identified by a task id, which can be quite 'cryptic'. An alternative way would be to identify a task based on a type and a key that is defined by the type and therefore can vary from task runner to task runner. So instead of having something like:
+	{
+		"customize": "vscode.npm.run build",	
+		"taskName": "npm: run build"
+	}
+a customization would look like this
+	{
+		"customize": {
+			"type": "npm",
+			"file": "${workspaceRoot}/package.json",
+			"script": "build"
+		},
+		"problemMatcher": ["$tsc"]
+	}
+where the structure of the identifying attribute is defined by the extension providing the runner support. In the example above the fact that a npm script is identified by the location of the package.json file and the script name comes from the npm extension. This might look different for task contributed by gulp of TypeScript
+Problem Matchers
+For task that execute a target of a task runner (e.g. gulp, npm, grunt) VS Code can't decide which problem matchers to attach. Since picking the right problem matcher currently requires editing the tasks.json file we should better support the user with this. We discussed the following ideas:
+
+always attach all known problem matchers if a task has no problem matchers. This might result in false positives and might require us to support removing problem matchers via a configuration mechanism.
+we could help the user attaching a problem matcher by generically scanning the output for problems and suggest problem matchers that exactly match these. If selected we update the tasks.json file for the user.
+
+Task panel
+It was suggested to run tasks in its own panel instead of reusing the terminal panel. They should still be executed using the terminal to get ANSI control character support and other nice terminal features (e.g. Ctrl+C). The panel could offer additional features like:
+
+a task summary (execution time, exit code, ...)
+the output of a task could be folded (like travis does for example)
+allow for in place customization of a task (for example attach a problem matcher) without the user being forced to edit a tasks.json file.
+
+We also discussed the need of a task viewlet but decided that this will not add any big additional value over the task picker and a separate panel.
+Top Level Menu
+We were also discussing whether the tasks deserve a top level menu. In general this was consider a good idea. However such a menu should be semantically not technical. So instead of naming it Tools or Tasks it would be better to offer top level menus like Build, Rebuild All, Clean, Run Tests. The downside of such an approach is that such a menu looks out of place if none of these entries trigger any meaningful action in the workspace (e.g. if a simple JS project is open at lease Build, Rebuild All and Clean don't make any sense)
+Better Selfhosting
+Would be great if we can improve the self hosting coverage of tasks. This is currently hard to do due to the fact how we build. But @dbaeumer will tweak our tasks.json to support more tasks currently run in the terminal (e.g run tests, linting, ...)
+
+104.  https://github.com/microsoft/vscode/issues/50386
+title: ['I set Dolphin as default file manager, but VSCode opens Nautilus instead of Dolphin °§ Issue #50386 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.24.0-insider
+OS Version: Ubuntu 18.04 with GNOME, KDE, Unity and XFCE
+
+Steps to Reproduce:
+
+I set Dolphin as default file manager via command and in the defaults.list.
+I open VSCode Insiders
+I open a folder
+VSCode opens Nautilus instead of Dolphin
+
+VSCode does not recognise that Dolphin is a new default file manager.
+Does this issue occur when all extensions are disabled? Yes
+
+105.  https://github.com/microsoft/vscode/issues/8226
+title: ['Cannot select text from deleted lines diff view °§ Issue #8226 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.3.0-insider
+OS Version: OS X 10.11
+
+Steps to Reproduce:
+
+Open a file with changes in inline diff mode
+Try to select the red (deleted) lines (You can't)
+
+You can select them normally in the side-by-side. Being able to do so is useful to restore/revert small pieces of code manually by copying and pasting.
+
+106.  https://github.com/microsoft/vscode/issues/42890
+title: ["Marketplace: searching by an extension's name is practically broken °§ Issue #42890 °§ microsoft/vscode °§ GitHub"]
+There are a few major problems when searching by an extension's name. First of all, if I remember correctly, the marketplace had this thing on every extension's page:
+
+So I've added an analogous message to all of my extensions' readme files, and I think other extension authors have done this too.
+I have an extension called Todo+ (full id: fabiospampinato.vscode-todo-plus). This is what happens when the command ext install vscode-todo-plus is executed:
+
+
+vscode-todo-plus in an exact match of the id minus my username, and the extension is not even in the top 10 results.
+Searching for fabiospampinato.vscode-todo-plus, which is an exact match of the full id, leads to the same results.
+Searching for @id:fabiospampinato.vscode-todo-plus works, but only inside VSC, it doesn't work on marketplace.visualstudio.com
+Where are these ext install and @id: commands documented anyway?
+
+Let's try to search for another extension of mine, Open in Browsers (full id: fabiospampinato.vscode-open-in-browsers):
+
+
+Not only vscode-open-in-browsers is an exact match of the extention id minus my username, but "Open in Browsers" is the extension's title, and "vscode" is practically a meaningless keyword, as is "in". What's the first result for this search? vscode-ins-support ??
+
+I hope we do agree there's a problem here.
+If I may suggest a few improvements:
+
+Always check if an extension's id (minus the username) is an exact match of the current query.
+Implement stop words.
+
+Please don't close this issue as "non actionable".
+
+107.  https://github.com/microsoft/vscode/issues/100840
+title: ['Font is always black after installing macOS 11 (Source Code Pro font or derivatives need to be updated) °§ Issue #100840 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.46.1
+OS Version: macOS Big Sur Version 11.0 Beta (20A4299v)
+
+Steps to Reproduce:
+
+Upgrade to macOS 11.0 Developer Beta 1
+Open VS Code, switch between the bundled colour themes
+
+
+
+Does this issue occur when all extensions are disabled?: Yes
+
+108.  https://github.com/microsoft/vscode/issues/6560
+title: ['Allow to open different windows with different permissions °§ Issue #6560 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.1.1
+OS Version: Windows 10 1511 (10586.318)
+
+Steps to Reproduce:
+
+Close all Code instances, then run Code as administrator (a new blank Code instance with administrator right)
+In File Explorer, right click a text file and Open with Code, nothing will happen.
+
+Note: there are multiple other ways to trigger this issue, the above repro is just an example.
+Note 2: If you already have a code instance running without administrator running, the above issue will not get triggered. That's why the very first step is to close all Code instances.
+
+109.  https://github.com/microsoft/vscode/issues/12588
+title: ['Extension proxy support °§ Issue #12588 °§ microsoft/vscode °§ GitHub']
+Proxy support for Visual Studio Code has been introduced recently through environment variables/settings (see https://code.visualstudio.com/docs/setup/setup-overview#_proxy-server-support). As an extension developer I would like to use these settings when requesting resources from the internet. My current implementation fails for users using a proxy.
+What is the recommended way for an extension to use a proxy?
+I could not find a vscode API that exposes methods to make requests using a proxy other than access to the proxy settings (workspace.getConfiguration()) and implementing everything on my own. Looking at the Visual Studio Code code base I identified the code that adds support for proxies, but copy&paste it into my extension would result in duplicated and potentially outdated code, which is something I want to avoid whenever possible. As I am probably not the only extension developer accessing the internet, I would like to hear your opinion on this issue. Any feedback would be greatly appreciated.
+
+110.  https://github.com/microsoft/vscode/issues/101069
+title: ['Crash on startup with remote X server °§ Issue #101069 °§ microsoft/vscode °§ GitHub']
+Just downloaded the latest version of VScode (https://az764295.vo.msecnd.net/insider/9b620b291e120caab8292cab38cad10c2b22dffe/code-insider-1593112949.tar.gz") and found it still shows a blank window after launch.
+
+111.  https://github.com/microsoft/vscode/issues/9539
+title: ['Visual Studio Code should update itself silently °§ Issue #9539 °§ microsoft/vscode °§ GitHub']
+I think automatic update is great, but I think some people just want the thing updated automatically without being asked.   There can be notification that indicates that it's changed and what's new.   But I think we should follow the Chrome model and just update it.
+Why?
+Think of it as software running on the web.   When I go to cnn.com, I'm not notified that there's a new version of the back-end software that I might be running.   So why / when should I care if the front-end software has updated?
+Sometimes you care -- such as low-bandwidth situations.   But that doesn't mean everyone cares.   Some of us, dare I say, a large majority of people, just want the latest stuff all the time.
+Thank you for listening.
+
+VSCode Version:
+OS Version:
+
+Steps to Reproduce:
+1.
+2.
+
+112.  https://github.com/microsoft/vscode/issues/2718
+title: ['Git: Automatically insert line breaks in git commit messages °§ Issue #2718 °§ microsoft/vscode °§ GitHub']
+I'm trying to get into the habit of writing good commit messages. Not sure if this should be the default but it would be really useful if vscode automatically wrapped commit message lines at say 80 chars and inserted line breaks.
+I don't mean changing the appearance of the text in the commit message box, just before it's actually committed. The line length could be in an option too.
+
+113.  https://github.com/microsoft/vscode/issues/10952
+title: ['Auto hide panel °§ Issue #10952 °§ microsoft/vscode °§ GitHub']
+Similar to behavior in Visual Studio, is there a way we could get the terminal to show/hide automatically? Leaving some sort of tab at the bottom of the screen?
+It opens when:
+
+User mouses over the tab
+Something is written to the terminal
+
+It hides when:
+
+User clicks outside of the open terminal window.
+The terminal has not been written to within a set period of ~10 seconds.
+
+Ex: I'm working on an Angular 2 application using the angular-cli build tool. When I'm writing code or clicking through the UI I don't particularly care about what's displaying in the terminal. But as soon as I save my changes and the build process starts, I DO want to quickly see what the current state of the build is. So after saving a file, when the CLI tool starts writing to the terminal, it would pop-up from the bottom, and as long as my mouse isn't hovering over it, it will hide again after several seconds of inactivity.
+
+114.  https://github.com/microsoft/vscode/issues/73818
+title: ['Starting inspector on 127.0.0.1:9229 failed: address already in use with nodemon °§ Issue #73818 °§ microsoft/vscode °§ GitHub']
+I am getting the same issues as this issue: #27794
+Version: 1.32.3
+Commit: a3db5be
+Date: 2019-03-14T23:38:49.842Z
+Electron: 3.1.6
+Chrome: 66.0.3359.181
+Node.js: 10.2.0
+V8: 6.6.346.32
+OS: Linux x64 4.10.0-32-generic
+Steps to Reproduce:
+Hitting me (changed)
+[nodemon] files triggering change check: application/index.ts
+[nodemon] matched rule: /home/karl/dev/a-vdgs-server/application/**/*
+[nodemon] changes after filters (before/after): 1/1
+[nodemon] restarting due to changes...
+[nodemon] application/index.ts
+
+[nodemon] starting `node -r ts-node/register --inspect=9229 ./application/server.ts`
+[nodemon] spawning
+[nodemon] child pid: 22626
+Debugger listening on ws://127.0.0.1:9229/d3273c04-8fe5-4130-b02c-a6ee36bc6979
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+NODE_ENV is set to: development
+Loaded config/development.json configuration file
+Config lib initialized
+Adding console log transport
+2019-05-16T12:20:58.539Z info: Log lib initilized1
+2019-05-16T12:20:58.555Z info: Websocket server started on port: 8081
+2019-05-16T12:20:58.556Z debug: Connecting to MQTT broker on: mqtt://172.17.0.2
+2019-05-16T12:20:58.595Z info: MQTT lib initilized
+2019-05-16T12:20:58.606Z info: HTTP server running on: http://localhost:8080
+2019-05-16T12:20:58.624Z debug: Connected to MQTT broker on: mqtt://172.17.0.2
+2019-05-16T12:20:58.636Z debug: Presence!
+2019-05-16T12:20:58.644Z debug: Hello mqtt
+[nodemon] files triggering change check: application/index.ts
+[nodemon] matched rule: /home/karl/dev/a-vdgs-server/application/**/*
+[nodemon] changes after filters (before/after): 1/1
+[nodemon] restarting due to changes...
+[nodemon] application/index.ts
+
+[nodemon] starting `node -r ts-node/register --inspect=9229 ./application/server.ts`
+[nodemon] spawning
+[nodemon] child pid: 22713
+Debugger listening on ws://127.0.0.1:9229/785cd083-92e5-4c01-afd0-c945c2bcfa02
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+NODE_ENV is set to: development
+Loaded config/development.json configuration file
+Config lib initialized
+Adding console log transport
+2019-05-16T12:21:06.992Z info: Log lib initilized1
+2019-05-16T12:21:07.004Z info: Websocket server started on port: 8081
+2019-05-16T12:21:07.005Z debug: Connecting to MQTT broker on: mqtt://172.17.0.2
+2019-05-16T12:21:07.038Z info: MQTT lib initilized
+2019-05-16T12:21:07.043Z info: HTTP server running on: http://localhost:8080
+2019-05-16T12:21:07.052Z debug: Connected to MQTT broker on: mqtt://172.17.0.2
+2019-05-16T12:21:07.055Z debug: Presence!
+2019-05-16T12:21:07.057Z debug: Hello mqtt
+[nodemon] files triggering change check: application/index.ts
+[nodemon] matched rule: /home/karl/dev/a-vdgs-server/application/**/*
+[nodemon] changes after filters (before/after): 1/1
+[nodemon] restarting due to changes...
+[nodemon] application/index.ts
+
+[nodemon] starting `node -r ts-node/register --inspect=9229 ./application/server.ts`
+[nodemon] spawning
+[nodemon] child pid: 22789
+Starting inspector on 127.0.0.1:9229 failed: address already in use
+[nodemon] app crashed - waiting for file changes before starting...
+
+launch.json
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "dev",
+            "runtimeExecutable": "nodemon",
+            "runtimeArgs": ["--config", "./nodemon.debug.json"],
+            "cwd": "${workspaceRoot}",
+            "restart": true,
+            "port": 9229,
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "outputCapture": "std",
+            "console": "integratedTerminal"
+        },
+
+nodemon.json
+{
+    "watch": ["application"],
+    "ext": "ts",
+    "ignore": ["./**/*.spec.ts"],
+    "exec": "node -r ts-node/register --inspect=9229 ./application/server.ts",
+    "verbose": true
+}
+
+The behavior I see is that it randomly happens. My best guess is that the previous attached debugger hasn't finished closing down when the new one tries to start up on the same port. This is due to the "restart": true. I don't know how this process works but from what I read it keeps track of the node process, but does it keep track of the previous debugger?
+
+115.  https://github.com/microsoft/vscode/issues/49342
+title: ['Indent guide highlighting is not semantic °§ Issue #49342 °§ microsoft/vscode °§ GitHub']
+Shouldn't the highlighted guide be the one with the blue arrow instead the one with the red when the cursor is at the green line?
+
+116.  https://github.com/microsoft/vscode/issues/61793
+title: ['MSIX installer °§ Issue #61793 °§ microsoft/vscode °§ GitHub']
+After 2 years of conversation in issue #10759 (Release in the Windows Store) I think this is the right time to reevaluate the request.
+What we originally wanted is all the goodness of UWP lifecycle management (clean install/uninstall and updates received in the background without having to run the app), but now it's possible outside of the Store with MSIX packaging without having to comply with some of the stricter rules of the Store and resource/capability management of UWP apps.
+So the proposal is simple: Please make an MSIX installer for VS Code even if it's not distributed through the Store (for numerous technical reasons).
+As a first step, Windows 10 users would benefit from it, later, as MSIX is designed to be cross-platform, it can evolve into the only installer format on all platforms (Linux, macOS, Windows 7+) and as the Store evolves, it can be a good foundation to potentially publish VS Code to the Store.
+
+117.  https://github.com/microsoft/vscode/issues/38834
+title: ['ANSI color support in edit buffer °§ Issue #38834 °§ microsoft/vscode °§ GitHub']
+Now ANSI colors are supported in the debug console, I'd like to see it in the editor, something like SublimeANSI.
+
+
+VSCode Version: 1.19
+OS Version: macOS
+
+Steps to Reproduce:
+
+open a file which contains ANSI color escape sequence, or simply ls --color | code
+colorless raw ANSI code displayed, rather than colored text.
+
+
+Reproduces without extensions: Yes
+
+118.  https://github.com/microsoft/vscode/issues/53262
+title: ['Outline view: collapsed by default (introduce optional setting?) °§ Issue #53262 °§ microsoft/vscode °§ GitHub']
+Very simple request: I'd like the outline view tree to be collapsed by default. It'd be great if there were a configuration setting for this. To be clear, I'm referring to the items in the tree, not the panel itself.
+Good:
+
+Bad:
+
+119.  https://github.com/microsoft/vscode/issues/1223
+title: ['Mac OS X :: "Open Folder With" VS Code °§ Issue #1223 °§ microsoft/vscode °§ GitHub']
+Hello,
+Since Finder is obviously developed by Apple, I'm not sure if this would be possible or not. Is there any way to right-click a folder in Finder, and "open with VS Code?" You can do this with individual files, but it would be a nice, small workflow enhancement to be able to open a folder with VS Code, directly from Finder, as well. If not, no big deal. This would be a fault with Finder, rather than VS Code.
+Here's a screenshot of right-clicking a folder ... there's no "Open With" option. Maybe the Share option could work somehow?
+
+Cheers,
+Trevor Sullivan
+Microsoft MVP: PowerShell
+
+120.  https://github.com/microsoft/vscode/issues/8794
+title: ['Make it possible to use drag and drop in a webview °§ Issue #8794 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.3.0-insider
+OS Version: windows7
+
+Steps to Reproduce:
+
+Download My extension:  https://github.com/f111fei/test-files/raw/master/webview-test-0.0.1.vsix
+Run command Hello Webview to open my webview.
+
+Problem:
+
+Drag Button into TextArea. Dragfeedback overlay will prevent  my dragging action.
+Typing some text in the textarea. Use Ctrl+A to select all, Nothing happen.
+
+Reason
+
+see https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/electron-browser/window.ts#L91, the default drag handler is prevented.
+see https://github.com/Microsoft/vscode/blob/master/src/vs/platform/keybinding/browser/keybindingServiceImpl.ts#L380, selectAll handler is prevented.
+
+121.  https://github.com/microsoft/vscode/issues/84745
+title: ['Linux Mint Guest OS crashes while using VSCode °§ Issue #84745 °§ microsoft/vscode °§ GitHub']
+Issue Type: Bug
+problem:
+VirtualBoxVM crashes with Application Error while running VSCode
+
+start with Windows 10
+Run Oracle VirtualBox
+create linux mint VM
+run linux mint VM
+install VSCode for Linux from tar.gz
+clone some repo from GitHub
+cd into local repo and start editor (usually code -a .)
+work with VSCode in local clone (unsure exactly what activity triggers this)
+
+After some unpredictable amount of time, clicking on a menu or the settings icon (maybe some other actions also trigger), the expected pop-up menu will be all black instead of filled with content.  A short time (usually no more than a minute) later, the guest VM will be unresponsive and an Application Error dialog will appear in the Win10 host.  The VM is dead at this point.  Here is the content of the dialog just received:
+The instruction at 0x00007FF84210F161 referenced memory at 
+0x00000000000000000000000000000000.  The memory could not be written.
+
+Click on OK to terminate the program
+
+This has been a consistent problem in the VSCode versions since I started.  May be tied to git plugin and editing in a directory that is a git repo.
+VS Code version: Code 1.40.0 (86405ea, 2019-11-06T18:14:08.920Z)
+OS version: Linux x64 4.15.0-70-generic
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz (1 x 1991)
+
+
+GPU Status
+2d_canvas: enabledflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmetal: disabled_offmultiple_raster_threads: disabled_offoop_rasterization: disabled_offprotected_video_decode: unavailable_offrasterization: disabled_softwareskia_renderer: disabled_offsurface_control: disabled_offsurface_synchronization: enabled_onvideo_decode: unavailable_offviz_display_compositor: enabled_onviz_hit_test_surface_layer: disabled_offwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+1, 1, 0
+
+
+Memory (System)
+5.82GB (3.37GB free)
+
+
+Process Argv
+-a . --no-sandbox
+
+
+Screen Reader
+no
+
+
+VM
+100%
+
+
+
+Extensions (6)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+gitlens
+eam
+10.1.2
+
+
+vscode-docker
+ms-
+0.8.2
+
+
+python
+ms-
+2019.10.44104
+
+
+cpptools
+ms-
+0.26.2-insiders
+
+
+preview-vscode
+myh
+1.3.0
+
+
+vscode-print
+pdc
+0.7.13
+
+
+
+
+
+Also:
+(base) mintadmin@mint-vm:~/.../eclipse/adl2pydm$ more /etc/os-release 
+NAME="Linux Mint"
+VERSION="19.2 (Tina)"
+ID=linuxmint
+ID_LIKE=ubuntu
+PRETTY_NAME="Linux Mint 19.2"
+VERSION_ID="19.2"
+HOME_URL="https://www.linuxmint.com/"
+SUPPORT_URL="https://forums.ubuntu.com/"
+BUG_REPORT_URL="http://linuxmint-troubleshooting-guide.readthedocs.io/en/latest/"
+PRIVACY_POLICY_URL="https://www.linuxmint.com/"
+VERSION_CODENAME=tina
+UBUNTU_CODENAME=bionic
+
+
+Windows 10 host details (running Oracle VirtualBox)
+VS Code version: Code 1.40.0 (86405ea, 2019-11-06T17:02:13.381Z)
+OS version: Windows_NT x64 10.0.17763
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz (8 x 1992)
+
+
+GPU Status
+2d_canvas: enabledflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmetal: disabled_offmultiple_raster_threads: enabled_onoop_rasterization: disabled_offprotected_video_decode: enabledrasterization: enabledskia_renderer: disabled_offsurface_control: disabled_offsurface_synchronization: enabled_onvideo_decode: enabledviz_display_compositor: enabled_onviz_hit_test_surface_layer: disabled_offwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+undefined
+
+
+Memory (System)
+15.85GB (6.32GB free)
+
+
+Process Argv
+-a .
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+122.  https://github.com/microsoft/vscode/issues/33607
+title: ['Allow to hide editor title section entirely (tabs, breadcrumbs) °§ Issue #33607 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.15.0
+OS Version: Manjaro Linux x64 Gellivara
+
+Steps to Reproduce:
+
+Configure settings.json
+
+{
+  "workbench.editor.showTabs": false
+}
+
+
+Tabs are hidden but tabs section still fill the space.
+
+Reproduces without extensions: Yes
+Some captures:
+
+Face to face with Vim
+
+
+
+Proposed setting:
+
+{
+  "workbench.editor.showTabs": "none | one | all"
+}
+
+With "workbench.editor.showTabs": "none" then
+
+123.  https://github.com/microsoft/vscode/issues/100427
+title: ['Integrated terminal poor performance on WSL 2 (laggy) °§ Issue #100427 °§ microsoft/vscode °§ GitHub']
+Version: 1.47.0-insider (system setup)
+Commit: 7e4cc2c435927e5a2845897961a2af10ee7f784d
+Date: 2020-06-12T06:03:53.183Z
+Electron: 7.3.1
+Chrome: 78.0.3904.130
+Node.js: 12.8.1
+V8: 7.8.279.23-electron.0
+OS: Windows_NT x64 10.0.19041
+OS Version: Windows 10 Pro
+
+Steps to Reproduce:
+
+Open a project VSCode native to windows
+use the terminal
+Open another (or the same) project in WSL 2 (using the WSL2 extension not just typing wsl in the terminal)
+use the terminal again..
+If you have Windows Terminal installed, compare the performance between that and the integrated terminal (with a project in WSL 2)
+
+
+Does this issue occur when all extensions are disabled?: Yes
+The integrated terminal seems to be a bit slow when using WSL2.
+I have zsh installed but i don't think its that because Windows Terminal is snappy and works fine in the same directories, the issue is only in the integrated terminal.
+It isn't super slow, but it does have a laggy feel.
+The issue doesn't appear to be with WSL as other terminals outside of VSCode are fine.
+
+124.  https://github.com/microsoft/vscode/issues/77949
+title: ['Restart to Update not working on Mac °§ Issue #77949 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.35.0
+OS Version: OS X 10.14.15
+
+Steps to Reproduce:
+
+Click on "Code" tab
+Then click on "Restart to Update"
+VSCode doesn't restart anymore and you've to download the application from the site to update to the latest version
+
+Does this issue occur when all extensions are disabled?: Yes
+
+125.  https://github.com/microsoft/vscode/issues/90578
+title: ['Word navigation not working with screen reader °§ Issue #90578 °§ microsoft/vscode °§ GitHub']
+From @RobGallo
+Depending on which edit control is being used, the problem is either in UIAutomations°Øs Text pattern implementation or IAccessible2°Øs IAccessibleText implementation. Either way, the text returned for the word at the carat position is incorrect.
+Here are the basic rules:
+The text of words returned by the accessibility API must match keyboard word navigation (ctrl+leftArrow and ctrl+rightArrow) exactly.
+The behavior of ctrl+leftArrow and ctrl+rightArrow must be symmetrical (i.e., the word breaks must not change regardless which command is used).
+The placement of the carat should never be on white space, except at the end of a line
+Word navigation should stop at all punctuation marks
+Here is a line from a file I°Øm working in. I started at the beginning of the line and I placed vertical bars (|) where the ctrl+rightArrow stops.
+import| {| NamedSFC| }| from| '../../|common|/react|/named|-sfc|';|
+based on this, the words returned by the accessibility API should be:
+°∞import°±
+°∞ {°±
+°∞ NamedSFC°±
+°∞ }°±
+°∞ from°±
+°∞ '../../°±
+°∞common°±
+°∞/react°±
+°∞/named°±
+°∞-sfc°±
+°∞';°±
+If this doesn°Øt look right to you, good. The places where the keyboard stops, and thus what is considered a word, make no sense. And as a coder myself, I find these word breaks not useful because I am often placed on space characters. That would be a problem even if I weren°Øt using an access technology.
+I would arrange the words in the line this way:
+°∞import °∞
+°∞{ °∞
+°∞NamedSFC °∞
+°∞} °∞
+°∞from °∞
+°∞'°±
+°∞..°±
+°∞/°±
+°∞..°±
+°∞/°±
+°∞common°±
+°∞/°±
+°∞react°±
+°∞/°±
+°∞named°±
+°∞-°∞
+°∞sfc°±
+°∞'°±
+°∞;°±
+Visual studio breaks up the line this way, which is also acceptable:
+°∞import °∞
+{ °∞
+NamedSFC °∞
+°∞} °∞
+°∞from °∞
+°∞'../../°±
+°∞common°±
+°∞/°±
+°∞react°±
+°∞/°±
+°∞named°±
+°∞-°∞
+°∞sfc°±
+°∞°Ø;°±
+Furthermore, the behavior of ctrl+leftArrow and ctrl+rightArrow in VSCode is not symmetrical. For example, here are the word breaks starting from the left and moving right:
+from| °Æ../../|common
+Here are the line breaks for the fragment starting at the end and moving to the left.
+from |°Æ../../|common
+Notice the positioning of the line break between °∞from°± and °∞°Ø°± has changed. That is disorienting.
+
+126.  https://github.com/microsoft/vscode/issues/75615
+title: ['Menu widget rendered in greyscale °§ Issue #75615 °§ microsoft/vscode °§ GitHub']
+Version: 1.35.1 (user setup)
+Commit: c7d83e5
+Date: 2019-06-12T14:30:02.622Z
+Electron: 3.1.8
+Chrome: 66.0.3359.181
+Node.js: 10.2.0
+V8: 6.6.346.32
+OS: Windows_NT x64 10.0.18362
+I also double checked that the problem is on the Insider's Build.
+Steps to Reproduce:
+
+Observe text on screen. It should have gray subpixel rendering.
+
+Open menu bar.
+Observe text on screen. It should have RGB subpixel rendering.
+
+
+This issue occurs on all text (except the menu bar submenus). I noticed it, because the text rendering looks better, but only when the menu bar was open! I would prefer all of it to use RGB subpixel rendering, like my other applications.
+Does this issue occur when all extensions are disabled?: Yes
+
+127.  https://github.com/microsoft/vscode/issues/25986
+title: ['[theming] Separate workbench theme and syntax theme °§ Issue #25986 °§ microsoft/vscode °§ GitHub']
+After upgrading to VS Code 1.12, I noticed that the workbench theme of the built-in Monokai color theme had been changed. However, I preferred the default workbench theme a lot.
+But in VS Code, there are only two types of themes: Color Theme and Icon Theme, and the workbench theme is tightly coupled with the syntax theme in the Color Theme category.
+In contrast, Sublime Text separates theme into color_scheme and theme in the preferences. For example, I can choose Material style for the workbench and Monokai for the syntax highlighting. Does the team have plan to separate them and let users have more flexibility to customize their editor?
+By the way, I found that some of theme extensions use .json as their theme file (including the built-in Monokai), but the official documentation only mentions that we can use yo code to generate theme extension with an existing .tmTheme file. Is there any documentation for clarifying their difference and also the schema of the .json file?
+
+128.  https://github.com/microsoft/vscode/issues/75627
+title: ['Extensions using the "type" command (for ex. Vim) have poor performance due to being single-threaded with other extensions °§ Issue #75627 °§ microsoft/vscode °§ GitHub']
+I don't know if this is a known/accepted issue, but I've had a number of users complain of poor performance in the editor when using my extension along with the Vim extension.
+This appears to be because the Vim extension uses the type command to handle keypresses (in the extension host). This means if pressing a key triggers a command that blocks in another extension (for example the first character press can trigger code completion, which if the list is 20,000 items can block the thread for a little while while they're build + serialised) the typing in the editor is really sluggish.
+You can easily reproduce this by making an extension that blocks for 1s when asked for completions:
+context.subscriptions.push(vscode.languages.registerCompletionItemProvider({ scheme: "file" }, {
+	provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext): vscode.ProviderResult<vscode.CompletionItem[] | vscode.CompletionList> {
+		console.log('Completion request');
+		var start = Date.now();
+		let i = 0;
+		while (Date.now() < start + 10000) {
+			// Block for a second...
+			i++;
+		}
+		return [new vscode.CompletionItem(`aaaItem (${i} iterations)`)];
+	},
+}));
+If you run this and enabled the Vim plugin, when you start typing on a newline (which triggers completion), the characters you type won't appear for a while.
+Of course, extensions should try to avoid blocking the extension host as much as possible, but sometimes it's unavoidable (for ex. assembling and serialising a huge number of completion items). It's not clear where users should raise bugs, since in isolation neither extension is really doing anything wrong.
+I don't know what the fix is (separate extension host for type-handling extensions might work, but that might also be a huge task), but I couldn't find any issues discussing this and figured it was worth some discussion (even if only to have the information described in one place we can point people to that hit these issue).
+
+129.  https://github.com/microsoft/vscode/issues/45020
+title: ['hide show comments °§ Issue #45020 °§ microsoft/vscode °§ GitHub']
+sometimes hide/show-comments help reading the code, visual studio has extensions for this, failed to find similar ones in vscode, hope we will get one some day.
+
+130.  https://github.com/microsoft/vscode/issues/63152
+title: ['Explore improving UX for Welcome Page °§ Issue #63152 °§ microsoft/vscode °§ GitHub']
+This exploration will aim to modernize the look and feel of the Welcome page while also improving the layout for new and current users. Items we're looking to explore:
+
+Add "privacy" section to page for better visibility
+Add "recently update" section for app and extension updates
+Add underline for text links on hover (consistency)
+
+Related issues
+
+Ability to remove recent item #22489
+Ability to pin projects #63057
+Don't open browser on first launch without user's action #14934
+Revisit "Interface Overview" page #19491
+
+Current Design
+
+Research
+Our research shows that new users install language & keyboard shortcut extensions the most, while current users go to recent projects or open folders. Below is a visualization of the top actions.
+Top actions for new users
+
+Top actions for current users
+
+I will be updating this issue with explorations as they're developed.
+
+131.  https://github.com/microsoft/vscode/issues/42149
+title: ['Allow 100% panel width and height °§ Issue #42149 °§ microsoft/vscode °§ GitHub']
+VSCode Version:VS code Insiders (1.20.0)
+OS Version: Windows &
+Steps to Reproduce:
+
+Open VS code
+2.Open Integrated terminal window
+expand Explorer view
+result: the Integrated terminal view shrinks to allow the explorer view to take the full height.
+expected: the explorer view adjusts its height as (window_height - Integrated terminal Height). allowing the integrated terminal to have a 100% window width.
+
+Does this issue occur when all extensions are disabled?: Yes
+
+132.  https://github.com/microsoft/vscode/issues/27286
+title: ['Explorer / Opened Editors Sorting °§ Issue #27286 °§ microsoft/vscode °§ GitHub']
+Numerous issues have been filed on this topic, merging them into one.
+Done
+
+ Option for sorting files by type in Explorer #5222
+ Give an option to show files before directories in file explorer #22529
+ Make listing directories first an option #29329
+ Add option to sort files in Explorer side-bar by date modified #11823
+
+Open
+
+ Align explorer sorting with platform sorting #27759
+ Feature Request: api to custom files sort order at the sidebar #12345
+ Add sorting to Open Editors list #12453
+ Choose a sort order of directories and files according to the settings pattern #23231
+ Feature to assign a particular file name to appear first in a directory listing #25724
+ Explorer order files names with underline #40679
+
+133.  https://github.com/microsoft/vscode/issues/18239
+title: ['Multiselect via ctrl+d case insensitivity makes it useless °§ Issue #18239 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Code 1.8.1 (ee428b0, 2016-12-19T14:41:20.664Z)
+OS Version: Linux x64 4.4.38-1-MANJARO
+Extensions:
+
+
+
+
+Extension
+Author
+Version
+
+
+
+
+Go
+lukehoban
+0.6.51
+
+
+
+
+Steps to Reproduce:
+consider this block of code:
+	accountQryConn   *grpc.ClientConn
+	accountQryClient proto.AccountQueryClient
+
+when I select 'account' and hit alt+d a few times it will select it like this.
+
+this is fine, but when I do this, I am doing it to replace it with something else. So I'll start typing:
+
+but now my case is broken for my second string.
+This is fine in a small example, but very annoying.
+Currently the case matches whatever is highlighted in the search widget. Behold what happens if I turn off case sensitivity:
+
+This is incredibly annoying. I can't think of a time when you would want to multiselect case-insensitively with ctrl+d. It simply selects the wrong stuff, because in code it's always case sensitive. So depending on whatever I did last with ctrl+f, my ctrl+d either works or is annoying.
+I think ctrl+d should always be case sensitive, or have a button that's not search-tied that does a case sensitive string selection match across the file
+My two cents.
+
+134.  https://github.com/microsoft/vscode/issues/2766
+title: ['Automatically Activate Markdown Preview °§ Issue #2766 °§ microsoft/vscode °§ GitHub']
+I would like to eliminate the step of pressing ctrl+k v to preview the md file I open. For the preview should always be on.
+Thank you
+
+135.  https://github.com/microsoft/vscode/issues/75111
+title: ['Sluggish User Interface on High-Resolution Screens °§ Issue #75111 °§ microsoft/vscode °§ GitHub']
+Issue Type: Performance Issue
+Hey there, I often experience sluggish and laggy UI when working with VS Code, e.g. clicking on tabs, activity bar icons, menus, etc.
+Is this related to certain machines or is it a global problem? And are there currently any workarounds? Isn't VS Code supposed to be smooth and fast by nature?
+Thanks in advance.
+VS Code version: Code 1.35.0 (553cfb2, 2019-06-04T01:17:12.481Z)
+OS version: Windows_NT x64 10.0.18362
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz (4 x 2904)
+
+
+GPU Status
+2d_canvas: enabledchecker_imaging: disabled_offflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmultiple_raster_threads: enabled_onnative_gpu_memory_buffers: disabled_softwarerasterization: enabledsurface_synchronization: enabled_onvideo_decode: enabledwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+undefined
+
+
+Memory (System)
+7.89GB (0.79GB free)
+
+
+Process Argv
+
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+
+
+
+Process Info
+CPU %	Mem MB	   PID	Process
+    1	    78	  2888	code main
+    2	    67	  1976	   window (Issue Reporter)
+    0	   220	  9180	   gpu-process
+    0	    58	 21624	   shared-process
+    0	   190	 24260	   window (index.html - MyPortfoiloWebsite - Visual Studio Code)
+    0	    16	  5028	     searchService
+    0	    12	  9496	     watcherService 
+    0	     5	  1712	       console-window-host (Windows internal process)
+    0	   102	 21196	     extensionHost
+    0	    22	  3588	       electron_node server.js 
+    0	    17	  8212	       electron_node sass-lint-server.js 
+    0	     3	 14940	       cmd /s /c "C:\Users\AmirHossein\.vscode\extensions\ms-vscode.csharp-1.19.1\.omnisharp\1.32.19\OmniSharp.exe -s "d:\My Development\Projects\MyPortfoiloWebsite" --hostPID 21196 DotNet:enablePackageRestore=false --encoding utf-8 --loglevel information --plugin C:\Users\AmirHossein\.vscode\extensions\ms-vscode.csharp-1.19.1\.razor\OmniSharpPlugin\Microsoft.AspNetCore.Razor.OmniSharpPlugin.dll formattingOptions:useTabs=false formattingOptions:tabSize=4 formattingOptions:indentationSize=4"
+    0	     5	   944	         console-window-host (Windows internal process)
+    0	    46	 21472	         C:\Users\AmirHossein\.vscode\extensions\ms-vscode.csharp-1.19.1\.omnisharp\1.32.19\OmniSharp.exe  -s "d:\My Development\Projects\MyPortfoiloWebsite" --hostPID 21196 DotNet:enablePackageRestore=false --encoding utf-8 --loglevel information --plugin C:\Users\AmirHossein\.vscode\extensions\ms-vscode.csharp-1.19.1\.razor\OmniSharpPlugin\Microsoft.AspNetCore.Razor.OmniSharpPlugin.dll formattingOptions:useTabs=false formattingOptions:tabSize=4 formattingOptions:indentationSize=4
+    0	    21	 15308	       electron_node server.js 
+    0	    75	 16032	       electron_node server.js 
+    0	    28	 19600	       "C:\Users\AmirHossein\AppData\Local\Programs\Microsoft VS Code\Code.exe" "c:\Users\AmirHossein\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\html-language-features\server\dist\htmlServerMain" --node-ipc --clientProcessId=21196
+    0	    30	 20120	       C:\Users\AmirHossein\.vscode\extensions\ms-vscode.csharp-1.19.1\.razor\rzls.exe -lsp --logLevel None
+    0	     4	 18644	         console-window-host (Windows internal process)
+    0	    21	 21284	       "C:\Users\AmirHossein\AppData\Local\Programs\Microsoft VS Code\Code.exe" "c:\Users\AmirHossein\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\css-language-features\server\dist\cssServerMain" --node-ipc --clientProcessId=21196
+    0	    16	 23128	       "C:\Users\AmirHossein\AppData\Local\Programs\Microsoft VS Code\Code.exe" "c:\Users\AmirHossein\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\json-language-features\server\dist\jsonServerMain" --node-ipc --clientProcessId=21196
+    0	    28	 23136	       electron_node server.js 
+    0	     9	 23456	     electron-crash-reporter
+
+
+
+Workspace Info
+|  Window (index.html - MyPortfoiloWebsite - Visual Studio Code)
+|    Folder (MyPortfoiloWebsite): 7 files
+|      File types: scss(2) png(1) cs(1) html(1) razor(1) MD(1)
+|      Conf files:;
+
+
+Extensions (35)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+better-comments
+aar
+2.0.5
+
+
+Bookmarks
+ale
+10.4.4
+
+
+path-intellisense
+chr
+1.4.2
+
+
+vscode-faker
+dee
+1.3.0
+
+
+vscode-html-css
+ecm
+0.2.0
+
+
+vsc-material-theme
+Equ
+2.9.0
+
+
+prettier-vscode
+esb
+1.9.0
+
+
+auto-rename-tag
+for
+0.1.0
+
+
+code-runner
+for
+0.9.10
+
+
+sass-lint
+gle
+1.0.5
+
+
+todo-tree
+Gru
+0.0.134
+
+
+beautify
+Hoo
+1.5.0
+
+
+rest-client
+hum
+0.21.3
+
+
+csharpextensions
+jch
+1.3.0
+
+
+vscode-csharp-snippets
+jor
+0.3.1
+
+
+docomment
+k--
+0.1.7
+
+
+vscode-gutter-preview
+kis
+0.19.0
+
+
+vscode-filesize
+mkx
+2.1.3
+
+
+vscode-scss
+mrm
+0.6.2
+
+
+python
+ms-
+2019.5.18875
+
+
+csharp
+ms-
+1.19.1
+
+
+color-highlight
+nau
+2.3.0
+
+
+material-icon-theme
+PKi
+3.8.0
+
+
+polacode
+pnp
+0.3.2
+
+
+vscode-css-navigation
+puc
+1.6.2
+
+
+Csharp-ASPNETCore
+rah
+1.11.0
+
+
+live-sass
+rit
+3.0.0
+
+
+LiveServer
+rit
+5.6.1
+
+
+sass-indented
+rob
+1.5.1
+
+
+code-settings-sync
+Sha
+3.2.9
+
+
+swdc-vscode
+sof
+0.16.13
+
+
+code-spell-checker
+str
+1.7.16
+
+
+ayu
+tea
+0.18.0
+
+
+vscode-wakatime
+Wak
+2.1.2
+
+
+markdown-all-in-one
+yzh
+2.3.1
+
+
+
+(1 theme extensions excluded)
+
+136.  https://github.com/microsoft/vscode/issues/12463
+title: ['Allow to specify the tsconfig.json filename explicitly  °§ Issue #12463 °§ microsoft/vscode °§ GitHub']
+currently VSCode uses the file with the exact name tsconfig.json in the folder as the project file for a typescript project,
+i have a few other project files named differently for corresponding sub-projects inside the same folder, I wish there was a way to tell VSCode to use one of them rather then the default tsconfig.json
+
+137.  https://github.com/microsoft/vscode/issues/4338
+title: ['Debug Console should support find °§ Issue #4338 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 0.10.10
+OS Version: Ubuntu 14.04
+
+This goes along with a few other debug console feature requests that I see (ex: #3974), but it would also be nice if find worked in the debug console.
+Steps to reproduce:
+
+Start debugging something, have the console be full of text
+Hit Ctrl-F to find
+
+Result: Find works in the editor window instead of the debug console
+
+138.  https://github.com/microsoft/vscode/issues/18651
+title: ['Git: stale editor inputs hanging around °§ Issue #18651 °§ microsoft/vscode °§ GitHub']
+I am seeing multiple editors in index and working tree hanging around even though those are no longer valid:
+
+139.  https://github.com/microsoft/vscode/issues/18805
+title: ['[folding] Fold selection °§ Issue #18805 °§ microsoft/vscode °§ GitHub']
+In Visual Studio by doing Ctrl+M followed by Ctrl+H we were able to fold ANY regions in a code.
+Could we please have an equivalent feature in Code. Thanks may God bless the dev team!
+
+140.  https://github.com/microsoft/vscode/issues/8939
+title: ['Show quick open results as preview while navigating through them °§ Issue #8939 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.3.0
+OS Version: Windows 10 64bit & Mac OS X 10.11.3
+
+Steps to Reproduce:
+
+Open the Quick Open box
+Type a file name that returns several results
+A new Preview editor pops up and receives focus with the first result loaded into it
+Scroll through the results in the Quick Open box and the Preview editor changes to the file that's highlighted
+Selecting a result will fully open the file. Canceling can close the Preview editor or leave it open. I'd prefer if it closed the preview.
+
+141.  https://github.com/microsoft/vscode/issues/18071
+title: ['[html] Auto insert Quote when i type equal sign (=) °§ Issue #18071 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.8.1
+OS Version: Win10
+
+I need option like Visual studio. (Insert attribute value quote automatically)
+When i type = (Equal sign) automatically add double quote like this.
+1: <div class
+2: <div class="|"
+Please add this option in Next version! ??
+
+142.  https://github.com/microsoft/vscode/issues/28636
+title: ['On highlight/select text - cannot unhighlight/deselect text on click - need to do ESC °§ Issue #28636 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Code 1.13.0 (376c52b, 2017-06-08T16:43:13.058Z)
+OS Version: Windows_NT ia32 6.1.7601
+Extensions:
+
+
+
+
+Extension
+Author
+Version
+
+
+
+
+git-easy
+bibhasdn
+1.9.1
+
+
+file-icons
+file-icons
+1.0.3
+
+
+auto-close-tag
+formulahendry
+0.4.2
+
+
+auto-rename-tag
+formulahendry
+0.0.12
+
+
+minify
+HookyQR
+0.3.0
+
+
+Angular2
+johnpapa
+2.3.2
+
+
+vscode-github
+KnisterPeter
+0.16.2
+
+
+vs-deploy
+mkloubert
+9.25.0
+
+
+prettify-json
+mohsen1
+0.0.3
+
+
+debugger-for-chrome
+msjsdiag
+3.1.3
+
+
+vscode-run-git-difftool
+narekmal
+0.0.4
+
+
+gitblame
+waderyan
+1.11.2
+
+
+bootstrap-3-snippets
+wcwhitehead
+0.0.9
+
+
+
+
+Steps to Reproduce:
+
+Open a file
+Click Ctrl+A
+Click anywhere - highlight still stays and can't do anything else
+
+143.  https://github.com/microsoft/vscode/issues/76537
+title: ['Native Sierra-tabs are not working in macOS 10.12.x °§ Issue #76537 °§ microsoft/vscode °§ GitHub']
+VSCode Version: V1.36.0 (1.36.0) and higher
+OS Version: macOS 10.12(.0-6)
+
+Steps to Reproduce:
+
+Download latest release
+Try to use Sierra tab feature
+
+Note: Insiders build already does not work on Sierra
+Note 2: This feature works only for High Sierra and Mojave
+Note 3: Can this feature be added to without OS specific? i.e. for Windows users and/or for El Capitan users?
+Note 4: Upgrading to Mojave isn't solution as Mojave not available to all users
+
+Does this issue occur when all extensions are disabled?: Yes
+
+144.  https://github.com/microsoft/vscode/issues/26729
+title: ['VS Code keyboard shortcuts suggestion to learn °§ Issue #26729 °§ microsoft/vscode °§ GitHub']
+Keyboard shortcuts are central part of VS Code, there are a lot of them and I think I use only a fraction of them. It would be awesome if VS Code could suggest what shortcut should I learn, based on how I use the app with mouse. For example if  I click between editors a lot, then VS Code could somehow tell me to use ctrl+1 and ctrl+2. This way I could gradually learn shortcuts that would increase my productivity the most.
+
+145.  https://github.com/microsoft/vscode/issues/46718
+title: ['search.exclude does not work for searching symbols across a workspace °§ Issue #46718 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Code Insiders Version 1.22.0-insider (1.22.0-insider)
+
+Steps to Reproduce:
+
+Open a javascript project with a node_modules folder (couple packages installed)
+Search for a symbol across the project
+It will show results from the node_modules directory even if you have added the following your user/workspace settings:
+
+"**/node_modules": true,
+"node_modules": true
+
+146.  https://github.com/microsoft/vscode/issues/39441
+title: ['Consider showing completion item detail if available for all list items °§ Issue #39441 °§ microsoft/vscode °§ GitHub']
+Take the following completion list.
+
+Each Client item belongs to a different namespace. If the completion item detail was shown immediately for each item then users could, at a glance, easily identify the relevant item out of a list of similarly labeled items. I suppose the argument against is that this can be done by modifying the label to include this, but then what is the role of the detail property?
+
+147.  https://github.com/microsoft/vscode/issues/14165
+title: ['Feature request: configure tooltip max width °§ Issue #14165 °§ microsoft/vscode °§ GitHub']
+When you hover over a type in a TypeScript file, the tooltip that appears has a very low max width, making it difficult to read long type signatures.
+
+148.  https://github.com/microsoft/vscode/issues/87254
+title: ['Mac crashes when searching on the sidebar search form. °§ Issue #87254 °§ microsoft/vscode °§ GitHub']
+Issue Type: Bug
+Type validation-> in the sidebar search form.
+When entering one character at a time
+As soon as you enter the> character, the mac hangs and the mac restarts.
+I tried it several times, but even if I didn't hang up, mac stopped and started moving for about 1 minute. In this case,> is input as many characters as validation->>>>>>>>>>>>>>>>>>>>.
+When pasting validation-> string with copy and paste
+Mac hangs up.
+I think this bug did not occur before Ver1.40
+Maybe related to #86913
+VS Code version: Code 1.41.0 (9579eda, 2019-12-11T17:58:38.338Z)
+OS version: Darwin x64 18.7.0
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz (12 x 3200)
+
+
+GPU Status
+2d_canvas: enabledflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmetal: disabled_offmultiple_raster_threads: enabled_onoop_rasterization: disabled_offprotected_video_decode: unavailable_offrasterization: enabledskia_renderer: disabled_offsurface_control: disabled_offsurface_synchronization: enabled_onvideo_decode: enabledviz_display_compositor: enabled_onviz_hit_test_surface_layer: disabled_offwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+3, 35, 30
+
+
+Memory (System)
+16.00GB (0.58GB free)
+
+
+Process Argv
+-psn_0_520319
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+
+
+Extensions (64)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+html-snippets
+abu
+0.2.1
+
+
+vscode-caniuse
+aka
+0.5.3
+
+
+Bookmarks
+ale
+10.6.0
+
+
+project-manager
+ale
+10.9.1
+
+
+vagrant
+bbe
+0.5.0
+
+
+path-intellisense
+chr
+1.4.2
+
+
+regex
+chr
+0.2.0
+
+
+bracket-pair-colorizer-2
+Coe
+0.0.29
+
+
+vscode-svgviewer
+css
+2.0.0
+
+
+vscode-eslint
+dba
+2.0.6
+
+
+vscode-dash
+dee
+2.3.0
+
+
+githistory
+don
+0.4.11
+
+
+jquerysnippets
+don
+0.0.1
+
+
+gitlens
+eam
+10.2.0
+
+
+EditorConfig
+Edi
+0.14.3
+
+
+apacheconf-snippets
+eim
+1.3.0
+
+
+LogFileHighlighter
+emi
+2.6.0
+
+
+vscode-great-icons
+emm
+2.1.47
+
+
+prettier-vscode
+esb
+3.16.1
+
+
+vscode-todo-plus
+fab
+4.14.1
+
+
+php-debug
+fel
+1.13.0
+
+
+auto-close-tag
+for
+0.5.6
+
+
+auto-rename-tag
+for
+0.1.1
+
+
+code-runner
+for
+0.9.15
+
+
+vscode-google-translate
+fun
+1.4.2
+
+
+vue-snippets
+hol
+0.1.11
+
+
+minify
+Hoo
+0.4.3
+
+
+rest-client
+hum
+0.23.0
+
+
+output-colorizer
+IBM
+0.1.2
+
+
+plantuml
+jeb
+2.13.5
+
+
+docthis
+joe
+0.7.1
+
+
+markdownfromcsv
+joj
+1.0.0
+
+
+vscode-insertdatestring
+jsy
+2.2.4
+
+
+vscode-sshfs
+Kel
+1.16.3
+
+
+vscode-regexp-preivew
+le0
+0.0.3
+
+
+vue
+liu
+0.1.5
+
+
+MagicPython
+mag
+1.1.0
+
+
+rainbow-csv
+mec
+1.3.1
+
+
+easy-less
+mrc
+1.5.1
+
+
+vscode-apache
+mrm
+1.2.0
+
+
+vscode-csscomb
+mrm
+5.3.0
+
+
+vscode-docker
+ms-
+0.9.0
+
+
+vscode-language-pack-ja
+MS-
+1.41.2
+
+
+mssql
+ms-
+1.8.0
+
+
+python
+ms-
+2019.11.50794
+
+
+debugger-for-chrome
+msj
+4.12.3
+
+
+indent-rainbow
+ode
+7.4.0
+
+
+csv-to-table
+php
+1.2.1
+
+
+material-icon-theme
+PKi
+3.9.2
+
+
+partial-diff
+ryu
+1.4.0
+
+
+vscode-sql-beautify
+sen
+0.0.4
+
+
+code-settings-sync
+Sha
+3.4.3
+
+
+addDocComments
+ste
+0.0.8
+
+
+pretty-json
+sup
+0.0.4
+
+
+ayu
+tea
+0.18.0
+
+
+pdf
+tom
+0.5.1
+
+
+highlight-matching-tag
+vin
+0.9.6
+
+
+vscode-icons
+vsc
+9.6.0
+
+
+quokka-vscode
+Wal
+1.0.267
+
+
+jinja
+who
+0.0.8
+
+
+change-case
+wma
+1.0.0
+
+
+better-align
+wwm
+1.1.6
+
+
+JavaScriptSnippets
+xab
+1.7.2
+
+
+markdown-pdf
+yza
+1.4.1
+
+
+
+(5 theme extensions excluded)
+
+149.  https://github.com/microsoft/vscode/issues/43244
+title: ['Incorrect indentation for single line if/for/while/etc, multiline chaining statements etc °§ Issue #43244 °§ microsoft/vscode °§ GitHub']
+I am experiencing some weird indentation issues. Not using any plugins to prettify or similar.
+if (condition) {
+    return; // <-- correct indentation
+}
+
+if(condition)
+return; // <-- incorrect indentation
+
+Some ppl claim this should be avoided. I don't agree. Using pair of { } for simple early exits messes up code. Putting the return on the end of the same line can be hard to read if the condition is long.
+This is not exclusive to return. Applies to all single lines.
+same problems apply to for, while, etc.
+var transformedValues =
+originalValues <-- incorrect should be indented one level.
+.where(condition) <-- incorrect, should be indented two levels.
+.select(transform); <-- incorrect, should be indented two levels. 
+
+function someFunction() {
+    callToSomeOtherFunction(
+         variableWithLongNameWhichRequiresASeparateLine,
+         anotherVariableWithLongNameWhichRequiresASeparateLine);
+    }  <-- incorrect should not be indented.
+    function ... <-- incorrect the rest of the file is indented.
+
+150.  https://github.com/microsoft/vscode/issues/93265
+title: ['?? Notebook API announcements °§ Issue #93265 °§ microsoft/vscode °§ GitHub']
+We introduced a proposed API for Notebook but currently the API is majorly two managed object: NotebookDocument and NotebookCell. We create them for extensions and listen to their properties changes. However this doesn't follow the principal of TextEditor/Document where TextDocument is always readonly and TextEditor is the API for applying changes to the document.
+If we try to follow TextEditor/Document, the API can be shaped as below
+export interface NotebookEditor {
+    readonly document: NotebookDocument;
+    viewColumn?: ViewColumn;
+    /**
+     * Fired when the output hosting webview posts a message.
+     */
+    readonly onDidReceiveMessage: Event<any>;
+    /**
+     * Post a message to the output hosting webview.
+     *
+     * Messages are only delivered if the editor is live.
+     *
+     * @param message Body of the message. This must be a string or other json serilizable object.
+     */
+    postMessage(message: any): Thenable<boolean>;
+
+    /**
+     * Create a notebook cell. The cell is not inserted into current document when created. Extensions should insert the cell into the document by [TextDocument.cells](#TextDocument.cells)
+     */
+    createCell(content: string, language: string, type: CellKind, outputs: CellOutput[], metadata: NotebookCellMetadata): NotebookCell;
+
+    /**
+     * Insert/Delete cells from the document
+     */
+    spliceCells(index: number, deleteCnt: number, insertedCells: NotebookCell[]): Promise<void>;
+
+    /**
+     * Make changes to individual cells
+     */
+    applyCellEdits(cell: NotebookCell, changes: { language?: string, outputs?: CellOutput[], metadata?: NotebookCellMetadata }): Promise<void>;
+}
+
+export interface NotebookDocument {
+    readonly uri: Uri;
+    readonly fileName: string;
+    readonly isDirty: boolean;
+    readonly languages: string[];
+    readonly cells: NotebookCell[];
+    readonly displayOrder?: GlobPattern[];
+    readonly metadata?: NotebookDocumentMetadata;
+}
+
+export interface NotebookCell {
+    readonly uri: Uri;
+    readonly handle: number;
+    readonly language: string;
+    readonly cellKind: CellKind;
+    readonly outputs: CellOutput[];
+    readonly metadata?: NotebookCellMetadata;
+    getContent(): string;
+}
+
+151.  https://github.com/microsoft/vscode/issues/14165
+title: ['Feature request: configure tooltip max width °§ Issue #14165 °§ microsoft/vscode °§ GitHub']
+When you hover over a type in a TypeScript file, the tooltip that appears has a very low max width, making it difficult to read long type signatures.
+
+152.  https://github.com/microsoft/vscode/issues/824
+title: ['Provide encoding-related APIs for editor extensions °§ Issue #824 °§ microsoft/vscode °§ GitHub']
+Currently there are only two fields in the TextEditorOptions API, a few other TextEditor-related APIs, and none of them is able to deal with the text buffer's encoding.
+Comparing to Atom's TextEdit API, that is far from enough.
+Most importantly, the API limitation makes it (seems) impossible for vscode-editorconfig to implement features like charset support, which is a crucial need for many people.
+
+153.  https://github.com/microsoft/vscode/issues/20488
+title: ['[html] prevent that embedded grammars can corrupt syntax highlighting of rest of document °§ Issue #20488 °§ microsoft/vscode °§ GitHub']
+Currently, when writing embedded language, a lot of the times the embedded grammar can cause disruption to the rest of DOCUMENT:
+This is html grammar.
+
+Imagine editing css in a <style> at the <head> of a long html file. The rest of document will be constantly re-tokenized and (wrongly) syntax highlighted. This doesn't look good UX-wise and will probably have some perf impact.
+For the following grammar and setting:
+- name: source.css.embedded.html
+   begin: <style>
+   end: </style>
+   patterns:
+   - include: source.css
+"embeddedLanguages": {
+  "source.css": "css"
+}
+I hope VSCode can only apply CSS grammar to the section between <style> and </style>, so when I'm typing out my incomplete CSS VSCode would just re-tokenize and highlight until </style>, but not rest of the document.
+/cc @alexandrudima
+Also would like to hear @aeschli's opinion, as you are writing the html grammar.
+
+
+
+
+154.  https://github.com/microsoft/vscode/issues/106770
+title: ['Stablize apple silicon exploration builds °§ Issue #106770 °§ microsoft/vscode °§ GitHub']
+Umbrella issue:
+
+ Create self-hosted agent with DTK for ci testing #106773
+ Ensure automatic updates work #106771
+ Crash in v8 when loading oniguruma wasm module #106770 (comment)
+ Use arm64 binaries of ripgrep
+ Add downloads links to website microsoft/vscode-website#901
+ Publish remote server bits for mac arm64 microsoft/vscode-remote-release#4069
+ Publish mac arm64 MS electron builds (thanks to @alexeykuzmin)
+ Update download links in the website from exploration to insiders microsoft/vscode-website#912
+ Provide notification to use arm builds when running on Rosetta
+
+Build to use: https://az764295.vo.msecnd.net/insider/96b426ef1da0f0a51ce9ef1931cd1fd2322547e4/VSCode-darwin-arm64.zip
+Any other issues that might come in from testing, should be added to the above list.
+
+155.  https://github.com/microsoft/vscode/issues/9505
+title: ['Test Runner Viewlet with an Extension API to plug into [Enhancement Request] °§ Issue #9505 °§ microsoft/vscode °§ GitHub']
+In response to Erich Gamma's tweet @Krzysztof-Cieslak
+A test runner viewlet/sidebar with a pluggable API would be a great addition to vscode.
+The viewlet should include visual indications of
+
+the progress of completed tests out of the set of tests being run
+visual indicators or icons showing basic tests states at the least
+not run |  success | failure | ignored/skipped
+
+
+The test runner should be able to provide a set of sorting categories and repopulate the viewlet based on the users selection
+
+A query box with the ability to filter the tests based on the names shown in the runner's list at a minimum, with the ability for the underlying runner to populate a set of query filters.
+
+Instead of the VS style of collapsing categories
+
+I think the vscode style used in the debugger viewlet is much nicer ??
+
+A button could be used to select which test runner you want to use out of the test runner extensions that have been installed
+
+But a dropdown menu would work too
+
+A side button to open a menu could enable the active test runner to populate it with any additional commands specific to its functionality
+
+Some other functionality points -
+
+When an individual test is selected the result could be rendered in the output panel
+An icon/button to run all tests
+The ability to highlight/select a set of tests and only run those tests
+A basic set of run options, which individual runners might be able to extend
+
+Tests outputs can contain links to specific points in source code
+Debugging specific tests (would be awesome, but understandable if this is too difficult for an initial implementation)
+Associate test runner extensions with specific languages?
+Test playlists (would be nice, but not especially important)
+Ability to specify a task/trigger that will repopulate the viewlet's list of tests
+Dropdown menu that the test runner can population with platform/environment/runtime configurations to use during test execution.
+
+156.  https://github.com/microsoft/vscode/issues/17634
+title: ['Add support for additional global config files (in addition to settings.json) °§ Issue #17634 °§ microsoft/vscode °§ GitHub']
+It would be very helpful for somebody attempting to sync config files between multiple machines if VSCode supported some system for having multiple config files included at a time.
+Benefits:
+Imagine a config folder structure like this on a developer's mac:
+- settings.json -> ~/Drive/dotfiles/settings.json
+- settings.local.json -> ~/Drive/dotfiles/settings.my-mac.json
+
+And then like this on a developer's linux desktop:
+- settings.json -> ~/Drive/dotfiles/settings.json
+- settings.local.json -> ~/Drive/dotfiles/settings.my-arch.json
+
+Using symlinks, then, a developer would be able to have specialized configuration files for each computer, while keeping the vast majority of options synced between both.
+Implementation:
+I can think of two simple ways to implement this with as little friction as possible.
+
+An editor.includeConfig option in the main settings.json
+This might be a JSON array, with support for various different config files. It could also just be a single field.
+Whether or not the option should be recursive is up to the VSCode team.
+VSCode searches for all config files in the directory matching settings[.foo].json and includes those.
+
+Conflicts:
+If going with option (1) above, conflicting config entries should take precedence the later they appear in the includeConfig array.
+If going with option (2), the main settings.json file should take precendence.
+
+157.  https://github.com/microsoft/vscode/issues/70963
+title: [".gitignore'd files sometimes not greyed-out °§ Issue #70963 °§ microsoft/vscode °§ GitHub"]
+Hi ??
+Sometimes files and folders that are in .gitignore and normally greyed-out just stop being greyed-out. #70099 may be related, see how in the first image in comment #70099 (comment) node_modules directory is not greyed out, however in the second one it is properly greyed-out again.
+Here is a quick gif (I do ??P °™ Reload window in the middle of it):
+
+Unfortunately, cannot reproduce ??
+
+VSCode Version: 1.32.3
+OS Version: 10.14.3
+
+158.  https://github.com/microsoft/vscode/issues/62104
+title: ['Add labels/colors for folders °§ Issue #62104 °§ microsoft/vscode °§ GitHub']
+Issue Type: Feature Request
+Assign colors or labels to any folder, making it easy to identify the most important. Useful for when working with many folders.
+
+159.  https://github.com/microsoft/vscode/issues/68787
+title: ['Some Ctrl+Alt shortcuts no longer work °§ Issue #68787 °§ microsoft/vscode °§ GitHub']
+I have several shortcuts defined using Ctrl+Alt+.  The ones that have a vowel no longer execute the shortcut, but instead insert an accented character.  This started with the latest update -
+Version: 1.31.1 (user setup)
+Commit: 1b8e830
+Date: 2019-02-12T02:20:54.427Z
+Electron: 3.1.2
+Chrome: 66.0.3359.181
+Node.js: 10.2.0
+V8: 6.6.346.32
+OS: Windows_NT x64 6.1.7601
+The keyboard shortcuts that no longer work
+{
+"key": "ctrl+alt+e",
+"command": "cursorLineEnd",
+"when": "editorTextFocus"
+},
+{
+"key": "ctrl+alt+a",
+"command": "cursorLineStart",
+"when": "editorTextFocus"
+},
+I've tried this with extensions disabled and in insiders and the result is the same.  When I try to add the shortcut using the "Define Keybinding" button, when I type the 'e', the Ctrl and Alt disappear from the editor and only the 'e' is left.  The language set in the OS has not changed, nor has the keyboard setup - standard UK keyboard.
+How do I restore the shortcuts and remove the accented characters?
+Thanks
+Craig
+
+160.  https://github.com/microsoft/vscode/issues/83678
+title: ['Support expanding input parameters into multiple arguments °§ Issue #83678 °§ microsoft/vscode °§ GitHub']
+Currently, it is possible to specify debug arguments from input, using this syntax:
+        "inputs": [
+                {
+                        "id": "mystr",
+                        "type": "promptString",
+                        "description": "",
+                }
+        ]
+
+And having this prompt appear in launch.json:
+        "configurations": [
+                {
+                        "name": "myexe",
+                        "type": "cppdbg",
+                        "request": "launch",
+                        "program": "myexepath",
+                        "args": [
+                                "${input:mystr}"
+                        ]
+                }
+        ]
+
+This will cause a prompt to appear, asking for arguments to pass to the application. However, it is only possible to pass one argument that way.
+It would be nice if it was possible to expand this:
+"-a 5 -b 10 -c 15 -d \"some string\""
+
+into this:
+["-a", "5", "-b", "10", "-c", "15", "-d", "some string"]
+
+This would make opportunistic debugging (testing with different parameters quickly) much easier, and will avoid polluting the launch.json with targets that are used only once and then discarded.
+
+161.  https://github.com/microsoft/vscode/issues/75141
+title: ['"Terminal: Clear" not working as desired °§ Issue #75141 °§ microsoft/vscode °§ GitHub']
+Steps to Reproduce:
+
+Run a python file using command palette      >Python: Run file in terminal window
+Terminal shows the output. Now, clear the terminal using command palette     >Terminal: Clear
+Terminal gets clear now.  Run the file again in the terminal    >Python: Run file in terminal window
+Here is where issue shows up - the terminal still shows all the previous outputs from before the last clear command.  IMO, desired should be that terminal should not show any previously cleared outputs.
+Attached below is a gif of the screen reproducing & visualizing this issue
+
+
+
+Does this issue occur when all extensions are disabled?:
+Yes, the issue reoccurs.  (Note: All except the "Python" extension were disabled.  Python extension is needed to run the python file in terminal.
+I had also posted in Super User forum thinking this was some issue with my system. And then I tried it on a clean build of VS code and it got repeated.  Hence, I decided to post it as a bug.
+Link to Super User forum question
+VS Code version: Code - Insiders 1.36.0-insider (c089daa, 2019-06-07T05:19:15.188Z)
+OS version: Windows_NT x64 10.0.18362
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz (12 x 3696)
+
+
+GPU Status
+2d_canvas: enabledflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmultiple_raster_threads: enabled_onnative_gpu_memory_buffers: disabled_softwareoop_rasterization: disabled_offprotected_video_decode: enabledrasterization: enabledskia_deferred_display_list: disabled_offskia_renderer: disabled_offsurface_synchronization: enabled_onvideo_decode: enabledviz_display_compositor: disabled_offwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+undefined
+
+
+Memory (System)
+15.68GB (7.71GB free)
+
+
+Process Argv
+
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+
+
+Extensions (1)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+python
+ms-
+2019.5.18875
+
+162.  https://github.com/microsoft/vscode/issues/15909
+title: ['Add ability to extend from other settings files °§ Issue #15909 °§ microsoft/vscode °§ GitHub']
+Inspired by TSLint's ability to extend configuration files, it would be nice if .vscode/settings.json could behave the same way.
+So if I have some global settings set up:
+~/example-repo/.vscode/my-company-settings.json:
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": false
+}
+I can use them in another file, without having to duplicate the settings:
+~/example-repo/my-project/.vscode/settings.json:
+{
+  "extends": "../../.vscode/my-company-settings.json",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true
+}
+And the computed settings for ~/example-repo/my-project/.vscode/settings.json would be:
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true
+}
+Scenario:
+Multi-root workspace doesn't solve this for our use case. We have a bunch of npm modules each in their own git repository. We have a package which contains our shared tsconfig.json and tslint.json settings that all the other packages include with extends. We don't use a multi-root workspace since the idea is that people can clone the specific package(s) they need to work on. Every repository contains the exact same .vscode directory which is essentially copy&pasted all over the place. Maintaining the .vscode settings for the projects is "not pretty" compared to the tsconfig.json and tslint.json which only require the settings package to be updated with for example yarn upgrade.
+
+163.  https://github.com/microsoft/vscode/issues/3932
+title: ['Support Elastic Tabstops °§ Issue #3932 °§ microsoft/vscode °§ GitHub']
+ref: http://nickgravgaard.com/elastic-tabstops/
+
+164.  https://github.com/microsoft/vscode/issues/78138
+title: ['VSCode freezes/crashes Windows 10 1809 °§ Issue #78138 °§ microsoft/vscode °§ GitHub']
+Hi, we are experiencing weird behaviour with VSCode and Win10 at the office.
+My co-worker and I both have the same machines with Windows 10 1809 installed and noticed that VSCode will eventually soft freeze the whole operating system.
+Once the system is frozen (by reproducing using the steps), all windows except for Google chrome and chromium based applications (Google Chrome, Slack, VSCode) are visually responsive, but nothing else happens when interacting with the operating system or UI elements - just as if someone pulled the plug from the SSD/HDD. For example: Launching a shell and trying to ping results in the cmd window freezing.
+We will have to hard reboot our machines TWICE - rebooting once does not work, as Windows 10 will stay on the grey loading screen (with the spinner) forever - or even randomly lock out the drive and ask for a bitlocker recovery key (but not after the second (!) reboot).
+This issue may be related to #49425 , but should be fixed by now with Windows 10 1809 ?!
+WIN+CTRL+SHIFT+B doesn't help here :)
+
+VSCode Version: 1.36.1
+OS Version: Windows 10 Enterprise 1809
+
+Steps to Reproduce:
+
+Open Google Chrome
+Open VSCode
+Either close VSCode or open multiple instances (workspaces) and switch between them.
+
+Does this issue occur when all extensions are disabled?: Yes
+
+165.  https://github.com/microsoft/vscode/issues/56530
+title: ['Method separator  °§ Issue #56530 °§ microsoft/vscode °§ GitHub']
+Issue Type: Feature Request
+Please add method separator in class and shortcut for go back to previous Edit/last edit location ... Thanks
+VS Code version: Code 1.26.0 (4e93618, 2018-08-13T16:20:44.170Z)
+OS version: Darwin x64 17.7.0
+
+166.  https://github.com/microsoft/vscode/issues/68
+title: ['Git: Support git history in VSCode °§ Issue #68 °§ microsoft/vscode °§ GitHub']
+It would be awesome to be able to squash commits right from the UI too
+
+167.  https://github.com/microsoft/vscode/issues/127
+title: ['Provide option to opt out of line ending normalisation for files °§ Issue #127 °§ microsoft/vscode °§ GitHub']
+Upon saving a file edited with VS Code, it appears to perform line ending normalisation automatically and without user notification of any sort. Because of this, I've found myself bitten by large diffs in Git (I'm aware you can circumvent this using the -w flag) where a trivial fix to a single line of source code appears to affect a significant proportion of the file, which makes pull requests and reviews for such changes on GitHub a pain to sift through. Then again, I guess one could argue why a source file with mixed line endings should stay in version control like that anyway!
+Visual Studio Community displays a prompt upon opening a file if it has mixed line endings and lets a user decide whether or not to have it fixed.
+
+Version: 0.10.1
+(By the way, great work on open sourcing VS Code too, thanks!)
+
+168.  https://github.com/microsoft/vscode/issues/58038
+title: ['New settings editor cannot override value in workspace settings °§ Issue #58038 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.27
+OS Version: Windows 10 1803
+
+Steps to Reproduce:
+
+
+Set some value to true in your user settings, like editor.formatOnSave:
+
+
+
+Open settings editor, switch to Workspace Settings, you will see the item is unchecked but showed (modified by user):
+
+
+
+If you want to set editor.formatOnSave to false in this workspace, there's no way to achieve this. If you check & uncheck the item, there will only be an empty settings.json file in .vscode folder:
+
+
+
+Does this issue occur when all extensions are disabled?: Yes
+
+169.  https://github.com/microsoft/vscode/issues/20889
+title: ['[Feature Request] Undo branches °§ Issue #20889 °§ microsoft/vscode °§ GitHub']
+Undo branches / undo tree allows you to undo some changes,
+then make a new change, while keeping all changes available in the undo tree.
+The undo tree can therefore prevent awkward scenarios such as:
+
+Losing all redo futures by accidentally pressing a button during undo
+Copying the file or save it with git when trying multiple alternatives
+
+This screen-cap showcases how it works in Emacs with undo-tree.
+
+Zalastax@c569971 contains the changes to the model that are needed, but several questions remain to be answered. I'm interested in completing the feature but need further input before proceeding.
+
+How should the UI look? Graphics / ASCII, clickable?
+Should the tree be formatted like in Emacs undo-tree (as short tree as possible) or like Vim's Gundo http://screenr.com/M9l (one state per line sorted by time)?
+What unit-tests should be added?
+
+You can try out the current changes by compiling my fork and you'll find 'History Tree' in the Edit menu. Clicking the menu item will console.log a function that changes what redo future is selected (just like in the gif).
+
+170.  https://github.com/microsoft/vscode/issues/97979
+title: ['[css][html] Option to disable MDN Reference popups only (without effecting other functionalities) °§ Issue #97979 °§ microsoft/vscode °§ GitHub']
+Pretty please give us an option to disable ONLY and ONLY those 'MDN Reference' info boxes but NOT the hover boxes alltogether.
+Disabling Editor > Hover in Settings also disables other useful things like ColorPicker popup plugins depending on it etc. MDN info may be useful for some but most of the time it is just a HUGE annoyance for others.
+Taking this idea one step further MDN Reference may be removed alltogether and/or make it an optional download for whoever needs it. I know it is there to help but it is also a source of problem too eager to get in the way between you and your code.
+
+171.  https://github.com/microsoft/vscode/issues/43806
+title: ['Allow custom setting/control of workbench tab titles °§ Issue #43806 °§ microsoft/vscode °§ GitHub']
+Hi there,
+In my project, I have files with quite long file names (beyond my control).  This limits me to having 3-4 tabs show in my workbench at once.  I would like to be able to rename these tabs, or control their label format myself, in order to have more condense tab titles and thus more easily navigate my tabs.  This was roughly suggested by #21662 but was not really addressed by #12965 -- any of the options for workbench.editor.labelFormat still give me tab titles that are too long.  Can workbench.editor.labelFormat be modified, for example, to optionally take a formatter lambda function we can provide?  As just one example of a reasonable formatter one might write, it could be that you fix tab titles to 20 chars, and for long filenames you truncate and prepend with "...".  Additionally, one might want to assign nickname/shorthand tab titles for commonly used files.  Please pardon me if there is already a way to do this (would love to know how!), but if not, I'd sincerely appreciate considering this as a feature request.
+Thanks!
+
+172.  https://github.com/microsoft/vscode/issues/164
+title: ['Better drag and drop / clipboard integration of files across applications °§ Issue #164 °§ microsoft/vscode °§ GitHub']
+This includes being able to drag files and folders from VS Code into other applications as well as to being able to copy a file or folder to the native clipboard.
+Specifically:
+
+copy files/folders from VS Code file explorer to clipboard and paste into native OS explorer
+copy files/folders from native OS explorer and paste into VS Code file explorer
+support the native file data transfer when doing drag and drop (electron/electron#2853)
+support 3rd party tools such as WinRAR to open files from an archive (#90196)
+
+173.  https://github.com/microsoft/vscode/issues/27317
+title: ['Improve ranking of elements in quick open °§ Issue #27317 °§ microsoft/vscode °§ GitHub']
+Numerous issues have been filed on this topic, merging them into one:
+File Picker
+
+ Improve sorting of files in quick open #27028
+ Improved search in "Go to file" panel #25925
+[ ]?Quick open file order does not make sense as designed #92282
+ Prioritize filetypes containing code in Quick open / Go to file #49853
+ Quick Open strange highlighting #56667
+ Provide an option to disable fuzzy matching in file picker #2705
+ Add a setting to disable fuzzy matching in quick open #99171
+ Search for files should prefer findings in one piece #69648
+[ ]?index.js index.ts file should show at top of file picker when searching for the name of the directory #72514
+ Unexpected order of fuzzy find results with many consecutive matches #103889
+ Restrict quick open file to project files #19762
+ Bump quickOpen suggestions from current workspace to the top #38128
+ Sort results in "Go to file" by how close they are to the working file (usability) #5806
+ Rank exact match over history matches #106786
+ Allow additional fuzzy search within files found via CTRL+P #39542
+ Go to file: prefix with / to prefer results in root #81250
+ Allow quick open to filter on folder names by typing folder name after the file #30404
+ Scorer is not very good for matching on filenames #12095
+ Sort order for file quickopen should prefer shorter paths #17443
+ Quick open highlight should match consecutive characters better #21019
+ Improve quick find algorithm to prioritize exact matches better #26649
+ QuickOpen (Ctrl+P) search matching logic needs to be improved #33247
+ How to locate one of several files of the same name #32918
+ File list order not correct in go to file #34210
+ fuzzy searching problem #36119
+ Fuzzy search results are not prioritized well. #36166
+
+Command Palette
+
+ Command palette should rank results with closer search terms higher #14727
+ Add fuzzy search to commands in palette #1964
+ Adaptive abbreviation search for quick open commands #17697
+ Command Palette should be filterable/customized by user-settings #38841
+[ ]?Adjacent characters are given a lower rank in command palette than distant #40044
+ Improve Command Palette search experience for word permutations #99685
+  Favorite Commands #101616
+ Quick commands fuzzy search doesn't work for text in brackets #27636
+
+Picker (extensions)
+
+ Support custom QuickPick filter logic #90521
+[ ]?Ability to apply a final sort to QuickPick results #63050
+ Enable fuzzy matching for picker #34088
+ Broken fuzzy search highlighting/ranking for trimable strings #62918
+
+Editor History
+
+ Allow for camel case matches in editor history #108446
+ Fuzzy search also in editor history #100590
+ Sort recently opened files by recency after I start typing #35610
+ Allow disable of recent history in "go to file" command #30770
+ Quick open changes order for matching elements #10690
+ Unintuitive result scoring with Ctrl-P in recent history #20546
+ Recently opened files is just a bucket and not sorted by recency #31591
+
+Symbols
+
+ Allow extensions to fully control workspace symbol search (matching and highlights) #98125
+ Allow fzf style query in workspaceSymbols #106788
+ Add fuzzy search to search by symbol #33746
+ Lift the 60 chars limit on the camel case matcher #43338
+ Allow fuzzy result on searching symbol in file #62435
+ Allow to configure that "Go to symbols" sorts symbols by fuzzy match #69062
+  Improve ordering of "Go to symbol in workspace" results #71951
+
+174.  https://github.com/microsoft/vscode/issues/104673
+title: ['In some cases orca reads spaces instead of reading tabs. °§ Issue #104673 °§ microsoft/vscode °§ GitHub']
+Issue Type: Bug
+This was previously reported on the orca list and appears to be related to the upgrade to electron 9.
+Steps:
+
+Launch orca.
+turn on Speak indentation and justification in the tab speech of orca's preferences page.
+Open an empty file in VSCode.
+Press the tab and type this is a test.
+Press the enter key.
+Browse the text using up and down arrow.
+
+Orca reads the text preceded by the number of leading spaces in the line, as expected.
+
+Convert the indentation to tabs.
+Browse the text using up and down arrow.
+
+Orca should read the text preceded by the number of initial tabs in the line but instead it announces that there is a space at the beginning of the line.
+On the orca list @joanie commented the following:
+
+This commit fixes the problem -- though it's not a specific fix for
+it: https://chromium.googlesource.com/chromium/src/+/e49659287. Not
+sure if it should be cherry-picked into Electron 9 or not....
+
+VS Code version: Code - Insiders 1.49.0-insider (bd08768, 2020-08-14T06:41:56.571Z)
+OS version: Linux x64 5.7.12-arch1-1
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz (4 x 2786)
+
+
+GPU Status
+2d_canvas: enabledflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmultiple_raster_threads: enabled_onoop_rasterization: disabled_offopengl: enabled_onprotected_video_decode: unavailable_offrasterization: disabled_softwareskia_renderer: enabled_onvideo_decode: unavailable_offvulkan: disabled_offwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+0, 1, 1
+
+
+Memory (System)
+9.60GB (1.12GB free)
+
+
+Process Argv
+-n --no-sandbox --crash-reporter-id 8d5a3738-d241-4b34-b208-057882a7b877
+
+
+Screen Reader
+yes
+
+
+VM
+0%
+
+
+DESKTOP_SESSION
+gnome-xorg
+
+
+XDG_CURRENT_DESKTOP
+GNOME
+
+
+XDG_SESSION_DESKTOP
+gnome-xorg
+
+
+XDG_SESSION_TYPE
+x11
+
+
+
+
+We have written the needed data into your clipboard because it was too large to send. Please paste.
+
+175.  https://github.com/microsoft/vscode/issues/20768
+title: ['Option for seeding find string from editor on ctrl + f °§ Issue #20768 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.10.0 - insider
+OS Version: Windows 10
+
+-- Sorry for the English, I used Google Translator --
+If I put the cursor on the word (start, middle or end of word) and press ctrl + f, that word is automatically placed in the search.
+Is not that wrong?
+The correct would be if I selected the word and then pressing ctrl + f it should appear in the search field.
+
+176.  https://github.com/microsoft/vscode/issues/54272
+title: ['Allow diagnostics messages to have markdown (or formatted text) content °§ Issue #54272 °§ microsoft/vscode °§ GitHub']
+Feature request
+Allow diagnostics to display formatted content. The specific request was to show part of a diagnostic message in bold.
+A few potential options:
+
+Allow diagnostics to use markdown content
+Allow diagnostics to use formatted text
+Add an "important span" to diagnostic messages that lets us control the styling of the diagnostic.
+
+(This request came out of the FB meeting)
+
+177.  https://github.com/microsoft/vscode/issues/20768
+title: ['Option for seeding find string from editor on ctrl + f °§ Issue #20768 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.10.0 - insider
+OS Version: Windows 10
+
+-- Sorry for the English, I used Google Translator --
+If I put the cursor on the word (start, middle or end of word) and press ctrl + f, that word is automatically placed in the search.
+Is not that wrong?
+The correct would be if I selected the word and then pressing ctrl + f it should appear in the search field.
+
+178.  https://github.com/microsoft/vscode/issues/30191
+title: ['Change Vertical Scrollbar Width °§ Issue #30191 °§ microsoft/vscode °§ GitHub']
+Is there any way to change the width of the vertical scrollbars in Visual Studio Code, especially the one for the left panel?
+I find it so thin that it's a bit fiddly to use.
+
+179.  https://github.com/microsoft/vscode/issues/47816
+title: ['Use fresh environment block on new terminals in Windows °§ Issue #47816 °§ microsoft/vscode °§ GitHub']
+At the moment, if any environment variables change, or new "apps" are installed while VS Code is running, in order for those changes to be recognized VS Code needs to be closed and re-open.
+For instance, when running npm i -g <something> or choco install <package> in another prompt or powershell window, those new commands are not recognized until the app is rebooted.
+It would be great if adding a new terminal instance with + would load these new variables/apps/notsurewhatterminologytouse.
+
+180.  https://github.com/microsoft/vscode/issues/3220
+title: ['Custom peek widgets °§ Issue #3220 °§ microsoft/vscode °§ GitHub']
+LightTable and Swift allow for inline evaluation which also places the results in line with the particular line of source which was evaluated.
+A new widget would be necessary for this. This widget would be able to hold values or arrays or plots with arrays and plots requiring expansion to be shown fully as to not clutter the editor. The widget would not be dismissed upon losing focus and multiple widgets are possible in the editor.
+https://github.com/JunoLab/atom-ink and https://github.com/nteract/hydrogen are two examples of this done in atom.
+Below are two example images from Juno which is based on LightTable.
+
+181.  https://github.com/microsoft/vscode/issues/5923
+title: ['Decorations with gutter icons hide breakpoint icons °§ Issue #5923 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.0.0
+OS Version: any
+
+Steps to Reproduce:
+
+Create a decoration type window.createTextEditorDecorationType({ gutterIconPath: ... }); with an icon, decorate a line.
+Set a breakpoint for the line. While the breakpoint works, the decoration type gutter icon is completely hiding it.
+
+Ideally, there should be a way to see both (all) icons. I'm assuming the same issue happens if two different extensions set different icons for the same line. Atom and IntelliJ platform based IDEs solve this by allowing to create a plugin specific gutter/or just extending the gutter horizontally to fit all icons.
+If the above mentioned solution is not desirable for some reason, then it should probably be allowed to set a gutter icon zIndex for a decoration type. Or maybe the breakpoint icon should just take precedence and always be displayed above any extensions icons.
+
+182.  https://github.com/microsoft/vscode/issues/83568
+title: ["Can't rearrange tabs anymore °§ Issue #83568 °§ microsoft/vscode °§ GitHub"]
+Issue Type: Bug
+Sounds exactly like #45303 but that was closed without a resolution other than "windows update made it go away". I use vscode on three different machines running ubuntu 18.04 and I only observe this on one of them. This started happening several updates ago, I wish I had captured the version when it first started. Mostly I've just been living with it for quite a while.
+When I try to move a tab from one pane to another, the tab rendering follows my mouse but the tab doesn't move:
+
+And the same happens when I try to move files:
+
+Here's some additional info from the about box:
+
+I am happy to provide additional information and try other debugging steps. And here's the data from the vscode bug report template:
+VS Code version: Code 1.39.2 (6ab5985, 2019-10-15T15:33:40.634Z)
+OS version: Linux x64 4.15.0-66-generic
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz (12 x 4299)
+
+
+GPU Status
+2d_canvas: enabledflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmultiple_raster_threads: enabled_onnative_gpu_memory_buffers: disabled_softwareoop_rasterization: disabled_offprotected_video_decode: unavailable_offrasterization: disabled_softwareskia_deferred_display_list: disabled_offskia_renderer: disabled_offsurface_synchronization: enabled_onvideo_decode: unavailable_offviz_display_compositor: disabled_offwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+1, 1, 1
+
+
+Memory (System)
+31.35GB (22.90GB free)
+
+
+Process Argv
+.
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+
+
+Extensions (9)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+cmake-format
+che
+0.6.0
+
+
+latex-workshop
+Jam
+8.2.0
+
+
+vscode-phpfmt
+kok
+1.0.30
+
+
+restructuredtext
+lex
+114.0.0
+
+
+python
+ms-
+2019.10.44104
+
+
+cpptools
+ms-
+0.26.1
+
+
+vsliveshare
+ms-
+1.0.1056
+
+
+rewrap
+stk
+1.9.1
+
+
+cmake
+twx
+0.0.17
+
+183.  https://github.com/microsoft/vscode/issues/56614
+title: ['Allow extensions to be installed for all users °§ Issue #56614 °§ microsoft/vscode °§ GitHub']
+I'm the instructor a college Python programming course. I'd love to adopt VS Code for this course, but the fact that extensions are installed on a per-user basis is a major problem. For education and enterprise markets, there needs to be support for pre-installing extensions for all users.
+It's important that we be able to provide a ready-to-use environment to students on login. I have 50 students in my class. I can't afford to lose class time to making students install the Python extension each time they use a new computer or to help troubleshooting students when they have problems.
+I've put together a very hackish workaround where I've created a batch file that installs the plugin and then launches VS Code. I've added shortcuts to this batch file, but it's messy and I fear brittle.
+Please add a flag to code --install-extension that allows users to specify the extension is to be installed for all users.
+FWIW, @rhyspaterson mentioned needing this same functionality in a comment on Issue #27972.
+
+184.  https://github.com/microsoft/vscode/issues/658
+title: ['Native node modules from extensions °§ Issue #658 °§ microsoft/vscode °§ GitHub']
+I°Øm looking to build an extension but one of the packages I need to depend on is a native module. When I do an npm install it installs the package just fine, I can launch a node shell and interact with it, etc. But when I go to use the package from within my plugin I get an error as it°Øs trying to load the ia32 build of the native module not the x64 which was compiled by node-gyp.
+A quick bit of debugging indicates that the problem stems by process.arch returning ia32 when running in VS Code when my machine is a x64 machine (Win10 x64).
+So is there some way to either:
+
+Have VS Code run an x64 process
+Have VS Code°Øs ia32 process do my npm restore (and subsequent compile with node-gyp)
+
+Otherwise I fear that my extension might be dead in the water ??
+
+185.  https://github.com/microsoft/vscode/issues/37947
+title: ['Git: Support nested git repositories °§ Issue #37947 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Code 1.18.0 (dcee220, 2017-11-08T21:22:49.932Z)
+OS Version: Windows_NT x64 6.1.7601
+Extensions:
+
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+cpptools
+ms-
+0.14.0
+
+
+
+
+Steps to Reproduce:
+We use some command line tools from ARM to organise our project. This tools rely on special lib files to establish dependencies between modules. Each module should be an independent repository (git repositories in our case). So once all the references are deployed (the tools will "git clone" the indicated repositories in the lib files) the folder structure would look like this (folders in bold):
+
+
+project_folder (git repo)
+
+module1.lib
+module2.lib
+module1 (git repo)
+
+module3.lib
+module3 (git repo)
+
+
+module2 (git repo)
+
+
+
+
+If we add project_folder as the root folder, the source control tab will only track the changes done in project_folder.
+If we use the new multi-root project feature and also add module1, module2, and module3 to the workspace; we still find that only the changes in project_folder are tracked.
+Nevertheless, if we add the folder in an strict reverse nesting order in the following manner:
+
+With an empty project open module3 as root folder
+Add folder to workspace... module2
+Add folder to workspace... module1
+Add folder to workspace... project_folder
+
+Then we see that the source control view displays the several source control providers correctly.
+
+Reproduces without extensions: Yes
+
+186.  https://github.com/microsoft/vscode/issues/68527
+title: ['Explore Extensions Management UX °§ Issue #68527 °§ microsoft/vscode °§ GitHub']
+Explore Extensions Management UX
+Extensions Management include:
+
+
+Managing installed extensions
+
+Enabled
+Disabled
+All installed
+Built in
+Outdated
+
+
+
+Browsing Marketplace
+
+Searching
+Categories
+Order of viewing
+
+
+
+Show Recommendations
+
+Workspace
+General (file)
+
+
+
+Over the time this viewlet has become a single place for all of the above which made it
+
+Flooded with views and making them hard to manage
+Hard to distinguish among installed, recommendations and market place
+Missing prominent information on installed extensions
+
+Active
+Running
+Activation time
+
+
+Viewlet is lacking space to provide necessary information like
+
+Why reload is required
+Due to this fact, we have a different page for running extensions
+
+
+There is no nice landing page
+Hard to browse extensions in market place with categories
+
+This seems like Extensions viewlet is overloaded with too many features and used for managing/browsing/customising extensions instead of just using like an explorer.
+Goal of this issue is to explore some ideas considering all above use cases and come with a good design which gets aligned with current VS Code UX.
+Following are some issues that are kinda related to current viewlet
+
+#68456
+#68529
+#68584
+#68590
+#68711
+#68702
+#67369
+#84390
+
+187.  https://github.com/microsoft/vscode/issues/68237
+title: ['Search with non-standard encodings not supported °§ Issue #68237 °§ microsoft/vscode °§ GitHub']
+Issue Type: Bug
+Set worskpace encoding to cp437.
+Do a worskspace search for anything.
+The search box is surrounded in red, a popup appears underneath it saying "Unknown encoding: cp437".
+I had the same problem once and found I had to unset the option search.useRipgrep to have it working. That worked. But now, I have a warning on this preference that says "deprecated" and to use  pcre (which doesn't work).
+That's a regression.
+VS Code version: Code 1.31.0 (7c66f58, 2019-02-06T08:51:24.856Z)
+OS version: Linux x64 4.15.0-1032-oem
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz (8 x 2874)
+
+
+GPU Status
+2d_canvas: enabledchecker_imaging: disabled_offflash_3d: enabledflash_stage3d: enabledflash_stage3d_baseline: enabledgpu_compositing: enabledmultiple_raster_threads: enabled_onnative_gpu_memory_buffers: disabled_softwarerasterization: disabled_softwaresurface_synchronization: enabled_onvideo_decode: unavailable_offwebgl: enabledwebgl2: enabled
+
+
+Load (avg)
+2, 3, 3
+
+
+Memory (System)
+15.39GB (1.47GB free)
+
+
+Process Argv
+
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+
+
+Extensions (20)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+project-manager
+ale
+10.3.2
+
+
+quitcontrol-vscode
+art
+3.0.0
+
+
+better-toml
+bun
+0.3.2
+
+
+whitespace-plus
+dav
+0.0.5
+
+
+mustache
+daw
+1.1.1
+
+
+gitlens
+eam
+9.5.0
+
+
+EditorConfig
+Edi
+0.12.8
+
+
+githd
+hui
+2.1.0
+
+
+rpm-spec
+Lau
+0.2.3
+
+
+vscode-duplicate
+mrm
+1.2.1
+
+
+indent-rainbow
+ode
+7.2.4
+
+
+vscode-subword-navigation
+ow
+1.2.0
+
+
+vscode-docker
+Pet
+0.5.2
+
+
+rust
+rus
+0.5.3
+
+
+whitespace
+san
+0.0.5
+
+
+crates
+ser
+0.3.6
+
+
+code-settings-sync
+Sha
+3.2.4
+
+
+local-history
+xyz
+1.7.0
+
+
+plsql-language
+xyz
+1.7.0
+
+
+markdown-all-in-one
+yzh
+2.0.1
+
+188.  https://github.com/microsoft/vscode/issues/5970
+title: ['Git: Symlink support °§ Issue #5970 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.0.0 (1.0.0)
+OS Version: OSX 10.11.4 (15E65)
+
+Steps to Reproduce:
+
+Create a new project with git repository initialised.
+Create a folder /foo/bar
+Add a symlink from /foo/bar to /bar ln -s /foo/bar .
+Go to Git tab on vscode, and stage /bar folder.
+
+If now you click on staged /bar folder, you'll get an error Warn: Can't open this git resource.
+
+189.  https://github.com/microsoft/vscode/issues/27759
+title: ['Align explorer sorting with platform sorting °§ Issue #27759 °§ microsoft/vscode °§ GitHub']
+It looks like our file sorting in the explorer does not match platform beahviour in some cases.
+Windows:
+
+a file foo.ts is sorted before foo_test.ts but we sort it the other way around
+
+Linux:
+
+a file foo.ts is sorted before foo_test.ts but we sort it the other way around
+a lowercase file seems to be sorted before an upper case file but we seem to mix the sorting independent of the casing (e.g. folders [out, outb, outd, Outa, Outc] are showing up as [out, OutA, outb, Outc, outd]
+
+macOS:
+
+seems to be OK
+
+We use a JavaScript Collator for the comparing here.
+Unfortunately I am not able to tweak the Collator options to bring me the desired result...
+
+190.  https://github.com/microsoft/vscode/issues/24043
+title: ['Neo keyboard layout: Some Keys stopped working °§ Issue #24043 °§ microsoft/vscode °§ GitHub']
+VSCode Version: Code 1.11.0 (9122ec4, 2017-04-05T21:13:24.700Z)
+OS Version: Linux x64 4.4.0-72-generic
+
+
+Steps to Reproduce:
+
+Install and activate Neo keyboard layout
+Open any source file in VS code
+Put cursor somewhere in the file
+Press M4 key and hold. Press s key (see image)
+Instead of the cursor moving left, nothing happens
+
+In the previous version of VSCode (1.10.2 8076a19) this worked just fine .
+
+191.  https://github.com/microsoft/vscode/issues/84136
+title: ['The horizontal wheel of mouse is invalid °§ Issue #84136 °§ microsoft/vscode °§ GitHub']
+Issue Type: Bug
+mouse: logi m590
+The horizontal wheel of mouse does not work in VS code.
+VS Code version: Code 1.39.2 (6ab5985, 2019-10-15T15:35:18.241Z)
+OS version: Windows_NT x64 10.0.18362
+
+
+
+
+192.  https://github.com/microsoft/vscode/issues/76490
+title: ["Search doesn't follow symlinks in a Samba share on Linux °§ Issue #76490 °§ microsoft/vscode °§ GitHub"]
+VSCode Version: 1.35.1
+Local OS Version: Windows 7
+Remote OS Version: Centos 6.4
+Remote Extension/Connection Type: SSH
+
+Steps to Reproduce:
+
+Connect to remote development via SSH
+Press ctrl+P, followed by a filename that exists on remote server.
+The search does not show any results
+
+193.  https://github.com/microsoft/vscode/issues/23957
+title: ['[Feature] Option to disable cmd+click trigger for goToDefinition °§ Issue #23957 °§ microsoft/vscode °§ GitHub']
+Starting ~2 weeks ago, I have been plagued by this feature. Somehow I manage to trigger this feature about 60% of the time when I am trying to copy+paste. It is the same issue as reported here, but in the editor so am creating this ticket as suggested by @bpasero .
+#7827 (comment)
+
+VSCode Version: Version 1.10.2 (1.10.2)
+OS Version: OS X 10.11.6 (15G31)
+
+Steps to Reproduce:
+
+Cmd+click a followable definition.
+Unexpectedly arrive somewhere deep in node_modules.
+
+Don't get me wrong, I love this feature but whatever changes were made recently seem to be incompatible with my muscle memory when copying text. So, I would like to change the keybinding, or at the very least turn it off altogether.
+
+194.  https://github.com/microsoft/vscode/issues/108087
+title: ["Can't open some plugin market - xhr timeout °§ Issue #108087 °§ microsoft/vscode °§ GitHub"]
+Issue Type: Bug
+some plugin in plugin market can't be opened.
+VS Code version: Code 1.49.3 (2af0510, 2020-10-02T17:56:11.027Z)
+OS version: Linux x64 5.4.0-48-generic snap
+
+System Info
+
+
+
+Item
+Value
+
+
+
+
+CPUs
+Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz (8 x 3254)
+
+
+GPU Status
+2d_canvas: unavailable_softwareflash_3d: disabled_softwareflash_stage3d: disabled_softwareflash_stage3d_baseline: disabled_softwaregpu_compositing: disabled_softwaremultiple_raster_threads: enabled_onoop_rasterization: disabled_offopengl: disabled_offprotected_video_decode: disabled_offrasterization: disabled_softwareskia_renderer: enabled_onvideo_decode: disabled_softwarevulkan: disabled_offwebgl: unavailable_softwarewebgl2: unavailable_software
+
+
+Load (avg)
+1, 1, 1
+
+
+Memory (System)
+7.64GB (0.44GB free)
+
+
+Process Argv
+--force-user-env --no-sandbox --unity-launch --no-sandbox --crash-reporter-id f9567cb3-2186-4d15-8e30-e0d18366d79b
+
+
+Screen Reader
+no
+
+
+VM
+0%
+
+
+DESKTOP_SESSION
+ubuntu
+
+
+XDG_CURRENT_DESKTOP
+Unity
+
+
+XDG_SESSION_DESKTOP
+ubuntu
+
+
+XDG_SESSION_TYPE
+x11
+
+
+
+Extensions (2)
+
+
+
+Extension
+Author (truncated)
+Version
+
+
+
+
+gitlens
+eam
+10.2.2
+
+
+go
+gol
+0.17.2
+
+195.  https://github.com/microsoft/vscode/issues/10471
+title: ['Lift `setContext` from a command to proper API °§ Issue #10471 °§ microsoft/vscode °§ GitHub']
+This would be very useful to activate extension build feature per project type.
+would help for this issue
+
+196.  https://github.com/microsoft/vscode/issues/41351
+title: ['Sort folders/projects in multi-root workspace °§ Issue #41351 °§ microsoft/vscode °§ GitHub']
+Could the ability be added to some way sort the list of folders/projects that are in a multi-root workspace? From what it seems, they only stay arranged in the order in which they are added.
+
+197.  https://github.com/microsoft/vscode/issues/92274
+title: ['Startup is blocked resolving configuration for a slow remote folder °§ Issue #92274 °§ microsoft/vscode °§ GitHub']
+Hi, in my use case i have some folders opened in the workspace, one of these is remote, i mean that one of these is on a computer in lan network with access allowed by Samba.
+When i start Visual Studio Code if this lan-computer is off Visual Studio Code is blocked for some min trying to access on the lan-folder uslessly.
+It would be nice to make this access to each folder on workspace in async way, for avoid the bloking.
+Thanks :)
+
+198.  https://github.com/microsoft/vscode/issues/12223
+title: ['Possibility to display line endings in text area °§ Issue #12223 °§ microsoft/vscode °§ GitHub']
+VSCode Version: 1.5
+OS Version: Win 7 x64
+
+At the moment there is only the little statusbar menu which display/change the line ending if the actual file. But sometimes it would be great to see the line endings directly in every line (see atom f.e.) especially when there are mixed line endings (not good, but this happens from time to time).
+Greetings
+Tonka
+
+199.  https://github.com/microsoft/vscode/issues/43154
+title: ['Titlebar-less view for Linux °§ Issue #43154 °§ microsoft/vscode °§ GitHub']
+Just as Mozilla did in Firefox 59 (you can check it out in Firefox Nightly atm), and someone was doing for the Mac version in #12377, it would be really good to have an option to integrate the title bar in the same row where the tabs reside, in order to save some vertical space (which is even more important if like me you usually work on a non-FHD laptop such as an old Thinkpad or a Dell Latitude).
+I said in Gnome cause it's what I use, but maybe it could be made into a more portable solution that has options for all DEs with top bars (be it Mac, Gnome, Xfce...). Like Mozilla did, it could even start to roll out when just some DEs are supported, with the warning that it may not work on all systems.
+
+200.  https://github.com/microsoft/vscode/issues/52639
+title: ['Allow disabling builtin extensions from the command line and persisting the configuration state so that subsequently when vscode is closed and open ithose extensions will still be disabled °§ Issue #52639 °§ microsoft/vscode °§ GitHub']
+Allow disabling builtin extensions from the command line
