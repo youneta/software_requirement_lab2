@@ -53,6 +53,7 @@ def get_issue_content(issue_name):
     tree = etree.HTML(page_source)
     # 获取issue内容
     issue_content = tree.xpath('//table//td')[0].xpath('string(.)')
+    # 获取issue标题
     issue_title = tree.xpath('/html/head/title/text()')
     return issue_content, issue_title
 
