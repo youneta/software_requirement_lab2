@@ -1,0 +1,213 @@
+
+
+1.  ['允许浮动窗口 - Issue #10121 - microsoft/vscode - GitHub'] 
+2.  ['允许改变工作台的字体大小和字体 - Issue #519 - microsoft/vscode - GitHub'] 3. 
+3.  ['发布在微软商店--问题#10759--microsoft/vscode--GitHub'] 
+4.  ['Git: 支持使用私钥密码的git - 问题#13680 - microsoft/vscode - GitHub]] 
+5.  ['Editor: scroll jumps randomly (related to Chrome, Electron, xinput) - Issue #28795 - microsoft/vscode - GitHub]] 
+6.  ['允许自定义鼠标快捷键 - Issue #3130 - microsoft/vscode - GitHub'] 。
+7.  ['宏录制--问题#4490--microsoft/vscode--GitHub'] 
+8.  ['Tabs for integrated terminal - Issue #10546 - microsoft/vscode - GitHub'] 
+9.  ['Visual Studio Code for ipad - Issue #70764 - microsoft/vscode - GitHub'] 
+10.  ['在菜单下方添加一个可选配置的工具栏 - Issue #41309 - microsoft/vscode - GitHub'] 10. 
+11.  ['允许在同一窗口中打开多个工作空间 - 问题#43188 - microsoft/vscode - GitHub'] 11. 
+12.  ['改进的列选择(Alt+select)-问题#5402-microsoft/vscode-GitHub']] 
+13.  ['大纲视图的其他位置--问题#49923--microsoft/vscode--GitHub'] 
+14.  ['File Nesting - Issue #6328 - microsoft/vscode - GitHub'] 
+15.  ['Windows更新失败。访问被拒绝 - Issue #47841 - microsoft/vscode - GitHub'] 
+16.  ['支持打印编辑器内容 - Issue #5953 - microsoft/vscode - GitHub'] 。
+17.  ['重新审视VS Code文件夹结构中的应用数据、设置、扩展 - 问题#3884 - microsoft/vscode - GitHub'] 。
+18.  ['Allow tabs to wrap to multi-line - Issue #70413 - microsoft/vscode - GitHub'] 。
+19.  ['支持在多个VS Code窗口中打开一个项目文件夹 - 问题#2686 - microsoft/vscode - GitHub'] 
+20.  ['在设置中解析值时支持变量 - 问题#2809 - microsoft/vscode - GitHub'] 
+21.  ['在比较视图中复制/替换/添加左<->右 - Issue #25887 - microsoft/vscode - GitHub'] 。
+22.  ['排除所有文件，除了... - Issue #869 - microsoft/vscode - GitHub'] 
+23.  ['搜索：针对特定文件集 - Issue #20530 - microsoft/vscode - GitHub'] 
+24.  ['VS代码在等待更新的情况下关机时丢失了 - Issue #52855 - microsoft/vscode - GitHub'] 。
+25.  ['当使用XRDP连接时，VS代码在Ubuntu上无法工作。- 问题#3451 - microsoft/vscode - GitHub'] 
+26.  ['Mac: 提供一个隐藏标题栏和内联窗口控件的设置 - 问题#12377 - microsoft/vscode - GitHub'] 。
+  ['功能请求。显示项目中所有文件的所有错误和警告，而不仅仅是打开的文件 - Issue #13953 - microsoft/vscode - GitHub'] 
+28.  ["Insert key doesn't switch to overtype/overwrite mode - Issue #1012 - microsoft/vscode - GitHub"] 。
+29.  29. ['虚拟空间未实现。- 问题#13960 - microsoft/vscode - GitHub'] 
+  30. ['Git: 使用VS Code作为合并编辑器 - 问题#5770 - microsoft/vscode - GitHub'] 
+31.  ['File watcher导致Mac/Linux上大型文件夹的CPU使用率很高 - Issue #3998 - microsoft/vscode - GitHub'] 。
+32.  ['[windows]打开速度慢 (vscode, file, folder...) - Issue #56644 - microsoft/vscode - GitHub']。
+33.  ['在当前文件功能中添加 "查找所有出现的内容"--问题#14836--microsoft/vscode--GitHub]] 
+34.  ['终端从睡眠状态恢复操作系统时有时会显示损坏的纹理 - Issue #69665 - microsoft/vscode - GitHub'] 。
+35.  ['通用语言注入--问题#1751--microsoft/vscode--GitHub'] 
+36.  ['支持类似于IntelliJ、WebStorm的Git冲突解决工具 - 问题#37350 - microsoft/vscode - GitHub'] 
+37.  ['提供像Adobe Brackets那样的HTML实时预览 - Issue #12080 - microsoft/vscode - GitHub']。
+38.  ['XHR在尝试通过Visual Studio代码安装插件时失败 - 问题#34385 - microsoft/vscode - GitHub'] 
+39.  ['文件资源管理器在多次文件更改后没有更新 - 问题#28432 - microsoft/vscode - GitHub'] 。
+40.  ["由于`\\\\bin`文件夹被另一进程使用，无法安装本地用户更新 - Issue #60697 - microsoft/vscode - GitHub"] 
+  ['功能请求。从配置文件中启用/禁用扩展 - Issue #40239 - microsoft/vscode - GitHub'] 。
+42.  ['创建一个选项来定位intellisense参数信息的顶部或底部。- Issue #33752 - microsoft/vscode - GitHub'] 。
+43.  ['Split Editor中的同步滚动 - Issue #33110 - microsoft/vscode - GitHub'] 
+44.  ['[功能]本地工作空间设置 - Issue #40233 - microsoft/vscode - GitHub'] 
+45.  ['添加只读模式 - Issue #4873 - microsoft/vscode - GitHub'] 
+46.  ['API访问 "Open Editors" - Issue #15178 - microsoft/vscode - GitHub'] 
+47.  ['允许扩展发布测试版，用户可以选择加入 - 问题#15756 - microsoft/vscode - GitHub'] 
+*** 使用www.DeepL.com/Translator翻译（免费版） ***
+
+48.  ['最大化当前文件/标签/编辑器 - Issue #16927 - microsoft/vscode - GitHub'] 。
+  ['功能请求。支持私人市场/画廊 - Issue #21839 - microsoft/vscode - GitHub]] 
+50.  ["[主题]主题不支持背景风格 - 问题#3429 - microsoft/vscode - GitHub"]。
+  ['功能请求。支持私人市场/画廊 - Issue #21839 - microsoft/vscode - GitHub'] 
+52.  ['FileSystemProvider: no way of handling permissions issues - Issue #48659 - microsoft/vscode - GitHub'] 。
+53.  ['鼠标中键滚动 - Issue #6302 - microsoft/vscode - GitHub'] 。
+54.  ['提取集成终端 - Issue #34442 - microsoft/vscode - GitHub'] 
+  55. ["Snap: 共享进程无法启动 - Issue #103295 - microsoft/vscode - GitHub"] 
+56.  ['macOS Mojave：代码命令行在dock中生成重复的 "最近打开 "图标 - Issue #60579 - microsoft/vscode - GitHub']。
+57.  ['允许隐藏标签栏行和面板标题栏中的按钮 - 问题#46403 - microsoft/vscode - GitHub'] 。
+58.  ['用HTML格式粘贴缩进两次 - 问题#32320 - microsoft/vscode - GitHub'] 。
+59.  ['如何在VSCode中检测shift shift键？- Issue #5280 - microsoft/vscode - GitHub'] 
+60.  ['添加自动隐藏侧边栏的设置 - Issue #3742 - microsoft/vscode - GitHub'] 。
+61.  ['功能请求：在编辑器中显示/隐藏注释 - 问题#46505 - microsoft/vscode - GitHub'] 
+62.  ['1.36滚动突然滞后--精密触控板--问题#76594--microsoft/vscode--GitHub'] 
+63.  ['用树形扫描器支持语法高亮 - Issue #50140 - microsoft/vscode - GitHub'] 。
+64.  ['在Linux上使用`setxkbmap'的键盘映射不工作 - 问题#23991 - microsoft/vscode - GitHub]] 
+65.  ['允许在.code-workspace文件中使用 "files "字段 - Issue #45177 - microsoft/vscode - GitHub]] 
+66.  ['滚动和打字反应慢 - 问题#107016 - microsoft/vscode - GitHub']。
+67.  ['[icon-themes]支持文件关联中的globs（图标主题） - Issue #12493 - microsoft/vscode - GitHub']。
+68.  ["用一个按钮清除'问题'窗格中的所有问题 - Issue #66982 - microsoft/vscode - GitHub"] 。
+69.  ['files.watcherExclude设置在多根工作空间中不起作用 - Issue #40898 - microsoft/vscode - GitHub'] 。
+70.  ['macOS Big Sur的图标更改 - Issue #101014 - microsoft/vscode - GitHub'] 。
+71.  ['增加一个退出前确认的选项 - Issue #14710 - microsoft/vscode - GitHub'] 。
+72.  ['工具提示妨碍了编辑器中的一般操作 - 问题#15667 - microsoft/vscode - GitHub'] 。
+73.  ['参数提示一直在线显示（像IntelliJ一样）-问题#16221-microsoft/vscode-GitHub']。
+74.  ['对RTL语言的支持--问题11770--microsoft/vscode--GitHub'] 
+75.  ['[折叠]将尾括号折叠到同一行 - 问题#3352 - microsoft/vscode - GitHub'] 。
+76.  ['允许更小或更大的标签高度 - Issue #42253 - microsoft/vscode - GitHub']] 
+77.  ['列表应该宣布选择了多少项 - Issue #91061 - microsoft/vscode - GitHub'] 。
+78.  ['允许同时显示多个视图 - Issue #26777 - microsoft/vscode - GitHub'] 。
+79.  ['isWatching task as preLaunchTask in launch.json - Issue #6209 - microsoft/vscode - GitHub'] 。
+80.  ['[主题]不同文件类型的不同主题 - Issue #20652 - microsoft/vscode - GitHub']。
+81.  ['当作为不同用户运行时，无法将文件从资源管理器拖放到VSCode - 问题#38999 - microsoft/vscode - GitHub'] 。
+82.  ['高DPI。OSX上滞后的无响应滚动 - 问题#26398 - microsoft/vscode - GitHub'] 。
+83.  ['Linux: watcher 要求工作区文件夹中每个文件的文件句柄 - Issue #45295 - microsoft/vscode - GitHub'] 。
+84.  ['Integrated Terminal Lags intermittently - Issue #105446 - microsoft/vscode - GitHub'] 。
+85.  ['类似于键绑定的宏 - Issue #871 - microsoft/vscode - GitHub'] 。
+86.  ['使用.gitignore在资源管理器中隐藏文件 - 问题#38878 - microsoft/vscode - GitHub'] 。
+87.  ['允许按平台设置作用域 - Issue #5595 - microsoft/vscode - GitHub'] 。
+88.  ['调查：当第一个文件夹发生变化时，不要重启扩展名主机 - 问题#69335 - microsoft/vscode - GitHub'] 。
+89.  ['经常出现全窗口挂起的情况 - Issue #71966 - microsoft/vscode - GitHub'] 。
+90.  ["[主题]以编程方式访问主题的颜色 - Issue #32813 - microsoft/vscode - GitHub"]。
+91.  ['允许配置编辑器自动重载行为 - 问题#23107 - microsoft/vscode - GitHub'] 。
+92.  ['打开颜色选择器并插入所选格式的颜色的快捷方式 - Issue #52364 - microsoft/vscode - GitHub'] 。
+93.  ['添加一些API以支持GUI定制 - Issue #1833 - microsoft/vscode - GitHub'] 。
+94.  ['提供代码标记样式和沟槽标记 - Issue #9209 - microsoft/vscode - GitHub'] 。
+95.  ['为 "复制相对路径 "操作指定分隔符的选项 - Issue #56279 - microsoft/vscode - GitHub'] 
+
+通过www.DeepL.com/Translator（免费版）翻译
+
+96.  ['在`tasks.json::tasks.options.env'中定义的环境变量不会覆盖现有的环境变量 - 问题#47985 - microsoft/vscode - GitHub]] 
+97.  ['允许通过拖放添加文件引用。- 问题#5240 - microsoft/vscode - GitHub'] 
+98.  ['钉住标签：在二级标签行中显示在其他标签行之上 - Issue #98160 - microsoft/vscode - GitHub'] 。
+99.  ['终端输出 div 容器应该更容易被屏幕阅读器访问 - Issue #98918 - microsoft/vscode - GitHub'] 。
+100.  ['在窗口重装之间保留终端进程 - Issue #20013 - microsoft/vscode - GitHub'] 。
+101.  ['支持特定平台扩展 - 问题#23251 - microsoft/vscode - GitHub'] 
+  ['功能请求。零延迟打字--问题#27378--microsoft/vscode--GitHub'] 
+103.  ['提供任务运行器视图 - Issue #28235 - microsoft/vscode - GitHub'] 
+104.  ['我把Dolphin设置为默认文件管理器，但VSCode打开Nautilus而不是Dolphin - Issue #50386 - microsoft/vscode - GitHub'] 。
+105.  ['无法从被删除的行中选择文本的diff视图 - Issue #8226 - microsoft/vscode - GitHub'] 。
+106.  ["Marketplace: searching by an extension's name is practically broken - Issue #42890 - microsoft/vscode - GitHub"] 。
+107.  ['安装macOS 11后字体总是黑的（Source Code Pro字体或衍生产品需要更新） - 问题#100840 - microsoft/vscode - GitHub'] 。
+108.  ['允许以不同的权限打开不同的窗口 - Issue #6560 - microsoft/vscode - GitHub']] 
+109.  ['扩展代理支持 - Issue #12588 - microsoft/vscode - GitHub'] 
+110.  ['远程X服务器启动时的崩溃 - 问题#101069 - microsoft/vscode - GitHub']] 
+111.  ['Visual Studio代码应默默地自我更新 - 问题#9539 - microsoft/vscode - GitHub'] 
+  112. ['Git: 自动在git提交消息中插入换行符 - 问题#2718 - microsoft/vscode - GitHub]] 
+113.  ['自动隐藏面板 - Issue #10952 - microsoft/vscode - GitHub'] 
+114.  ['Starting inspector on 127.0.0.1:9229 failed: address already in use with nodemon - Issue #73818 - microsoft/vscode - GitHub'] 
+115.  ['缩进指南高亮不符合语义 - Issue #49342 - microsoft/vscode - GitHub']。
+116.  ['MSIX installer - Issue #61793 - microsoft/vscode - GitHub'] 
+117.  ['编辑缓冲区中的ANSI颜色支持 - 问题#38834 - microsoft/vscode - GitHub'] 。
+118.  ['Outline view: collapsed by default (induce optional setting?) - Issue #53262 - microsoft/vscode - GitHub'] 。
+119.  ['Mac OS X :: "Open Folder With" VS Code - Issue #1223 - microsoft/vscode - GitHub'] 
+120.  ['使在webview中使用拖放功能成为可能 - Issue #8794 - microsoft/vscode - GitHub'] 。
+121.  ['Linux Mint Guest OS在使用VSCode时崩溃 - Issue #84745 - microsoft/vscode - GitHub'] 
+122.  ['允许完全隐藏编辑器标题部分（标签，面包屑） - Issue #33607 - microsoft/vscode - GitHub'] 。
+123.  ['综合终端在WSL 2上的性能不佳（滞后）--问题#100427--microsoft/vscode--GitHub'] 
+124.  ['重启更新在Mac上不起作用 - 问题#77949 - microsoft/vscode - GitHub'] 。
+125.  ['Word导航不能与屏幕阅读器一起使用 - Issue #90578 - microsoft/vscode - GitHub'] 
+126.  ['以灰度呈现的菜单小部件 - 问题#75615 - microsoft/vscode - GitHub'] 
+127.  ['[主题]单独的工作台主题和语法主题 - Issue #25986 - microsoft/vscode - GitHub']。
+128.  ['使用 "type "命令的扩展（如Vim）由于与其他扩展一起使用单线程，性能较差 - 问题75627 - microsoft/vscode - GitHub'] 。
+129.  ['隐藏显示评论 - Issue #45020 - microsoft/vscode - GitHub'] 
+130.  ['探索改进欢迎页的用户体验 - Issue #63152 - microsoft/vscode - GitHub'] 
+131.  ['允许100%的面板宽度和高度 - Issue #42149 - microsoft/vscode - GitHub'] 
+132.  ['Explorer / Opened Editors Sorting - Issue #27286 - microsoft/vscode - GitHub']。
+133.  ['multiselect via ctrl+d case insensitivity makes it useless - Issue #18239 - microsoft/vscode - GitHub'] 。
+134.  ['自动激活Markdown预览 - Issue #2766 - microsoft/vscode - GitHub'] 
+135.  ['高分辨率屏幕上迟缓的用户界面 - 问题#75111 - microsoft/vscode - GitHub'] 
+136.  ['允许明确指定 tsconfig.json 文件名 - Issue #12463 - microsoft/vscode - GitHub'] 
+137.  ['调试控制台应该支持查找 - Issue #4338 - microsoft/vscode - GitHub'] 。
+138.  ['Git: stale editor inputs hanging around - Issue #18651 - microsoft/vscode - GitHub'] 。
+139.  ['[折叠]折叠选择 - Issue #18805 - microsoft/vscode - GitHub'] 
+140.  ['在浏览快速打开的结果时将其显示为预览 - Issue #8939 - microsoft/vscode - GitHub'] 
+
+通过www.DeepL.com/Translator（免费版）翻译
+
+141.  ['[html]当我输入等号时自动插入引号(=) - Issue #18071 - microsoft/vscode - GitHub']。
+142.  ['在高亮/选择文本时 - 不能在点击时取消高亮/取消选择文本 - 需要做ESC - Issue #28636 - microsoft/vscode - GitHub']] 
+143.  ['Native Sierra-tabs are not working in macOS 10.12.x - Issue #76537 - microsoft/vscode - GitHub'] 
+144.  ['VS Code键盘快捷键建议学习--问题#26729--microsoft/vscode--GitHub']。
+145.  ['search.exclude无法在工作区搜索符号 - Issue #46718 - microsoft/vscode - GitHub'] 
+146.  ['如果所有列表项都可用，考虑显示完成项的详细信息 - Issue #39441 - microsoft/vscode - GitHub'] 。
+147.  ['功能请求：配置工具提示最大宽度 - Issue #14165 - microsoft/vscode - GitHub']] 
+148.  ['Mac在侧边栏搜索表单上搜索时崩溃。- Issue #87254 - microsoft/vscode - GitHub'] 。
+149.  ['单行if/for/while/etc、多行链式语句等缩进不正确 - 问题#43244 - microsoft/vscode - GitHub'] 
+150.  ['?? Notebook API公告 - Issue #93265 - microsoft/vscode - GitHub'] 
+151.  ['功能请求：配置工具提示最大宽度 - Issue #14165 - microsoft/vscode - GitHub']] 
+152.  ['为编辑器扩展提供与编码相关的API - Issue #824 - microsoft/vscode - GitHub'] 
+153.  ['[html]防止嵌入的语法破坏文档其余部分的语法高亮 - Issue #20488 - microsoft/vscode - GitHub']。
+154.  ['Stablize apple silicon exploration builds - Issue #106770 - microsoft/vscode - GitHub'] 
+155.  ['Test Runner Viewlet with an Extension API to plug into [Enhancement Request] - Issue #9505 - microsoft/vscode - GitHub'] 
+156.  ['添加对额外全局配置文件的支持（除了settings.json） - Issue #17634 - microsoft/vscode - GitHub'] 
+157.  [".gitignore'd文件有时不灰显 - 问题#70963 - microsoft/vscode - GitHub"] 
+158.  ['为文件夹添加标签/颜色 - 问题#62104 - microsoft/vscode - GitHub'] 。
+159.  ['一些Ctrl+Alt快捷键不再工作 - Issue #68787 - microsoft/vscode - GitHub'] 。
+160.  ['支持将输入参数扩展为多个参数 - Issue #83678 - microsoft/vscode - GitHub'] 
+161.  ['"Terminal: 不能如愿以偿 - Issue #75141 - microsoft/vscode - GitHub'] 
+162.  ['增加从其他设置文件扩展的能力 - Issue #15909 - microsoft/vscode - GitHub']] 
+163.  ['Support Elastic Tabstops - Issue #3932 - microsoft/vscode - GitHub'] 
+164.  ['VSCode freezes/crashes Windows 10 1809 - Issue #78138 - microsoft/vscode - GitHub'] 
+165.  ['方法分离器-问题#56530-microsoft/vscode-GitHub'] 
+166.  ['Git: 在VSCode中支持git历史 - 问题#68 - microsoft/vscode - GitHub'] 
+167.  ['提供选项以选择不对文件进行行尾规范化 - 问题#127 - microsoft/vscode - GitHub]] 
+168.  ['新的设置编辑器不能覆盖工作区设置中的值 - Issue #58038 - microsoft/vscode - GitHub'] 。
+169.  ['[功能请求]撤销分支 - Issue #20889 - microsoft/vscode - GitHub'] 
+170.  ['[css][html]仅禁用MDN参考弹出窗口的选项（不影响其他功能）-问题#97979 - microsoft/vscode - GitHub'] 
+171.  ['允许自定义设置/控制工作台标签页标题 - 问题#43806 - microsoft/vscode - GitHub'] 
+172.  ['更好地将文件拖放/剪贴板集成到各个应用程序中 - 问题#164 - microsoft/vscode - GitHub]] 
+173.  ['改进快速打开中元素的排名 - 问题#27317 - microsoft/vscode - GitHub'] 。
+174.  ['在某些情况下，orca读取空格而不是读取制表符。- 问题#104673 - microsoft/vscode - GitHub'] 
+175.  ['从编辑器中按ctrl+f查找字符串的选项 - Issue #20768 - microsoft/vscode - GitHub'] 。
+176.  ['允许诊断信息具有标记符（或格式化文本）内容 - Issue #54272 - microsoft/vscode - GitHub'] 
+177.  ['从编辑器中按ctrl+f查找字符串的选项 - Issue #20768 - microsoft/vscode - GitHub'] 。
+178.  ['Change Vertical Scrollbar Width - Issue #30191 - microsoft/vscode - GitHub'] 
+179.  ['在Windows的新终端上使用新的环境块 - 问题#47816 - microsoft/vscode - GitHub']。
+180.  ['自定义窥视小部件 - 问题#3220 - microsoft/vscode - GitHub'] 
+
+通过www.DeepL.com/Translator（免费版）翻译
+
+181.  ['带沟槽图标的装饰隐藏断点图标 - 问题#5923 - microsoft/vscode - GitHub'] 。
+182.  ["不能再重新排列标签了 - Issue #83568 - microsoft/vscode - GitHub"] 。
+183.  ['允许所有用户安装扩展 - Issue #56614 - microsoft/vscode - GitHub']。
+184.  ['来自扩展的原生节点模块 - Issue #658 - microsoft/vscode - GitHub'] 。
+185.  ['Git: 支持嵌套的git仓库 - 问题#37947 - microsoft/vscode - GitHub'] 
+186.  ['探索扩展管理用户体验 - Issue #68527 - microsoft/vscode - GitHub'] 。
+187.  ['不支持非标准编码的搜索 - 问题#68237 - microsoft/vscode - GitHub']。
+188.  ['Git: Symlink support - Issue #5970 - microsoft/vscode - GitHub'] 
+189.  ['将资源管理器排序与平台排序对齐 - Issue #27759 - microsoft/vscode - GitHub'] 。
+190.  ['Neo键盘布局。有些键停止工作 - Issue #24043 - microsoft/vscode - GitHub]] 
+191.  ['鼠标水平轮无效 - Issue #84136 - microsoft/vscode - GitHub'] 
+192.  ["Search doesn't follow symlinks in a Samba share on Linux - Issue #76490 - microsoft/vscode - GitHub"] 。
+193.  ['[功能]禁用cmd+点击触发goToDefinition的选项 - 问题#23957 - microsoft/vscode - GitHub'] 
+194.  ["无法打开一些插件市场 - xhr超时 - 问题#108087 - microsoft/vscode - GitHub"] 。
+195.  ['将命令中的`setContext'转为适当的API - Issue #10471 - microsoft/vscode - GitHub'] 
+196.  ['在多根工作空间中对文件夹/项目进行排序 - Issue #41351 - microsoft/vscode - GitHub'] 
+197.  ['启动受阻，解决慢速远程文件夹的配置问题 - Issue #92274 - microsoft/vscode - GitHub'] 。
+198.  ['在文本区域显示行尾的可能性 - Issue #12223 - microsoft/vscode - GitHub']] 
+199.  ['Linux的无标题栏视图 - 问题#43154 - microsoft/vscode - GitHub'] 
+200.  ['允许从命令行禁用内置扩展，并保持配置状态，以便随后当vscode关闭和打开时，这些扩展仍将被禁用 - Issue #52639 - microsoft/vscode - GitHub'] 。
